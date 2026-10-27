@@ -288,6 +288,12 @@ Run from the repo root with `.venv/bin/python` (not conda base). Tests use unitt
   checks, browser tests over deploy/compose.yaml, and two copies on one machine
   (COMPOSE_PROJECT_NAME + own ports). Every command run as written, with a separate
   project safeact-public-dev on 55433/56380; private stacks untouched.
+- Walkthrough check from a second copy (2026-10-27, branch docs/walkthrough-second-copy):
+  Compose stack as safeact-public-demo on 18080/18002, prepare_walkthrough.py --compose, Vite
+  /demo with all 5 chapters on real cases, a fresh Charge #1002 refund went UNKNOWN
+  (ambiguous_no_response) → VERIFYING → SUCCEEDED, 1 attempt, provider_verified. Fix:
+  prepare_walkthrough.py defaults to :8080/:8002 (the first copy's stack), so the README's
+  two-copies note now passes --api/--mcp and SAFEACT_API_URL with the copy's own ports.
 - Observations and defects: docs/phase-e/observations.md.
 
 ## Open decisions and known limits

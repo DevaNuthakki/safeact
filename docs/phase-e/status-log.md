@@ -21,6 +21,22 @@ rewritten. New entries go at the top of "Status history", newest first.
 
 ## Status history (verbatim, newest entries first where they were written that way)
 
+- Walkthrough check from a second copy (2026-10-27, public repository, branch
+  docs/walkthrough-second-copy from main 856b2a7). Followed README "Guided walkthrough"
+  and "Try it yourself" with COMPOSE_PROJECT_NAME=safeact-public-demo,
+  SAFEACT_CONSOLE_PORT=18080 and SAFEACT_MCP_PORT=18002 in the shell (the temporary .env held
+  only its four keys). The stack came up healthy (bootstrap exited 0), preparation succeeded,
+  and Vite served /demo with all five chapters on the prepared cases: $2,450.00 refund
+  Succeeded with 1 attempt, captured MCP refusal, open email proposal with Approve enabled
+  (not clicked), the order's recorded 409 stale_approval, and results 861/874 vs 841/874.
+  A fresh $37.50 refund on Charge #1002 went RECORDED → CLAIMED → DISPATCHING → UNKNOWN
+  (ambiguous_no_response) → VERIFYING → SUCCEEDED, 1 attempt, provider_verified. README
+  defect: prepare_walkthrough.py defaults to --api :8080 and --mcp :8002, so in a second
+  copy the walkthrough command as written signs in and submits to the first copy's stack
+  (not run here for that reason); the two-copies note now gives the --api/--mcp flags and
+  SAFEACT_API_URL with the copy's own ports, both re-run as written. Afterwards down -v removed
+  only the four safeact-public-demo volumes; the private containers and volumes were unchanged.
+
 - README "Running the tests" (2026-10-27, public repository, branch docs/running-the-tests
   from main 5ee4470). Closes the setup gaps found in PR #1: the pip line now matches CI's
   integration job (adds requirements-agent.lock, requirements-test.lock and
