@@ -54,7 +54,7 @@ the guided walkthrough (`docs/images/`), and the walkthrough itself runs locally
 | Fault catalog | `chaos/fault_contracts.py`, `chaos/scenarios.py`, `chaos/combinations.json`; coverage list `chaos/coverage_qual_v1.json` |
 | Versioned test scenarios | `chaos/scenarios_qual_v1.jsonl` (1,200, seed 510112026) pinned by `chaos/manifest_qual_v1.json` (`sha256: b779fa72…`); agent scenarios `deploy/evaluation/agent_v1/scenarios_heldout.jsonl` |
 | Baseline implementation details | `chaos/baselines/`; [B3 design](phase-e/b3-design.md); [weaker baselines](phase-e/weaker-baseline-implementation-plan.md); [STOP 2 review](phase-e/stop2-post-pooling-20261024/REVIEW.md) |
-| Raw outcomes | `docs/phase-e/qual-v1/full/results.jsonl` (all scored rows), `failure-rows.jsonl`, `traces-failing-unstable.jsonl`; full raw output by digest (`outside-repo.json`, Release asset planned); load: `docs/phase-e/load-v1/requests.jsonl.gz` |
+| Raw outcomes | `docs/phase-e/qual-v1/full/results.jsonl` (all scored rows), `failure-rows.jsonl`, `traces-failing-unstable.jsonl`; full raw output by digest (`outside-repo.json`; published as a [v1.0.0 Release asset](https://github.com/DevaNuthakki/safeact/releases/tag/v1.0.0), see [release assets](phase-e/qual-v1/release-assets.md)); load: `docs/phase-e/load-v1/requests.jsonl.gz` |
 | A reproduction command | README [Evidence and reproduction](../README.md#evidence-and-reproduction); each review states its command |
 | Agent prompts and tool versions | `mcp_server/agent/prompts/v1/system.md` (`agent-prompt-v1`, its sha256 in the manifests); toolset digests `safeact-guarded-v2` and `direct-mock-v1` in `deploy/evaluation/agent_v1/manifest_heldout.json`; SDK versions in the same manifest |
 | Sandbox results | [Stripe sandbox v1](phase-d/stripe-sandbox-v1/REVIEW-M58.md) |
@@ -117,8 +117,10 @@ adoption are claimed.
     since Milestone 5 (private development history).
   - `qualification.yml` is manual and gated.
   - The optional full qualification run in CI (neutral hardware) is planned, not run.
-- **The full raw output** is committed by digest only. Its Release asset is planned,
-  not yet published.
+- **The full raw output** is committed by digest only. The compressed copy, the run log
+  and the diagnostic's raw output are published as assets of the
+  [v1.0.0 release](https://github.com/DevaNuthakki/safeact/releases/tag/v1.0.0)
+  ([release assets](phase-e/qual-v1/release-assets.md) maps each one to its sealed digest).
 - **The optional Stripe test-mode demo profile** was run once against Stripe test
   mode: the normal refund, and the dropped response with exactly one refund at Stripe
   ([stripe-demo-v1](phase-e/stripe-demo-v1/REVIEW.md)). Here "Succeeded" means Stripe

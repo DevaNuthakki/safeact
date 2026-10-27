@@ -277,6 +277,12 @@ Run from the repo root with `.venv/bin/python` (not conda base). Tests use unitt
   planned work). Known intermittent e2e race: negative.spec.ts "duplicate submission" can reach
   /submit before the action page releases the retained request (failed once). Fixed in the test
   (branch test/fix-duplicate-submission-race): it waits for the release; 30/30 repeats passed.
+- Public release v1.0.0 (2026-10-27, author's go; public repo DevaNuthakki/safeact, tag on
+  a25bee2): three Release assets qual-v1-full-raw.jsonl.gz, qual-v1-full-qualify.log,
+  qual-v1-diagnostics-raw.jsonl.gz, re-downloaded and matched to the sealed digests. Sealed
+  packets (full/diagnostics REVIEW.md, outside-repo.json) left unchanged; the pointer is
+  docs/phase-e/qual-v1/release-assets.md (branch docs/release-v1-links). README: CI badge,
+  release links, first gap item "One laptop, no production operation". Tests: Phase A 970, Vitest 208.
 - Observations and defects: docs/phase-e/observations.md.
 
 ## Open decisions and known limits

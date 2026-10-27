@@ -123,6 +123,13 @@
       "kind": "UI-only",
       "step": "publish readiness (2026-10-26)",
       "reason": "Presentation only: a SUCCEEDED Stripe test-mode refund now says that Stripe accepted the request and created the refund, and shows the refund status Stripe reported at response time (details.provider.refund_status, already returned by GET /actions/{id}), labelled as not a live value, with settlement out of scope; evidence cards show the same reported status. Unrecognized values are shown verbatim as text. Nothing decides from it. No API, backend, lifecycle, migration or rule change."
+    },
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "v1.0.0 release links (2026-10-27, branch docs/release-v1-links)",
+      "reason": "Documentation only: ui/public/evidence/architecture.md stays an exact copy of README.md, which now carries a CI badge, links the raw qualification output published as v1.0.0 Release assets, and words the first gap item as one laptop with no production operation. No API, backend, lifecycle, migration, policy or sealed evaluation change."
     }
   ]
 }
