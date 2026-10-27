@@ -142,8 +142,10 @@ four jobs green (Phase A, PostgreSQL + broker integration, isolated security, co
 - **`fresh-clone.yml` on GitHub:** done since this report; it has passed on every merge to
   main (added 2026-10-27, private development history).
 - **The optional full qualification run in CI** (neutral hardware): planned, not run.
-- **Publishing the compressed raw full-run output as a Release asset:** planned, once
-  the public repository exists.
+- **Publishing the compressed raw full-run output as a Release asset:** done since this
+  report (2026-10-27): assets of the
+  [v1.0.0 release](https://github.com/DevaNuthakki/safeact/releases/tag/v1.0.0), mapped
+  to their sealed digests in [release-assets.md](qual-v1/release-assets.md).
 - **Open limits carried forward:** worker-side identity binding; runtime error-log
   attribution; SQL canonical-JSON enforcement; runtime credential/subject binding;
   agents get one operation per target; asynchronous Stripe refund failure is out of

@@ -21,6 +21,23 @@ rewritten. New entries go at the top of "Status history", newest first.
 
 ## Status history (verbatim, newest entries first where they were written that way)
 
+- Public release v1.0.0 (2026-10-27, on the public repository DevaNuthakki/safeact, branch
+  docs/release-v1-links from main a25bee2). With the author's go, created the release
+  "SafeAct v1.0.0: portfolio release" (tag v1.0.0 on a25bee2) with three assets, each
+  identified by SHA-256 against the committed outside-repo.json before copying, verified
+  again on the copies, and once more after re-downloading from GitHub:
+  qual-v1-full-raw.jsonl.gz (9ef815c2…, decompresses to raw.jsonl 5faff691…, 6,000 rows),
+  qual-v1-full-qualify.log (4892910f…), qual-v1-diagnostics-raw.jsonl.gz (eeb3a390…,
+  decompresses to 4c248f3d…). A pattern scan for credentials and local paths found none.
+  The full and diagnostics packets' REVIEW.md and outside-repo.json are sealed by their
+  artifact-sha256.json (digests still match), so they keep their original wording;
+  docs/phase-e/qual-v1/release-assets.md maps each sealed entry to its asset.
+  README (CI badge for ci.yml, release link, first "What would close these gaps" item now
+  "One laptop, no production operation"), evidence-pack, evidence-index and the Milestone 5
+  exit list updated; ui/public/evidence/architecture.md re-copied from README; ledger entry
+  added under outside_pinned_inventory. Environment from the README alone was incomplete:
+  see the PR description.
+
 - License and closing notes (2026-10-27, branch docs/license-and-future from main 6817c5b). MIT
   LICENSE, Copyright (c) 2026 Deva Harsha Nuthakki. Third-party scan: some icon paths in
   ui/src/components/Icon.tsx match Lucide (ISC) and Feather (MIT) exactly, and the favicon's

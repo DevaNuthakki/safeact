@@ -1,5 +1,7 @@
 # SafeAct
 
+[![CI](https://github.com/DevaNuthakki/safeact/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/DevaNuthakki/safeact/actions/workflows/ci.yml)
+
 **When an AI agent or a person asks another system to refund a payment, send an email
 or create a record, and the request times out, nobody knows whether it happened.
 Retry and you may refund twice; give up and the customer may never be paid. SafeAct
@@ -377,8 +379,10 @@ More: [full-run review](docs/phase-e/qual-v1/full/REVIEW.md),
 [diagnostic](docs/phase-e/qual-v1/diagnostics/REVIEW.md).
 
 **Raw output:** about 1.2 GB (55 MB compressed). Its digests are committed in
-[outside-repo.json](docs/phase-e/qual-v1/full/outside-repo.json). The compressed file
-is planned as a GitHub Release asset and is not yet published.
+[outside-repo.json](docs/phase-e/qual-v1/full/outside-repo.json). The compressed file,
+the run log and the diagnostic's raw output are published as assets of the
+[v1.0.0 release](https://github.com/DevaNuthakki/safeact/releases/tag/v1.0.0); how to
+check them: [release assets](docs/phase-e/qual-v1/release-assets.md).
 
 ### Load test (M5.13, 2026-10-25)
 
@@ -517,8 +521,9 @@ The results above are real, and they are narrower than "safe in production".
 
 These are not planned work. Each item would address one limit listed above.
 
-- **One laptop:** Deploy and qualify across multiple hosts (API, workers and database
-  on separate machines), then re-run the fault scenarios there.
+- **One laptop, no production operation:** Deploy in a production-style setup (API,
+  workers and database on separate machines, with TLS, backups and monitoring), then
+  re-run the fault scenarios there.
 - **Mock providers:** a connector-authoring guide or an installable library, then
   qualification against a real CRM and a real email provider.
 - **Worker identity:** bind each worker to a verified identity, as human API requests
