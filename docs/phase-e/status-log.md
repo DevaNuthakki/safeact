@@ -21,6 +21,19 @@ rewritten. New entries go at the top of "Status history", newest first.
 
 ## Status history (verbatim, newest entries first where they were written that way)
 
+- README "Running the tests" (2026-10-27, public repository, branch docs/running-the-tests
+  from main 5ee4470). Closes the setup gaps found in PR #1: the pip line now matches CI's
+  integration job (adds requirements-agent.lock, requirements-test.lock and
+  deploy/security/requirements-identity.txt; the Phase A job omits only the test lock),
+  Phase A and console commands from ci.yml, three ways to get Node 24, the browser tests'
+  dev stack (compose.yaml, alembic head, provision_local_admission_role.sql, Chromium),
+  and two copies on one machine: both Compose files fix their project name, so a second
+  clone sets COMPOSE_PROJECT_NAME (the only form that reaches prepare_walkthrough.py and
+  chaos.load) and its own host ports. Verified by running every command as written from
+  a fresh .venv and node_modules, with project safeact-public-dev on ports 55433/56380;
+  the private safeact-phase-b and safeact-stack containers and volumes were unchanged
+  before and after.
+
 - Public release v1.0.0 (2026-10-27, on the public repository DevaNuthakki/safeact, branch
   docs/release-v1-links from main a25bee2). With the author's go, created the release
   "SafeAct v1.0.0: portfolio release" (tag v1.0.0 on a25bee2) with three assets, each

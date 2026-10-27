@@ -283,6 +283,11 @@ Run from the repo root with `.venv/bin/python` (not conda base). Tests use unitt
   packets (full/diagnostics REVIEW.md, outside-repo.json) left unchanged; the pointer is
   docs/phase-e/qual-v1/release-assets.md (branch docs/release-v1-links). README: CI badge,
   release links, first gap item "One laptop, no production operation". Tests: Phase A 970, Vitest 208.
+- README "Running the tests" (2026-10-27, branch docs/running-the-tests): Python install
+  (CI integration job's line), Phase A, Node 24 (nvm / nodejs.org / npx -p node@24), console
+  checks, browser tests over deploy/compose.yaml, and two copies on one machine
+  (COMPOSE_PROJECT_NAME + own ports). Every command run as written, with a separate
+  project safeact-public-dev on 55433/56380; private stacks untouched.
 - Observations and defects: docs/phase-e/observations.md.
 
 ## Open decisions and known limits

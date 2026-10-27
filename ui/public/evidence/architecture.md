@@ -62,6 +62,7 @@ not approved.
 - [Connector assumptions](#connector-assumptions)
 - [When SafeAct retries](#when-safeact-retries)
 - [Run it locally](#run-it-locally)
+- [Running the tests](#running-the-tests)
 - [Results](#results)
 - [What this doesn't prove](#what-this-doesnt-prove)
 - [What would close these gaps](#what-would-close-these-gaps)
@@ -316,6 +317,67 @@ cd ui && npm ci && npm run dev                # console http://127.0.0.1:5173
 - **[Customer-support workflow](docs/demo/customer-support.md):** charge, then order,
   then a conditional refund.
 - **[Local API example](examples/README.md).**
+
+## Running the tests
+
+These match what CI runs ([ci.yml](.github/workflows/ci.yml)). Run them from the
+repository root unless a line says `cd ui`. The other suites and their opt-in flags
+are listed in `CLAUDE.md`.
+
+**Python 3.13 and Phase A** (the install line of CI's integration job; its Phase A job
+installs the same without `requirements-test.lock`):
+
+```sh
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements-db.lock -r requirements-broker.lock \
+    -r requirements-api.lock -r requirements-mcp.lock -r requirements-agent.lock \
+    -r requirements-test.lock -r requirements-obs.lock \
+    -r deploy/security/requirements-identity.txt
+.venv/bin/python -m unittest discover -s tests/phase_a -t . -p 'test_*.py'
+```
+
+**Console checks** need Node 24 (`ui/.nvmrc`): `nvm install 24` then `nvm use` in
+`ui/`, or the Node 24 installer from nodejs.org. Without installing it, put
+`npx -y -p node@24 --` in front of each `npm` and `npx` command, for example
+`npx -y -p node@24 -- npm ci --no-audit --no-fund`.
+
+```sh
+.venv/bin/python -m deploy.demo.export_openapi --check
+cd ui && npm ci --no-audit --no-fund
+npm run check:api && npm run typecheck && npm run lint && npm test && npm run build
+```
+
+**Browser tests** (Playwright) start their own throwaway stack on ports 8001 and 5173,
+over the dev PostgreSQL and Redis:
+
+```sh
+cp .env.example .env && chmod 600 .env          # then set the two passwords in .env
+docker compose --env-file .env -f deploy/compose.yaml up -d --wait
+.venv/bin/python -m alembic upgrade head
+docker compose --env-file .env -f deploy/compose.yaml exec -T postgres \
+    psql -U safeact_dev -d safeact_dev -v ON_ERROR_STOP=1 -1 -q -f - \
+    < deploy/security/provision_local_admission_role.sql
+cd ui && npx playwright install chromium        # on Linux add --with-deps, as CI does
+npx playwright test
+```
+
+Stop it with `docker compose --env-file .env -f deploy/compose.yaml down`; add `-v` to
+also delete its database and broker data.
+
+**Two copies on one machine:** both Compose files fix their project name
+(`safeact-phase-b` for the dev stack, `safeact-stack` for the container stack), so a
+second clone would reuse the first clone's containers and volumes. In the second clone:
+
+- run `export COMPOSE_PROJECT_NAME=safeact-copy2` (any unused name) in each shell
+  before `docker compose`. Passing `-p safeact-copy2` to every `docker compose` command
+  also works, but the variable is the only form that reaches the scripts that run
+  Compose themselves (`ui/scripts/prepare_walkthrough.py`, `chaos.load`);
+- give its `.env` free host ports, since the first copy holds them:
+  `SAFEACT_DEV_DB_PORT` and `SAFEACT_DEV_REDIS_PORT` (for example 55433 and 56380), and
+  `SAFEACT_CONSOLE_PORT` / `SAFEACT_MCP_PORT` in the shell for the container stack;
+- the Toxiproxy ports (8474, 21000-21099, only with `--profile chaos`), and the browser
+  tests' 8001 and 5173 are fixed: run those in one copy at a time;
+- `down -v` with the same project name deletes only that copy's volumes.
 
 ## Results
 
