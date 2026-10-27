@@ -1,0 +1,32 @@
+{
+  "scope": "Targeted local recovery tests and bounded worker microbenchmark only",
+  "targeted_tests_passed": 78,
+  "skipped": 0,
+  "measured_requests": 400,
+  "warmup_requests": 20,
+  "errors": 0,
+  "duplicate_effects": 0,
+  "provider_calls": 420,
+  "provider_effects": 420,
+  "frozen_execution_ledger_absent": true,
+  "frozen_inputs_unchanged": true,
+  "smoke_executed": false,
+  "calibration_executed": false,
+  "frozen_qualification_executed": false,
+  "external_provider_calls": 0,
+  "paid_calls": 0,
+  "sut_changes": false,
+  "commits_created": 0,
+  "index_empty": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "older_packets_unchanged": 10,
+  "older_packet_artifacts_unchanged": 487,
+  "cleanup": {
+    "database_removed": true,
+    "roles_removed": true,
+    "providers_stopped": true,
+    "frozen_ledger_absent": true,
+    "pin_unchanged": true
+  },
+  "manifest_sha256": "2fdb8e036709eb77f4d993b285d47fa2311f7bb9afed38f0ef5f7654271630f4"
+}

@@ -1,0 +1,86 @@
+name: safeact-phase-b
+
+services:
+  postgres:
+    image: postgres:17.11-bookworm
+    restart: "no"
+
+    # pg_stat_statements is preloaded for the load test (chaos/load.py,
+    # M5.13), which creates the extension in a schema of its own for the
+    # run and drops it afterwards. Preloading alone changes no behaviour.
+    command: ["postgres", "-c", "shared_preload_libraries=pg_stat_statements"]
+
+    environment:
+      POSTGRES_USER: safeact_dev
+      POSTGRES_PASSWORD: ${SAFEACT_DEV_DB_PASSWORD:?Missing local password}
+      POSTGRES_DB: safeact_dev
+
+    ports:
+      - "127.0.0.1:${SAFEACT_DEV_DB_PORT:-55432}:5432"
+
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"'
+      interval: 3s
+      timeout: 3s
+      retries: 30
+      start_period: 10s
+
+  # Broker for the Celery adapter (Phase C, C8). Its loss must never
+  # erase an operation: PostgreSQL holds the durable intent and outbox,
+  # and the relay republishes never-claimed work. AOF persistence
+  # (fsync every second) narrows, but does not remove, message loss on
+  # a crash; correctness never depends on it.
+  redis:
+    image: redis:7.4.2-bookworm
+    restart: "no"
+
+    environment:
+      REDISCLI_AUTH: ${SAFEACT_DEV_REDIS_PASSWORD:?Missing local Redis password}
+
+    command:
+      - redis-server
+      - --requirepass
+      - ${SAFEACT_DEV_REDIS_PASSWORD:?Missing local Redis password}
+      - --appendonly
+      - "yes"
+      - --appendfsync
+      - everysec
+
+    ports:
+      - "127.0.0.1:${SAFEACT_DEV_REDIS_PORT:-56379}:6379"
+
+    volumes:
+      - redisdata:/data
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+  # Fault injection for the qualification harness (Phase E, M5.9): TCP
+  # proxies between SafeAct (or a baseline) and the HTTP mock providers,
+  # whose latency, timeouts, resets and outages the harness controls
+  # through the API on 8474. Only with `--profile chaos`. Proxies listen
+  # on 127.0.0.1:21000-21099; their upstreams are the mocks on the host
+  # (host.docker.internal on Docker Desktop; the CI workflow uses the
+  # host network instead).
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:2.12.0@sha256:9378ed52a28bc50edc1350f936f518f31fa95f0d15917d6eb40b8e376d1a214e
+    restart: "no"
+    profiles: ["chaos"]
+    command: ["-host=0.0.0.0", "-port=8474"]
+    ports:
+      - "127.0.0.1:8474:8474"
+      - "127.0.0.1:21000-21099:21000-21099"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  pgdata:
+  redisdata:

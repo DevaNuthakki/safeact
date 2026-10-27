@@ -1,0 +1,282 @@
+[
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 0,
+    "requests": 10,
+    "elapsed_seconds": 0.023806819
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 0,
+    "requests": 10,
+    "elapsed_seconds": 0.822546661
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 1,
+    "requests": 10,
+    "elapsed_seconds": 0.8070510839999999
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 1,
+    "requests": 10,
+    "elapsed_seconds": 0.023526602
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 2,
+    "requests": 10,
+    "elapsed_seconds": 0.020597312
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 2,
+    "requests": 10,
+    "elapsed_seconds": 0.742837086
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 3,
+    "requests": 10,
+    "elapsed_seconds": 0.737079551
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 3,
+    "requests": 10,
+    "elapsed_seconds": 0.020134021000000002
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 4,
+    "requests": 10,
+    "elapsed_seconds": 0.019270904000000002
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 4,
+    "requests": 10,
+    "elapsed_seconds": 0.755686579
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 5,
+    "requests": 10,
+    "elapsed_seconds": 0.758664416
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 5,
+    "requests": 10,
+    "elapsed_seconds": 0.020365113999999997
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 6,
+    "requests": 10,
+    "elapsed_seconds": 0.020385145
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 6,
+    "requests": 10,
+    "elapsed_seconds": 0.7283128990000001
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 7,
+    "requests": 10,
+    "elapsed_seconds": 0.755395682
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 7,
+    "requests": 10,
+    "elapsed_seconds": 0.021209278
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 8,
+    "requests": 10,
+    "elapsed_seconds": 0.018585619
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 8,
+    "requests": 10,
+    "elapsed_seconds": 0.741348071
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 1,
+    "block": 9,
+    "requests": 10,
+    "elapsed_seconds": 0.7535135199999999
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 1,
+    "block": 9,
+    "requests": 10,
+    "elapsed_seconds": 0.021091811
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 0,
+    "requests": 10,
+    "elapsed_seconds": 0.018101197
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 0,
+    "requests": 10,
+    "elapsed_seconds": 0.28140955500000003
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 1,
+    "requests": 10,
+    "elapsed_seconds": 0.28143771700000003
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 1,
+    "requests": 10,
+    "elapsed_seconds": 0.018906142
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 2,
+    "requests": 10,
+    "elapsed_seconds": 0.018967247
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 2,
+    "requests": 10,
+    "elapsed_seconds": 0.283982442
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 3,
+    "requests": 10,
+    "elapsed_seconds": 0.260153568
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 3,
+    "requests": 10,
+    "elapsed_seconds": 0.018536666
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 4,
+    "requests": 10,
+    "elapsed_seconds": 0.020258982
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 4,
+    "requests": 10,
+    "elapsed_seconds": 0.37352274599999996
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 5,
+    "requests": 10,
+    "elapsed_seconds": 0.316837473
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 5,
+    "requests": 10,
+    "elapsed_seconds": 0.025526404
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 6,
+    "requests": 10,
+    "elapsed_seconds": 0.020822796
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 6,
+    "requests": 10,
+    "elapsed_seconds": 0.459738107
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 7,
+    "requests": 10,
+    "elapsed_seconds": 0.28907419900000003
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 7,
+    "requests": 10,
+    "elapsed_seconds": 0.020170393000000002
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 8,
+    "requests": 10,
+    "elapsed_seconds": 0.018594691
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 8,
+    "requests": 10,
+    "elapsed_seconds": 0.32189547199999996
+  },
+  {
+    "path": "safeact_durable_worker",
+    "concurrency": 4,
+    "block": 9,
+    "requests": 10,
+    "elapsed_seconds": 0.31037615799999996
+  },
+  {
+    "path": "direct_http",
+    "concurrency": 4,
+    "block": 9,
+    "requests": 10,
+    "elapsed_seconds": 0.020381562
+  }
+]

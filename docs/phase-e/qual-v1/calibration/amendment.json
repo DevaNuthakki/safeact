@@ -1,0 +1,42 @@
+{
+  "manifest_sha256": "b779fa720fc3a71fe9c26cd529f9199a9be0aed2779dbaa2c8c7968522df51af",
+  "candidates": [
+    {
+      "slots": 1,
+      "environment_path": "docs/phase-e/qual-v1/calibration/slots-1/environment.json",
+      "environment_sha256": "d0ff8c5b96f33956ef8613a6599361cc910ec25fd291639227a25fd52f932594",
+      "raw_path": "docs/phase-e/qual-v1/calibration/slots-1/raw.jsonl",
+      "raw_sha256": "7311760568fa418d161c9bcdcc4fe96fd3c435916d7a85963f5418fca08b1ba3"
+    },
+    {
+      "slots": 2,
+      "environment_path": "docs/phase-e/qual-v1/calibration/slots-2/environment.json",
+      "environment_sha256": "226f4cad4ee54a72fc8f15d6871695e9039612973b6cb4672ad8719af3337986",
+      "raw_path": "docs/phase-e/qual-v1/calibration/slots-2/raw.jsonl",
+      "raw_sha256": "e3aa1599f79a5bd755168b50bc75cb1ed56009c8a770de81d22cbb8d04273900"
+    },
+    {
+      "slots": 4,
+      "environment_path": "docs/phase-e/qual-v1/calibration/slots-4/environment.json",
+      "environment_sha256": "cbb1ce62c37ac1bc02acfdcee4f745da638625e1552b19dec5c021a72b64299c",
+      "raw_path": "docs/phase-e/qual-v1/calibration/slots-4/raw.jsonl",
+      "raw_sha256": "907daf029f6b84fd47040fb016cceb771d3bb5fc4fe50542419d4a2ace11ad52"
+    },
+    {
+      "slots": 6,
+      "environment_path": "docs/phase-e/qual-v1/calibration/slots-6/environment.json",
+      "environment_sha256": "bcc89f7fbca2f6bd2b2de79224ccbfcac09f0ce28c9a9667c7e39267982efeae",
+      "raw_path": "docs/phase-e/qual-v1/calibration/slots-6/raw.jsonl",
+      "raw_sha256": "773b8dd1f33c011bbd7d8f419c0335bbc215a004debc2c2ec70d1ae54b61677c"
+    },
+    {
+      "slots": 7,
+      "environment_path": "docs/phase-e/qual-v1/calibration/slots-7/environment.json",
+      "environment_sha256": "d89884c7d9758ae86c592d8a88add85b18d91dc01e74f1f1dc38410cfec3e4b4",
+      "raw_path": "docs/phase-e/qual-v1/calibration/slots-7/raw.jsonl",
+      "raw_sha256": "fd4bf71730de20b6a6a9efad0eb5ac521e3d1dbd6ab65e2ddc84d5b22a14ec94"
+    }
+  ],
+  "selected_slots": 4,
+  "selection_basis": "All sampled one-minute loads below CPU count; outcomes unused"
+}

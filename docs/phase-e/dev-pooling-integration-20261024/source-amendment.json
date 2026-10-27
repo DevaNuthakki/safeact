@@ -1,0 +1,18 @@
+{
+  "scope": "Source-only amendment after pooling integration and shutdown fix; no execution",
+  "unchanged_inputs": [
+    "scenarios",
+    "contracts",
+    "combinations",
+    "coverage",
+    "applicability",
+    "timing",
+    "scoring",
+    "oracle",
+    "workflow_oracle",
+    "generator"
+  ],
+  "source_files": 231,
+  "manifest_sha256": "391f085720eb1fb01ad8d410fa8955452eb4061a3418a903756a99f04ed73f07",
+  "qualification_executed": false
+}

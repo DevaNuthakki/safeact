@@ -1,0 +1,27 @@
+{
+  "scope": "Pooling/preparation local experiment only",
+  "measured_operations": 800,
+  "warmups": 256,
+  "safety_checks": 16,
+  "errors": 0,
+  "duplicate_effects": 0,
+  "production_code_changed": false,
+  "prototype_enabled_in_runtime": false,
+  "frozen_inputs_unchanged": true,
+  "frozen_execution_ledger_absent": true,
+  "pre_run_executed": false,
+  "calibration_executed": false,
+  "big_run_executed": false,
+  "external_provider_calls": 0,
+  "paid_calls": 0,
+  "commits_created": 0,
+  "index_empty": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "dependencies": {
+    "psycopg": "3.3.6",
+    "SQLAlchemy": "2.0.54"
+  },
+  "older_packets_unchanged": 11,
+  "older_artifacts_unchanged": 504,
+  "manifest_sha256": "2fdb8e036709eb77f4d993b285d47fa2311f7bb9afed38f0ef5f7654271630f4"
+}

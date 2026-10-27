@@ -1,0 +1,82 @@
+{
+  "scope": "Synthetic verifier counterexamples; not provider executions or qualification coverage",
+  "cases": 15,
+  "rejected": 15,
+  "results": [
+    {
+      "counterexample": "wrong-inverse-amount",
+      "case": "test_actual_order_rejection_refunds_exact_original_charge_and_amount",
+      "rejected": true
+    },
+    {
+      "counterexample": "wrong-original-link",
+      "case": "test_actual_order_rejection_refunds_exact_original_charge_and_amount",
+      "rejected": true
+    },
+    {
+      "counterexample": "duplicate-inverse",
+      "case": "test_actual_order_rejection_refunds_exact_original_charge_and_amount",
+      "rejected": true
+    },
+    {
+      "counterexample": "false-restoration",
+      "case": "test_rejected_refund_keeps_forward_history_and_unresolved_compensation",
+      "rejected": true
+    },
+    {
+      "counterexample": "orphan-effect",
+      "case": "test_normal_workflow_has_two_distinct_forward_effects_and_no_inverse",
+      "rejected": true
+    },
+    {
+      "counterexample": "cleanup-only-effect",
+      "case": "test_normal_workflow_has_two_distinct_forward_effects_and_no_inverse",
+      "rejected": true
+    },
+    {
+      "counterexample": "requester-approval",
+      "case": "test_real_overlapping_reviewers_commit_one_decision_winner_key_replays",
+      "rejected": true
+    },
+    {
+      "counterexample": "missing-reviewer-role",
+      "case": "test_real_overlapping_reviewers_commit_one_decision_winner_key_replays",
+      "rejected": true
+    },
+    {
+      "counterexample": "invented-overlap",
+      "case": "test_real_overlapping_reviewers_commit_one_decision_winner_key_replays",
+      "rejected": true
+    },
+    {
+      "counterexample": "two-decisions",
+      "case": "test_real_overlapping_reviewers_commit_one_decision_winner_key_replays",
+      "rejected": true
+    },
+    {
+      "counterexample": "missing-commit",
+      "case": "test_normal_workflow_has_two_distinct_forward_effects_and_no_inverse",
+      "rejected": true
+    },
+    {
+      "counterexample": "stale-without-prior-evidence",
+      "case": "test_actual_new_matching_provider_evidence_makes_displayed_proposal_stale",
+      "rejected": true
+    },
+    {
+      "counterexample": "reused-authorization",
+      "case": "test_real_overlapping_reviewers_commit_one_decision_winner_key_replays",
+      "rejected": true
+    },
+    {
+      "counterexample": "early-retry",
+      "case": "test_human_approval_preserves_actual_retry_after_and_avoids_unnecessary_lookup",
+      "rejected": true
+    },
+    {
+      "counterexample": "missing-ready-recovery",
+      "case": "test_late_lookup_resolves_approved_ready_work_without_any_broker_delivery",
+      "rejected": true
+    }
+  ]
+}

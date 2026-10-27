@@ -1,0 +1,8 @@
+{
+  "packet": "docs/phase-e/dev-baseline-adapter-20261023",
+  "method": "kept files + ~/safeact-evidence raw files merged into a scratch copy; seal verified (123/123) before replay",
+  "replay": "Replayed 375 selected development rows; all applicable SafeAct/B3 labels and native boundaries observed",
+  "counterexamples": "Rejected 25 of 25 saved-data mutations",
+  "code_commit": "fb896043559a43fd2397acf1e231b681d5047e6d",
+  "note": "Saved bytes only. These development rows were executed before pooling; no scenario ran for this packet."
+}

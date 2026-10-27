@@ -1,0 +1,36 @@
+{
+  "scope": "Bounded integrated worker check only; no frozen execution",
+  "modes": [
+    "fresh_connections",
+    "integrated_pool"
+  ],
+  "concurrency": [
+    1,
+    4
+  ],
+  "measured_per_configuration": 100,
+  "warmups_per_configuration": 32,
+  "blocks": 10,
+  "operations_per_block": 10,
+  "order": "Alternate mode order across blocks; same provider, amount, client, unique resources and identities",
+  "path": "submit_intent then unchanged ExecutionWorker.execute with fresh or integrated connection_scope",
+  "pool": "ConnectionPool native leases; preflight liveness and full session reset included in measured time",
+  "admission": "Fresh fixture NullPool versus bounded QueuePool with reset_engine_sessions",
+  "prepare_threshold": "Psycopg default automatic preparation in both paths",
+  "timer": "perf_counter_ns; nearest-rank percentiles",
+  "exclusions": [
+    "Public API/authentication",
+    "Celery/Redis/relay scheduling",
+    "Setup/warmup/cleanup",
+    "Production capacity"
+  ],
+  "manifest_sha256": "391f085720eb1fb01ad8d410fa8955452eb4061a3418a903756a99f04ed73f07",
+  "script_sha256": "c6f335ad2077030aca2c38f6ba782d5aa0bbc1830f4548c693c5c882db972abe",
+  "load_start": [
+    8.37451171875,
+    5.40087890625,
+    4.57568359375
+  ],
+  "external_provider_calls": 0,
+  "paid_calls": 0
+}

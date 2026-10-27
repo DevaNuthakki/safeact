@@ -1,0 +1,460 @@
+{
+  "scope": "Existing development cases only (corpus dev, seed 7); no frozen corpus, smoke, calibration or full run",
+  "compared_pairs": 70,
+  "pre_rows": 70,
+  "post_rows": 85,
+  "differences": [
+    {
+      "scenario_id": "D-F05-0005",
+      "arm": "b0",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F05-0005",
+      "arm": "b1",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F05-0005",
+      "arm": "b2",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F05-0005",
+      "arm": "b3",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F05-0005",
+      "arm": "safeact",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F06-0004",
+      "arm": "b0",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F06-0004",
+      "arm": "b1",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F06-0004",
+      "arm": "b2",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F06-0004",
+      "arm": "b3",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F06-0004",
+      "arm": "safeact",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0001",
+      "arm": "b3",
+      "family": "F16",
+      "seed": 7,
+      "fields": [
+        "outcome_classes"
+      ],
+      "pre": {
+        "outcome_classes": [
+          "escalated_unresolved",
+          "escalated_unresolved",
+          "escalated_unresolved"
+        ]
+      },
+      "post": {
+        "outcome_classes": [
+          "escalated_unresolved",
+          "escalated_unresolved",
+          "pending"
+        ]
+      },
+      "pre_source": null
+    },
+    {
+      "scenario_id": "D-F16-0002",
+      "arm": "safeact",
+      "family": "F16",
+      "seed": 7,
+      "fields": [
+        "effects",
+        "interleavings",
+        "outcome_classes",
+        "safe_completion"
+      ],
+      "pre": {
+        "effects": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "interleavings": [
+          "breaker_open_with_unresolved_work"
+        ],
+        "outcome_classes": [
+          "escalated_unresolved",
+          "confirmed_success",
+          "confirmed_success",
+          "confirmed_success",
+          "confirmed_success"
+        ],
+        "safe_completion": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "post": {
+        "effects": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "interleavings": [
+          "breaker_open_with_unresolved_work",
+          "late_commit_after_empty_lookup"
+        ],
+        "outcome_classes": [
+          "confirmed_success",
+          "confirmed_success",
+          "confirmed_success",
+          "confirmed_success",
+          "confirmed_success"
+        ],
+        "safe_completion": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "pre_source": null
+    },
+    {
+      "scenario_id": "D-F16-0003",
+      "arm": "b3",
+      "family": "F16",
+      "seed": 7,
+      "fields": [
+        "interleavings"
+      ],
+      "pre": {
+        "interleavings": [
+          "provider_outage_spanned_deadline"
+        ]
+      },
+      "post": {
+        "interleavings": []
+      },
+      "pre_source": null
+    },
+    {
+      "scenario_id": "D-F16-0004",
+      "arm": "b3",
+      "family": "F16",
+      "seed": 7,
+      "fields": [
+        "outcome_classes"
+      ],
+      "pre": {
+        "outcome_classes": [
+          "escalated_unresolved"
+        ]
+      },
+      "post": {
+        "outcome_classes": [
+          "pending"
+        ]
+      },
+      "pre_source": null
+    },
+    {
+      "scenario_id": "D-F16-0005",
+      "arm": "b0",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0005",
+      "arm": "b1",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0005",
+      "arm": "b2",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0005",
+      "arm": "b3",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0005",
+      "arm": "safeact",
+      "seed": 7,
+      "fields": [
+        "row_missing_pre"
+      ]
+    }
+  ],
+  "differing_pairs": 19,
+  "differing_by_arm": {
+    "b0": 3,
+    "b1": 3,
+    "b2": 3,
+    "b3": 6,
+    "safeact": 4
+  },
+  "pre_by_family": {
+    "F05": {
+      "b0": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "0/2"
+      },
+      "b1": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 2,
+        "useful": "0/2"
+      },
+      "b2": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 2,
+        "useful": "0/2"
+      },
+      "b3": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "2/2"
+      },
+      "safeact": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "2/2"
+      }
+    },
+    "F06": {
+      "b0": {
+        "rows": 4,
+        "not_applicable": 4,
+        "safety_failure_rows": 0,
+        "useful": "0/0"
+      },
+      "b1": {
+        "rows": 4,
+        "not_applicable": 0,
+        "safety_failure_rows": 4,
+        "useful": "0/4"
+      },
+      "b2": {
+        "rows": 4,
+        "not_applicable": 0,
+        "safety_failure_rows": 1,
+        "useful": "3/4"
+      },
+      "b3": {
+        "rows": 4,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "4/4"
+      },
+      "safeact": {
+        "rows": 4,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "4/4"
+      }
+    },
+    "F16": {
+      "b0": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "0/5"
+      },
+      "b1": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "b2": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "b3": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "safeact": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "4/5"
+      }
+    }
+  },
+  "post_by_family": {
+    "F05": {
+      "b0": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "0/2"
+      },
+      "b1": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 2,
+        "useful": "0/2"
+      },
+      "b2": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 2,
+        "useful": "0/2"
+      },
+      "b3": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "2/2"
+      },
+      "safeact": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "2/2"
+      }
+    },
+    "F06": {
+      "b0": {
+        "rows": 5,
+        "not_applicable": 5,
+        "safety_failure_rows": 0,
+        "useful": "0/0"
+      },
+      "b1": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 4,
+        "useful": "1/5"
+      },
+      "b2": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 1,
+        "useful": "4/5"
+      },
+      "b3": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "safeact": {
+        "rows": 5,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      }
+    },
+    "F16": {
+      "b0": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "0/5"
+      },
+      "b1": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "b2": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "b3": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      },
+      "safeact": {
+        "rows": 6,
+        "not_applicable": 0,
+        "safety_failure_rows": 0,
+        "useful": "5/5"
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "scope": "Development, not frozen qualification; baseline foundation is not a runnable arm",
+  "uncommitted": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "distinct_python_tests": 1383,
+  "python_breakdown": {
+    "phase-a-complete": 795,
+    "integration-final": 547,
+    "baseline-admission-integration": 9,
+    "isolated": 21,
+    "api-e2e": 9,
+    "agent": 2
+  },
+  "console_unit_tests": 37,
+  "browser_tests": 14,
+  "console_total": 51,
+  "development_cases": 9,
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "final_postgresql_discovery": 547,
+  "additional_baseline_tests": 9,
+  "initial_database_failure_retained": true,
+  "source_files": 394,
+  "qualification_source_files": 389,
+  "base_only_files": 4,
+  "logs": {
+    "phase-a-complete": {
+      "original_path": "/tmp/safeact-boundaries-phase-a-complete.log",
+      "original_sha256": "9142b22d00dac94ac1582175c74a816da1b9db861061cb082392124c0e327097",
+      "hex64_redactions": 0
+    },
+    "integration-final": {
+      "original_path": "/tmp/safeact-boundaries-integration-final.log",
+      "original_sha256": "ff8f1a73de3915761bb2aefe31e8b0b155b466f0368804bd47973c4a4a15dbbf",
+      "hex64_redactions": 0
+    },
+    "isolated": {
+      "original_path": "/tmp/safeact-boundaries-isolated.log",
+      "original_sha256": "1da57d3d1124aa7ec9bb63e1bd924f459b2aa4f5cd0041caef37e8554248b8aa",
+      "hex64_redactions": 0
+    },
+    "api-e2e": {
+      "original_path": "/tmp/safeact-boundaries-api-e2e.log",
+      "original_sha256": "6ca4387872d380e13c21f8ffa10a09de92cf910f1a9c9e37b405300dcb41b87f",
+      "hex64_redactions": 0
+    },
+    "agent": {
+      "original_path": "/tmp/safeact-boundaries-agent.log",
+      "original_sha256": "4bcfaef08cbc4d9e1866498a79f5ad6b314e53151b80951f9b0683e2f2ed9f7f",
+      "hex64_redactions": 0
+    },
+    "baseline-admission-integration": {
+      "original_path": "/tmp/safeact-baseline-admission-integration.log",
+      "original_sha256": "562cab298b8ad04688a5ec7c60afb86a273183cfde9347bbb75a1453375ef2a7",
+      "hex64_redactions": 0
+    },
+    "browser": {
+      "original_path": "/tmp/safeact-boundaries-browser.log",
+      "original_sha256": "9f4287499b3765d26e96b9b842093fa25c9775e8cdbb47ff302fbc2eca9bc2ad",
+      "hex64_redactions": 0
+    },
+    "baseline-unit-first": {
+      "original_path": "/tmp/safeact-baseline-recovery-unit.log",
+      "original_sha256": "f8994925b61923a91fa03db6fe13ca67163c10c842221453d962b4c2ecdc9ed1",
+      "hex64_redactions": 0
+    },
+    "baseline-unit-corrected": {
+      "original_path": "/tmp/safeact-baseline-recovery-unit-final.log",
+      "original_sha256": "defaf30680e28b2cc9db52ed49f3fbd20bef2bf53c3921551c7f02e14285b584",
+      "hex64_redactions": 0
+    },
+    "baseline-unit-final": {
+      "original_path": "/tmp/safeact-baseline-recovery-admission-unit.log",
+      "original_sha256": "6f8afb37792466e8ea62b9b94ea2bd420e28c32503b2e97f4cc286ae8b7b186a",
+      "hex64_redactions": 0
+    },
+    "console-unit": {
+      "original_path": "/tmp/safeact-boundaries-console-unit.log",
+      "original_sha256": "a34679fd8f8e345dc568d4182ee2edffcf9abd13a4a78c9ceefb69a752d6fd30",
+      "hex64_redactions": 0
+    },
+    "console-typecheck": {
+      "original_path": "/tmp/safeact-boundaries-console-typecheck.log",
+      "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "hex64_redactions": 0
+    },
+    "console-lint": {
+      "original_path": "/tmp/safeact-boundaries-console-lint.log",
+      "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "hex64_redactions": 0
+    },
+    "console-build": {
+      "original_path": "/tmp/safeact-boundaries-console-build.log",
+      "original_sha256": "f2b93f3abefadb6c5ad8977911b720edf243be4340e9f205a096eb76799151aa",
+      "hex64_redactions": 0
+    }
+  }
+}

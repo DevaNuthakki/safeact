@@ -1,0 +1,30 @@
+{
+  "added": [
+    {
+      "path": "chaos/baselines/trace.py",
+      "sha256": "d54550a4609e1f0369c35c5ac25abd5927146023df012de091cb91ea93a05baa"
+    },
+    {
+      "path": "tests/integration/test_baseline_process_trace.py",
+      "sha256": "d61147cc0e47cce0066e321066c3278a49d3d7eb24d806367933a83cd5825b19"
+    },
+    {
+      "path": "tests/phase_a/test_baseline_trace.py",
+      "sha256": "42796316e5c863eddc26238a7c17e52b8e7085361147df3e13e164081dff5405"
+    }
+  ],
+  "changed": [
+    {
+      "path": "chaos/baselines/processes.py",
+      "previous_sha256": "2e023b284d34763b6f6093f7662484ed63321f78b99490872e7e6b632c92b781",
+      "sha256": "ca57f5b6b4850eed9cd4d083ca76aee8eeb9c8205ff6a8d71e9068969fb375c2"
+    },
+    {
+      "path": "chaos/coverage.py",
+      "previous_sha256": "508c8ccd0e8723188f6b8f3344b5368caed1bb603551f1cebfd91ea5fcce9e2b",
+      "sha256": "edf2b36801be797951dcb836e63c27e9bef400f5857f081526c9005fe1afc78e"
+    }
+  ],
+  "removed": [],
+  "unchanged": 411
+}

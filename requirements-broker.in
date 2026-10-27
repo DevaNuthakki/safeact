@@ -1,0 +1,4 @@
+# SafeAct Phase C: pinned broker dependencies (Celery over Redis).
+# Transitive installed versions are recorded in requirements-broker.lock.
+
+celery[redis]==5.5.3

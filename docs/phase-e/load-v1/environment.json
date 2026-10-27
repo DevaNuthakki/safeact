@@ -1,0 +1,71 @@
+{
+  "start": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792959177.433332,
+      "load_1": 2.51,
+      "load_5": 4.89,
+      "load_15": 4.43,
+      "available_memory_bytes": 14434844672
+    },
+    "versions": {
+      "postgresql": 170011,
+      "redis": "7.4.2",
+      "toxiproxy": "2.12.0",
+      "node": "v26.4.0",
+      "celery": "5.5.3",
+      "SQLAlchemy": "2.0.54",
+      "httpx2": "2.13.1",
+      "psycopg": "3.3.6"
+    },
+    "git_commit": "33242f66c2876bd7d5ec992f10f9e000e4234fbd",
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t12%; charging; 2:19 remaining present: true",
+    "caffeinate_active": true,
+    "power_source": "ac",
+    "docker": "29.2.1"
+  },
+  "end": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792959808.348908,
+      "load_1": 2.66,
+      "load_5": 5.02,
+      "load_15": 4.95,
+      "available_memory_bytes": 14325211136
+    },
+    "versions": {
+      "postgresql": 170011,
+      "redis": "7.4.2",
+      "toxiproxy": "2.12.0",
+      "node": "v26.4.0",
+      "celery": "5.5.3",
+      "SQLAlchemy": "2.0.54",
+      "httpx2": "2.13.1",
+      "psycopg": "3.3.6"
+    },
+    "git_commit": "33242f66c2876bd7d5ec992f10f9e000e4234fbd",
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t25%; charging; 2:04 remaining present: true",
+    "caffeinate_active": true,
+    "power_source": "ac",
+    "docker": "29.2.1"
+  },
+  "awake": {
+    "applicable": true,
+    "pid": 35936,
+    "running": true,
+    "at": 1792959808.637252,
+    "assertion_observed": true
+  }
+}

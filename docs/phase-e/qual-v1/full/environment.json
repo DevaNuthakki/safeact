@@ -1,0 +1,105 @@
+{
+  "scope": "full",
+  "manifest_sha256": "b779fa720fc3a71fe9c26cd529f9199a9be0aed2779dbaa2c8c7968522df51af",
+  "start": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792900493.179005,
+      "load_1": 2.45,
+      "load_5": 6.47,
+      "load_15": 16.51,
+      "available_memory_bytes": 14375436288
+    },
+    "versions": {
+      "postgresql": 170011,
+      "redis": "7.4.2",
+      "toxiproxy": "2.12.0",
+      "node": "v26.4.0",
+      "celery": "5.5.3",
+      "SQLAlchemy": "2.0.54",
+      "httpx2": "2.13.1",
+      "psycopg": "3.3.6"
+    },
+    "git_commit": "f24bc59b9c6ce5866da7c3714ea012fcd52bf9f0",
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t100%; charged; 0:00 remaining present: true",
+    "caffeinate_active": true,
+    "power_source": "ac",
+    "docker": "29.2.1"
+  },
+  "slots": 4,
+  "scenarios": 1200,
+  "arms": [
+    "safeact",
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "power_source": "ac",
+  "caffeinate": {
+    "applicable": true,
+    "command": [
+      "caffeinate",
+      "-i",
+      "-w",
+      "80865"
+    ],
+    "pid": 80902,
+    "watched_pid": 80865,
+    "started_at": 1792900493.136189,
+    "assertion_observed": true
+  },
+  "invocation_claim_path": "docs/phase-e/qual-v1/executions/primary-full.json",
+  "calibration_sha256": "1d573bfd2dd64b9b969e7b2a6e42fd257d8d37c9e1691696ac5898dc80e192d0",
+  "end": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792918727.2503622,
+      "load_1": 9.51,
+      "load_5": 9.6,
+      "load_15": 8.08,
+      "available_memory_bytes": 13484113920
+    },
+    "versions": {
+      "postgresql": 170011,
+      "redis": "7.4.2",
+      "toxiproxy": "2.12.0",
+      "node": "v26.4.0",
+      "celery": "5.5.3",
+      "SQLAlchemy": "2.0.54",
+      "httpx2": "2.13.1",
+      "psycopg": "3.3.6"
+    },
+    "git_commit": "f24bc59b9c6ce5866da7c3714ea012fcd52bf9f0",
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t100%; charged; 0:00 remaining present: true",
+    "caffeinate_active": true,
+    "power_source": "ac",
+    "docker": "29.2.1"
+  },
+  "caffeinate_end": {
+    "applicable": true,
+    "pid": 80902,
+    "running": true,
+    "at": 1792918728.7713778,
+    "assertion_observed": true
+  },
+  "exit_code": 0,
+  "rows": 6000,
+  "expected_rows": 6000,
+  "not_run_rows": 0,
+  "stopped_for_budget_or_safety": false
+}

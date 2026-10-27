@@ -1,0 +1,10 @@
+{
+  "check": "integration",
+  "tests": 709,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true,
+  "elapsed_seconds": 1316.7211584360339,
+  "log": "final-integration.log"
+}

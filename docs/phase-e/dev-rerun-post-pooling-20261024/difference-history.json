@@ -1,0 +1,334 @@
+{
+  "scope": "Every saved pre-pooling development run of each differing pair (from dev-baseline-adapter-20261023/development-runs.tar.gz)",
+  "pairs": [
+    {
+      "scenario_id": "D-F01-0001",
+      "arm": "b1",
+      "selected_pre_source": "b1-lifecycle-corrected",
+      "pre_pooling_runs": [
+        {
+          "run": "b1-lifecycle-corrected",
+          "outcome_classes": [
+            "pending"
+          ],
+          "effects": [
+            2
+          ],
+          "prohibited_duplicates": 1,
+          "interleavings": []
+        },
+        {
+          "run": "weaker-first",
+          "outcome_classes": [
+            "pending"
+          ],
+          "effects": [
+            2
+          ],
+          "prohibited_duplicates": 1,
+          "interleavings": []
+        },
+        {
+          "run": "weaker-marker-corrected",
+          "outcome_classes": [
+            "confirmed_success"
+          ],
+          "effects": [
+            2
+          ],
+          "prohibited_duplicates": 1,
+          "interleavings": []
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": [
+        "weaker-marker-corrected"
+      ]
+    },
+    {
+      "scenario_id": "D-F01-0001",
+      "arm": "b2",
+      "selected_pre_source": "weaker-marker-corrected",
+      "pre_pooling_runs": [
+        {
+          "run": "weaker-first",
+          "outcome_classes": [
+            "confirmed_success"
+          ],
+          "effects": [
+            2
+          ],
+          "prohibited_duplicates": 1,
+          "interleavings": []
+        },
+        {
+          "run": "weaker-marker-corrected",
+          "outcome_classes": [
+            "confirmed_success"
+          ],
+          "effects": [
+            2
+          ],
+          "prohibited_duplicates": 1,
+          "interleavings": []
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": []
+    },
+    {
+      "scenario_id": "D-F16-0000",
+      "arm": "b3",
+      "selected_pre_source": "breaker",
+      "pre_pooling_runs": [
+        {
+          "run": "b3-audit",
+          "outcome_classes": [
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure"
+          ],
+          "effects": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "rate_limited_then_retried"
+          ]
+        },
+        {
+          "run": "b3-first",
+          "outcome_classes": [
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure"
+          ],
+          "effects": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "rate_limited_then_retried"
+          ]
+        },
+        {
+          "run": "breaker",
+          "outcome_classes": [
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure",
+            "confirmed_failure"
+          ],
+          "effects": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "breaker_open_with_unresolved_work"
+          ]
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": []
+    },
+    {
+      "scenario_id": "D-F16-0002",
+      "arm": "b1",
+      "selected_pre_source": "b1-lifecycle-corrected",
+      "pre_pooling_runs": [
+        {
+          "run": "b1-lifecycle-corrected",
+          "outcome_classes": [
+            "pending",
+            "pending",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success"
+          ],
+          "effects": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "breaker_open_with_unresolved_work"
+          ]
+        },
+        {
+          "run": "breaker",
+          "outcome_classes": [
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success"
+          ],
+          "effects": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "breaker_open_with_unresolved_work"
+          ]
+        },
+        {
+          "run": "weaker-first",
+          "outcome_classes": [
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success"
+          ],
+          "effects": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": []
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": [
+        "breaker",
+        "weaker-first"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0002",
+      "arm": "safeact",
+      "selected_pre_source": "breaker",
+      "pre_pooling_runs": [
+        {
+          "run": "breaker",
+          "outcome_classes": [
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success"
+          ],
+          "effects": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "breaker_open_with_unresolved_work"
+          ]
+        },
+        {
+          "run": "safeact-first",
+          "outcome_classes": [
+            "escalated_unresolved",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success",
+            "confirmed_success"
+          ],
+          "effects": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": []
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": [
+        "safeact-first"
+      ]
+    },
+    {
+      "scenario_id": "D-F16-0003",
+      "arm": "b3",
+      "selected_pre_source": "breaker",
+      "pre_pooling_runs": [
+        {
+          "run": "b3-audit",
+          "outcome_classes": [
+            "confirmed_failure"
+          ],
+          "effects": [
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": [
+            "provider_outage_spanned_deadline"
+          ]
+        },
+        {
+          "run": "b3-first",
+          "outcome_classes": [
+            "confirmed_failure"
+          ],
+          "effects": [
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": []
+        },
+        {
+          "run": "breaker",
+          "outcome_classes": [
+            "confirmed_failure"
+          ],
+          "effects": [
+            0
+          ],
+          "prohibited_duplicates": 0,
+          "interleavings": []
+        }
+      ],
+      "post_outcome_seen_in_pre_pooling_runs": [
+        "b3-audit"
+      ]
+    }
+  ]
+}

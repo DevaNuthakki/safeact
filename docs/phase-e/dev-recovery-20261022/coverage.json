@@ -1,0 +1,48 @@
+{
+  "declared": {
+    "effect_applied_response_lost": "effect committed; caller received no answer",
+    "server_error_after_commit": "5xx response after the effect committed",
+    "late_commit_after_empty_lookup": "empty lookup before the effect committed",
+    "lease_expired_while_request_ran": "lease expired inside the request interval",
+    "worker_crashed_after_send": "observed process death after the provider call",
+    "worker_crashed_before_send": "observed process death before the provider call",
+    "commit_ack_lost": "commit observed independently of its lost acknowledgement",
+    "broker_messages_lost": "observed messages removed before work was claimed",
+    "broker_process_killed": "queued messages lost across an owned Redis SIGKILL and restart",
+    "broker_redelivered_during_dispatch": "the same unacked task restored while its original provider call ran",
+    "duplicate_submissions_collapsed": "identical submissions returned one local id",
+    "changed_payload_refused": "changed submission refused after original admission",
+    "rate_limited_then_retried": "observed 429 response followed by another request",
+    "provider_outage_spanned_deadline": "observed outage covered the deadline",
+    "retention_expired_before_outcome": "observed key expiry before resolution",
+    "lookup_lied_outside_contract": "lookup result violated the declared contract",
+    "late_commit_after_escalation": "provider effect committed after an independently observed escalation"
+  },
+  "observed": {
+    "safeact": {
+      "late_commit_after_empty_lookup": 4,
+      "late_commit_after_escalation": 2,
+      "retention_expired_before_outcome": 3,
+      "rate_limited_then_retried": 1,
+      "provider_outage_spanned_deadline": 3
+    }
+  },
+  "unobserved": {
+    "safeact": [
+      "broker_messages_lost",
+      "broker_process_killed",
+      "broker_redelivered_during_dispatch",
+      "changed_payload_refused",
+      "commit_ack_lost",
+      "duplicate_submissions_collapsed",
+      "effect_applied_response_lost",
+      "lease_expired_while_request_ran",
+      "lookup_lied_outside_contract",
+      "server_error_after_commit",
+      "worker_crashed_after_send",
+      "worker_crashed_before_send"
+    ]
+  },
+  "complete": false,
+  "scope": "development only"
+}

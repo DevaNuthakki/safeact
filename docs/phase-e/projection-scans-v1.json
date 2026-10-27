@@ -1,0 +1,113 @@
+{
+  "server": "17.11 (Debian 17.11-1.pgdg12+2)",
+  "client": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+  "seed": {
+    "done": [
+      20000,
+      "SUCCEEDED"
+    ],
+    "dispatching": [
+      20,
+      "DISPATCHING"
+    ],
+    "unknown": [
+      20,
+      "UNKNOWN"
+    ],
+    "fresh": [
+      10,
+      null
+    ]
+  },
+  "rows": {
+    "safeact_operations": 20050,
+    "safeact_operation_transitions": 60100,
+    "safeact_state_projection": 20050
+  },
+  "repeats": 7,
+  "results": {
+    "log_claimable_limit_100": {
+      "median_ms": 21.379,
+      "min_ms": 19.517,
+      "max_ms": 25.193,
+      "plan": [
+        "Limit",
+        "Sort",
+        "Hash Join",
+        "Seq Scan on safeact_operations",
+        "Hash",
+        "Seq Scan on safeact_operation_transitions"
+      ]
+    },
+    "log_dispatching_scan_limit_100": {
+      "median_ms": 40.767,
+      "min_ms": 39.294,
+      "max_ms": 41.736,
+      "plan": [
+        "Limit",
+        "Merge Join",
+        "Index Only Scan on safeact_operation_transitions using ix_safeact_operation_transitions_state",
+        "Index Only Scan on safeact_operation_transitions using pk_safeact_operation_transitions"
+      ]
+    },
+    "log_unknown_scan_limit_100": {
+      "median_ms": 0.09,
+      "min_ms": 0.084,
+      "max_ms": 0.095,
+      "plan": [
+        "Limit",
+        "Sort",
+        "Nested Loop",
+        "Bitmap Heap Scan on safeact_operation_transitions",
+        "Bitmap Index Scan using ix_safeact_operation_transitions_state",
+        "Index Only Scan on safeact_operation_transitions using pk_safeact_operation_transitions"
+      ]
+    },
+    "claimable_limit_100": {
+      "median_ms": 0.257,
+      "min_ms": 0.237,
+      "max_ms": 0.308,
+      "plan": [
+        "Limit",
+        "Sort",
+        "Append",
+        "Nested Loop",
+        "Index Only Scan on safeact_state_projection using ix_safeact_state_projection_state",
+        "Index Scan on safeact_operations using safeact_operations_pkey",
+        "Nested Loop",
+        "Index Only Scan on safeact_state_projection using ix_safeact_state_projection_state",
+        "Aggregate",
+        "Index Scan on safeact_operation_transitions using ix_safeact_operation_transitions_state",
+        "Index Scan on safeact_operations using safeact_operations_pkey"
+      ]
+    },
+    "dispatching_scan_limit_100": {
+      "median_ms": 0.133,
+      "min_ms": 0.116,
+      "max_ms": 0.178,
+      "plan": [
+        "Limit",
+        "Index Scan on safeact_state_projection using ix_safeact_state_projection_state"
+      ]
+    },
+    "unknown_scan_limit_100": {
+      "median_ms": 0.02,
+      "min_ms": 0.018,
+      "max_ms": 0.022,
+      "plan": [
+        "Limit",
+        "Index Scan on safeact_state_projection using ix_safeact_state_projection_state"
+      ]
+    },
+    "current_state_by_operation": {
+      "median_ms": 0.033,
+      "min_ms": 0.026,
+      "max_ms": 0.042,
+      "plan": [
+        "Nested Loop",
+        "Index Scan on safeact_operations using safeact_operations_pkey",
+        "Index Scan on safeact_state_projection using safeact_state_projection_pkey"
+      ]
+    }
+  }
+}

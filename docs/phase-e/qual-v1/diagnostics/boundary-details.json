@@ -1,0 +1,22 @@
+{
+  "safeact": {
+    "commit_ack_stages": [],
+    "concurrent_reclaim_refused": true
+  },
+  "b0": {
+    "commit_ack_stages": [],
+    "concurrent_reclaim_refused": false
+  },
+  "b1": {
+    "commit_ack_stages": [],
+    "concurrent_reclaim_refused": false
+  },
+  "b2": {
+    "commit_ack_stages": [],
+    "concurrent_reclaim_refused": false
+  },
+  "b3": {
+    "commit_ack_stages": [],
+    "concurrent_reclaim_refused": true
+  }
+}

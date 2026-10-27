@@ -1,0 +1,119 @@
+{
+  "scope": "Synthetic mutations of retained observations, not new unittest cases, provider effects or fault-family coverage",
+  "cases": 28,
+  "rejected": 28,
+  "results": [
+    {
+      "mutation": "ack:commit_xid",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:pid",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:error_type",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:monotonic_ns",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:missing_execution",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:missing_database",
+      "rejected": true
+    },
+    {
+      "mutation": "ack:missing_error",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:returncode",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:signal",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:parked_pid",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:missing_timeline",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:missing_http",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:missing_effect",
+      "rejected": true
+    },
+    {
+      "mutation": "kill:missing_request",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:task_id",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:delivery_id",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:missing_received",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:missing_committed_delivery",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:invented_child_process",
+      "rejected": true
+    },
+    {
+      "mutation": "prefork:late_publication",
+      "rejected": true
+    },
+    {
+      "mutation": "workflow:missing_audit",
+      "rejected": true
+    },
+    {
+      "mutation": "workflow:wrong_xid",
+      "rejected": true
+    },
+    {
+      "mutation": "workflow:wrong_identity",
+      "rejected": true
+    },
+    {
+      "mutation": "http:wrong_digest",
+      "rejected": true
+    },
+    {
+      "mutation": "http:missing_all_observations",
+      "rejected": true
+    },
+    {
+      "mutation": "http:missing_start",
+      "rejected": true
+    },
+    {
+      "mutation": "http:invented_fence_xid",
+      "rejected": true
+    },
+    {
+      "mutation": "http:secret_field",
+      "rejected": true
+    }
+  ]
+}

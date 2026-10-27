@@ -1,0 +1,10 @@
+# SafeAct Phase D: pinned API dependencies (FastAPI over uvicorn).
+# Transitive installed versions are recorded in requirements-api.lock.
+# httpx2 is test-only (Starlette/FastAPI TestClient and the API end-to-end
+# tests). It is the pydantic organization's project (github.com/pydantic/httpx2,
+# tag v2.13.1, 2026-09-23); httpx is not needed by anything installed.
+
+fastapi==0.148.0
+pydantic==2.14.1
+uvicorn==0.54.0
+httpx2==2.13.1

@@ -1,0 +1,3 @@
+# Supplemental identity dependencies; not a full project lockfile.
+PyJWT==2.13.0
+cryptography==46.0.4

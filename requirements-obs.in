@@ -1,0 +1,5 @@
+# SafeAct Milestone 5: pinned observability dependencies.
+# Transitive installed versions are recorded in requirements-obs.lock.
+# prometheus-client has no required dependencies (released 2026-07-24).
+
+prometheus-client==0.26.0

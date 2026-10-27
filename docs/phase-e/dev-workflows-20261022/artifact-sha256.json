@@ -1,0 +1,82 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "8d708001799b24157f2195161fb245c12bbbb7d9ace03f0f1ff9e9451869bb66"
+  },
+  {
+    "path": "coverage.json",
+    "sha256": "3881cdd5c7b060bfd12cca2c93a7a4f17e7e9f962bfd3e007c2a8f23cbd76e10"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "a4a6a2966995b35dd961b33a07d8a668a9ac1afc40beff4a5c37b50ad0271f03"
+  },
+  {
+    "path": "raw.jsonl",
+    "sha256": "abf2c798bde43f18ed31b6d5cd9b25831f4d0deb1575672d62616897311e986a"
+  },
+  {
+    "path": "regression-checks.json",
+    "sha256": "663d948c1f0049fd10f499a86197c0dfb2ef840a87ef55e8a2599d454b52b0d0"
+  },
+  {
+    "path": "regressions/agent.log",
+    "sha256": "a201864f48aaeb11a822dc9a34a28eb3915a99a5184d00ce95cfb683454115d7"
+  },
+  {
+    "path": "regressions/api-e2e.log",
+    "sha256": "dafaae9c63269d07ac7955b3a5b9ee74f5c877b339c3c59593f8dcaad68bcf11"
+  },
+  {
+    "path": "regressions/concurrent-login-rerun.log",
+    "sha256": "9d4f4fb5b733d3e66c063eed0f134bc4eb92e521480782a692c4466a6cfe8d0a"
+  },
+  {
+    "path": "regressions/integration-final.log",
+    "sha256": "824fb851b06f0edfaa69e36e52142ddaa76e62d7b8fe0d493f240114f189c880"
+  },
+  {
+    "path": "regressions/integration-first.log",
+    "sha256": "d598439027b1047352fd8c5e2d065a9b28c69de40d49303cc384a8360fd8c0a4"
+  },
+  {
+    "path": "regressions/isolated-security.log",
+    "sha256": "60a871c6986623b4757e53dcfeab00791262d53687e854f52835a29b230c0afc"
+  },
+  {
+    "path": "regressions/phase-a.log",
+    "sha256": "ac4b14891edcbf2affe5707393775bbd66a9eedf6567c2628c026d46fa8b019a"
+  },
+  {
+    "path": "regressions/playwright.log",
+    "sha256": "2ae34ea98c7fe94d8492e52813bcbac202c6435074cc23b4317dfd59adac5c10"
+  },
+  {
+    "path": "regressions/provider-compatibility.log",
+    "sha256": "f83b3f0930f73f6f0ca40129f49d5490c95b715e9715c57c83e5fa45876dfcf4"
+  },
+  {
+    "path": "regressions/workflow-observer.log",
+    "sha256": "796685be12d3dd4cc25c9d579ae2c2d47c0b4538e0f0521fe7a540229d70bdec"
+  },
+  {
+    "path": "report.md",
+    "sha256": "7e3f80987e068726bfaa56ecea3a777e192855e90a72040122845fe423978b3f"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "e4ffe5f57625c28ff2f24687ae4a48e6fa6ccbcecf11b212d5702c110fa679c6"
+  },
+  {
+    "path": "source-sha256.json",
+    "sha256": "0aa902f2feaa7ad9945eb0bba84647f2a9cd37d23a6360b7de1e1e5f7c36ed80"
+  },
+  {
+    "path": "source.tar.gz",
+    "sha256": "603b210655b584a9862238383aca20726ca781c20c461d699a6a5f5e49e80f17"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "3a91b6315ceff45b5379685e76ee6de60613e88c2482405d3ceab0c9ee0bcb15"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "3d6f8d531654efe25478d496d149412b7c3739481ae1370de00d06c425c644f5"
+  },
+  {
+    "path": "boundary-details.json",
+    "sha256": "893c3e8b4854d1e2d8608dff01026a527b12303c50e67e51d917b85b459bee1a"
+  },
+  {
+    "path": "compare_diagnostic.py",
+    "sha256": "173c9dd1b748d5da9529afac126386cfb08efff3d6fe727aaafb45a31e17e2d0"
+  },
+  {
+    "path": "comparison.json",
+    "sha256": "8e4ee9943d18bdb309f10240c83dc24fdb64bc3b9c3846f9e4e57ba7c1ba8836"
+  },
+  {
+    "path": "coverage.json",
+    "sha256": "271a4285356153e7013dd17085007106b04bbb883450f49c449d9b66894f865f"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "4ebf695acebfc55914e3dda41e1e44cffbdd4475459800a424fd7de982d860f4"
+  },
+  {
+    "path": "load-suspect.json",
+    "sha256": "6babe8dac0ce2b6ace90f449c93f21a67268b9df04ce636dddb5aa241e0d3462"
+  },
+  {
+    "path": "outside-repo.json",
+    "sha256": "28ba4460fcc5dc918801396dd71847d80d7ce99b4f0905b030b480bf5a66310f"
+  },
+  {
+    "path": "report.md",
+    "sha256": "6a8d6b19e05cf99d906857643dabe0fa243a19854f4fa77eaef5bccb73c5692a"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "90312476a2760e9b2f7315eb4a3baf4968b31eb0851a2204013cf4ccf6898bce"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "402c1516733c835be38ac290493294a7525ccec28aefd8f464ee51f42a348f52"
+  }
+]

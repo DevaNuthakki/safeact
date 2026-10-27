@@ -1,0 +1,248 @@
+# The whole SafeAct demo stack in containers (DEMO ONLY: mock providers,
+# synthetic accounts, the safeact_demo schema; production stays deny-only).
+#
+#   cp .env.example .env && chmod 600 .env     # then set the two passwords
+#   docker compose --env-file .env -f deploy/compose.stack.yaml up --build --wait
+#   open http://localhost:8080                 # console; MCP at http://127.0.0.1:8002/mcp
+#   docker compose --env-file .env -f deploy/compose.stack.yaml exec api \
+#       cat /state/demo-credentials            # demo sign-ins and agent keys
+#   docker compose --env-file .env -f deploy/compose.stack.yaml down -v
+#
+# The bootstrap rebuilds safeact_demo (fresh role passwords and sign-ins) each
+# time it runs. After running it again, recreate the other services
+# (`up -d --force-recreate`) so they read the new credentials.
+#
+# A separate project from deploy/compose.yaml (the development database the
+# tests use), with its own PostgreSQL, Redis and volumes.
+#
+# Every service joins the postgres container's network namespace, like the
+# containers of one pod. PostgreSQL, Redis, the mock providers, the API, the
+# MCP server, the metrics exporters and Prometheus listen on loopback there,
+# so the local-only guards are unchanged: storage/database.py connects to
+# 127.0.0.1 only, and the API and MCP server bind to 127.0.0.1. Only nginx
+# listens beyond loopback, and only its two ports are published, on the
+# host's 127.0.0.1: the console (with the API behind it) and MCP.
+name: safeact-stack
+
+# Every Python service builds the same Dockerfile; BuildKit's cache makes
+# that one build. A shared image tag would make parallel builds collide.
+x-python: &python
+  build:
+    context: ..
+    dockerfile: deploy/docker/python.Dockerfile
+  restart: "no"
+  network_mode: "service:postgres"
+  tmpfs: ["/tmp"]
+  environment: &python-env
+    SAFEACT_DEV_DB_PASSWORD: ${SAFEACT_DEV_DB_PASSWORD:?Missing local password}
+    SAFEACT_DEV_REDIS_PASSWORD: ${SAFEACT_DEV_REDIS_PASSWORD:?Missing local Redis password}
+    SAFEACT_STACK_CREDENTIALS: /state/demo-credentials
+    SAFEACT_STACK_REDIS_DB: "1"
+  volumes:
+    - demo-state:/state
+  depends_on: &after-bootstrap
+    bootstrap:
+      condition: service_completed_successfully
+    redis:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:17.11-bookworm@sha256:858bb5e98eed02eb8cafbcdc007f9a65d1b613972028944a8ec2133ccaf80d27
+    restart: "no"
+    environment:
+      POSTGRES_USER: safeact_dev
+      POSTGRES_PASSWORD: ${SAFEACT_DEV_DB_PASSWORD:?Missing local password}
+      POSTGRES_DB: safeact_dev
+    command: ["postgres", "-c", "listen_addresses=127.0.0.1",
+              "-c", "shared_preload_libraries=pg_stat_statements"]
+    ports:
+      - "127.0.0.1:${SAFEACT_CONSOLE_PORT:-8080}:8080"
+      - "127.0.0.1:${SAFEACT_MCP_PORT:-8002}:8002"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", 'pg_isready -h 127.0.0.1 -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 3s
+      timeout: 3s
+      retries: 30
+      start_period: 10s
+
+  redis:
+    image: redis:7.4.2-bookworm@sha256:fbdbaea47b9ae4ecc2082ecdb4e1cea81e32176ffb1dcf643d422ad07427e5d9
+    restart: "no"
+    network_mode: "service:postgres"
+    environment:
+      REDISCLI_AUTH: ${SAFEACT_DEV_REDIS_PASSWORD:?Missing local Redis password}
+    command:
+      - redis-server
+      - --bind
+      - 127.0.0.1
+      - --requirepass
+      - ${SAFEACT_DEV_REDIS_PASSWORD:?Missing local Redis password}
+      - --appendonly
+      - "yes"
+      - --appendfsync
+      - everysec
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # One-shot: alembic head, admission-role provisioning, demo rebuild
+  # (deploy/docker/bootstrap.py). Every other SafeAct service waits for it.
+  bootstrap:
+    <<: *python
+    command: ["python", "-m", "deploy.docker.bootstrap",
+              "--credentials", "/state/demo-credentials"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  providers:
+    <<: *python
+    command: ["python", "-m", "deploy.stack.providers"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8109/healthz', timeout=2)"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  worker:
+    <<: *python
+    command: ["celery", "-A", "deploy.stack.worker", "worker", "--pool=prefork",
+              "--concurrency=2", "--loglevel=WARNING", "--without-heartbeat",
+              "--without-mingle", "--without-gossip"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9103"
+      PROMETHEUS_MULTIPROC_DIR: /tmp/metrics
+    depends_on:
+      <<: *after-bootstrap
+      providers:
+        condition: service_healthy
+
+  relay:
+    <<: *python
+    command: ["python", "-m", "deploy.stack.loops", "relay"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9104"
+
+  reconciler:
+    <<: *python
+    command: ["python", "-m", "deploy.stack.loops", "reconciler"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9105"
+    depends_on:
+      <<: *after-bootstrap
+      providers:
+        condition: service_healthy
+
+  advancer:
+    <<: *python
+    command: ["python", "-m", "deploy.stack.loops", "advancer"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9106"
+
+  api:
+    <<: *python
+    command: ["python", "-m", "uvicorn", "--factory", "api.app:demo_app",
+              "--host", "127.0.0.1", "--port", "8000", "--log-level", "warning",
+              "--no-access-log"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9101"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8000/readyz', timeout=2)"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+  mcp:
+    <<: *python
+    command: ["python", "-m", "mcp_server.server", "--port", "8012"]
+    environment:
+      <<: *python-env
+      SAFEACT_METRICS_PORT: "9102"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('127.0.0.1', 8012), 2).close()"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+
+  console:
+    build:
+      context: ..
+      dockerfile: deploy/docker/console.Dockerfile
+    restart: "no"
+    network_mode: "service:postgres"
+    read_only: true
+    tmpfs: ["/tmp", "/var/cache/nginx"]
+    depends_on:
+      api:
+        condition: service_healthy
+      mcp:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/healthz"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  prometheus:
+    image: prom/prometheus:v3.7.3@sha256:49214755b6153f90a597adcbff0252cc61069f8ab69ce8411285cd4a560e8038
+    restart: "no"
+    network_mode: "service:postgres"
+    command: ["--config.file=/etc/prometheus/prometheus.yml",
+              "--web.listen-address=127.0.0.1:9090",
+              "--storage.tsdb.path=/prometheus"]
+    volumes:
+      - ./docker/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - promdata:/prometheus
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9090/-/ready"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  # Fault injection for experiments against this stack, only with
+  # --profile chaos. The qualification runs natively, not here.
+  toxiproxy:
+    image: ghcr.io/shopify/toxiproxy:2.12.0@sha256:9378ed52a28bc50edc1350f936f518f31fa95f0d15917d6eb40b8e376d1a214e
+    restart: "no"
+    profiles: ["chaos"]
+    network_mode: "service:postgres"
+    command: ["-host=127.0.0.1", "-port=8474"]
+
+  # The fresh-clone smoke test (deploy/fresh_clone_check.sh), only with
+  # --profile check, run with `run --rm --no-deps smoke` once the stack is
+  # healthy: without --no-deps, Compose would re-run the one-shot bootstrap,
+  # which rebuilds safeact_demo under the running services. It signs in
+  # through nginx, as a browser would.
+  smoke:
+    <<: *python
+    profiles: ["check"]
+    command: ["python", "-m", "deploy.docker.smoke"]
+    depends_on:
+      console:
+        condition: service_healthy
+      prometheus:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  redisdata:
+  promdata:
+  demo-state:

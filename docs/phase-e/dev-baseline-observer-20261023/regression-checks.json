@@ -1,0 +1,327 @@
+{
+  "scope": "B3 independent database adapter development verification; not a registered comparison arm or qualification",
+  "uncommitted": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "distinct_python_tests": 1493,
+  "python_breakdown": {
+    "phase-a": 825,
+    "integration": 636,
+    "isolated": 21,
+    "api": 9,
+    "agent": 2
+  },
+  "console_unit_tests": 37,
+  "browser_tests": 14,
+  "console_total": 51,
+  "source_files": 413,
+  "base_only_files": 4,
+  "development_cases": 5,
+  "synthetic_counterexamples": 27,
+  "historical_replay_rows": 17,
+  "historical_packets": 6,
+  "historical_artifacts": 211,
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "final_qualification_started": false,
+  "executed": [
+    {
+      "check": "development",
+      "exit_code": 0,
+      "elapsed_seconds": 14.198998471023515,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "docs/phase-e/dev-baseline-observer-20261023/devcheck.py",
+        "--out",
+        "/tmp/safeact-b3-observer-development"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_BASELINE_DEV_CHECK",
+        "SAFEACT_RUN_DB_INTEGRATION",
+        "SAFEACT_RUN_DISPOSABLE_DB_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-observer-development.log"
+    },
+    {
+      "check": "phase-a",
+      "exit_code": 0,
+      "elapsed_seconds": 14.10736287990585,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/phase_a",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-phase-a.log"
+    },
+    {
+      "check": "isolated",
+      "exit_code": 0,
+      "elapsed_seconds": 11.54757815413177,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/isolated",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_ISOLATED_CLUSTER_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-observer-isolated.log"
+    },
+    {
+      "check": "api",
+      "exit_code": 0,
+      "elapsed_seconds": 36.14132303302176,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/e2e_api",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_API_E2E"
+      ],
+      "log": "/tmp/safeact-b3-observer-api.log"
+    },
+    {
+      "check": "agent",
+      "exit_code": 0,
+      "elapsed_seconds": 167.72388461395167,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/e2e_agent",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_AGENT_HARNESS"
+      ],
+      "log": "/tmp/safeact-b3-observer-agent.log"
+    },
+    {
+      "check": "browser",
+      "exit_code": 0,
+      "elapsed_seconds": 144.45279351691715,
+      "command": [
+        "npx",
+        "--no-install",
+        "playwright",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-browser.log"
+    },
+    {
+      "check": "integration",
+      "exit_code": 0,
+      "elapsed_seconds": 964.1488313041627,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_DB_INTEGRATION",
+        "SAFEACT_RUN_DISPOSABLE_DB_TESTS",
+        "SAFEACT_RUN_DB_SECURITY_TESTS",
+        "SAFEACT_RUN_BROKER_TESTS",
+        "SAFEACT_RUN_ISOLATED_REDIS_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-observer-integration.log"
+    },
+    {
+      "check": "console-unit",
+      "exit_code": 0,
+      "elapsed_seconds": 6.406706298002973,
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-console-unit.log"
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "elapsed_seconds": 4.1185673819854856,
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-typecheck.log"
+    },
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "elapsed_seconds": 4.489492527209222,
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-lint.log"
+    },
+    {
+      "check": "build",
+      "exit_code": 0,
+      "elapsed_seconds": 4.647874134825543,
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-observer-build.log"
+    }
+  ],
+  "logs": {
+    "development": {
+      "original_path": "/tmp/safeact-b3-observer-development.log",
+      "original_sha256": "975f47247a3f4de7122f87b38a30c113599ce9ecff028ae17f93f4cbb5f7263d",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "phase-a": {
+      "original_path": "/tmp/safeact-b3-observer-phase-a.log",
+      "original_sha256": "5705b8df1287da1198fded2f126e67c3ae48203f73ebfab510a1de78df8f39b2",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "isolated": {
+      "original_path": "/tmp/safeact-b3-observer-isolated.log",
+      "original_sha256": "8ed1660195971324021c9c9fc9c6dcf8a466c4f3bebc493791bd48ca8b27e344",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "api": {
+      "original_path": "/tmp/safeact-b3-observer-api.log",
+      "original_sha256": "2b5e8c1c942b07986c5e7d04ef7528a0d64fc87a827f57f6207990a8fdbaf7fe",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "agent": {
+      "original_path": "/tmp/safeact-b3-observer-agent.log",
+      "original_sha256": "26bee4e301c29e571dda5d9238cd45cfe16c5c6b027f6b3ccc4b9f7b0f7fc11c",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "browser": {
+      "original_path": "/tmp/safeact-b3-observer-browser.log",
+      "original_sha256": "41dc58545f5e7633cf08f56fcfd0a68866cfd854b7db04e289128101c4cad11d",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "integration": {
+      "original_path": "/tmp/safeact-b3-observer-integration.log",
+      "original_sha256": "0745fdac5a22b71878c07c704059cab9cf77f0306c9c6b55a60f676721d33d18",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-unit": {
+      "original_path": "/tmp/safeact-b3-observer-console-unit.log",
+      "original_sha256": "eea8ee98c74516cd43a6df449082fe0155741be2994311e5ce180203d2c2ca53",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "typecheck": {
+      "original_path": "/tmp/safeact-b3-observer-typecheck.log",
+      "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "lint": {
+      "original_path": "/tmp/safeact-b3-observer-lint.log",
+      "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "build": {
+      "original_path": "/tmp/safeact-b3-observer-build.log",
+      "original_sha256": "ad232fa0f11b2ac98e9ab2077fb83e1efd119f8b503ab9c0263b19e3be683f5f",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "focused-intermediate": {
+      "original_path": "/tmp/safeact-b3-observer-focused-1.log",
+      "original_sha256": "d4606859f2aa9a9dd0a79c9bdfcfd002a2b6c3426b642f5689b33a838d297e5e",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "new-unit": {
+      "original_path": "/tmp/safeact-b3-observer-unit-focused.log",
+      "original_sha256": "5291ee26798fe9df79a212d75290dcaa4013928bb237c6dfee72f9728a781a9a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "replay-import-failed": {
+      "original_path": "/tmp/safeact-b3-observer-replay.log",
+      "original_sha256": "1faebe16ee20a1fddc456ab722a576fd7ba60fb797109ccbe376d20e33aea5e3",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "replay-json-comparison-failed": {
+      "original_path": "/tmp/safeact-b3-observer-replay-corrected.log",
+      "original_sha256": "cbce0c3dda8d96799217ec2e66d70bd832413b1025df435563314100798136a1",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "replay-final": {
+      "original_path": "/tmp/safeact-b3-observer-replay-final.log",
+      "original_sha256": "e791a2276735b223ff40d31fd4e0f1297f524fa60399f80acabe9c05adc4be64",
+      "hex64_redactions": 5,
+      "retained_diagnostic_failure": false
+    },
+    "counterexamples": {
+      "original_path": "/tmp/safeact-b3-observer-counterexamples.log",
+      "original_sha256": "9af6cfed7d4d39dcf2513ec260ccc656433e7a6dc29962bc90cc495ce0774538",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    }
+  }
+}

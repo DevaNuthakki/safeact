@@ -1,0 +1,14 @@
+[
+  {
+    "path": "policy-and-contracts.log",
+    "original_sha256": "9b832a39fd722c300e63a48d036ff8033624dec91939080dd5cb31e2c14ff35c",
+    "shared_sha256": "9b832a39fd722c300e63a48d036ff8033624dec91939080dd5cb31e2c14ff35c",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "recovery-integration.log",
+    "original_sha256": "d846b8f05871e08baa5ac1e9babde925344b97e63e63a45426bfad33c44a0e46",
+    "shared_sha256": "d846b8f05871e08baa5ac1e9babde925344b97e63e63a45426bfad33c44a0e46",
+    "hex64_redactions": 0
+  }
+]

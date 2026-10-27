@@ -1,0 +1,59 @@
+{
+  "final_python_tests": 1313,
+  "final_python_checks": {
+    "phase-a": {
+      "tests": 744,
+      "seconds": 10.483,
+      "status": "passed",
+      "log": "regressions/phase-a.log"
+    },
+    "integration-final": {
+      "tests": 538,
+      "seconds": 687.185,
+      "status": "passed",
+      "log": "regressions/integration-final.log"
+    },
+    "isolated-security": {
+      "tests": 21,
+      "seconds": 15.538,
+      "status": "passed",
+      "log": "regressions/isolated-security.log"
+    },
+    "api-e2e": {
+      "tests": 8,
+      "seconds": 29.54,
+      "status": "passed",
+      "log": "regressions/api-e2e.log"
+    },
+    "agent": {
+      "tests": 2,
+      "seconds": 170.956,
+      "status": "passed",
+      "log": "regressions/agent.log"
+    }
+  },
+  "final_console_tests": 35,
+  "console_checks": {
+    "vitest": 25,
+    "playwright": 10,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed"
+  },
+  "console_static_evidence": "Successful npm execution output in this session",
+  "playwright_log": "regressions/playwright.log",
+  "original_database_run": {
+    "tests": 538,
+    "passed": 537,
+    "failed": 1,
+    "log": "regressions/integration-first.log"
+  },
+  "targeted_login_rerun": {
+    "tests": 1,
+    "status": "passed",
+    "log": "regressions/concurrent-login-rerun.log"
+  },
+  "authentication_timeouts_or_assertions_changed": false,
+  "commit_created": false,
+  "qualification_scope": "development only; frozen corpus not run"
+}

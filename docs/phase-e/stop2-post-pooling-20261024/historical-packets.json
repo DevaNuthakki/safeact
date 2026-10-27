@@ -1,0 +1,93 @@
+[
+  {
+    "packet": "docs/demo/validation-20261022",
+    "entries": 30,
+    "verified": 30,
+    "in_repo": 5,
+    "outside_repo": 25
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-adapter-20261023",
+    "entries": 123,
+    "verified": 123,
+    "in_repo": 37,
+    "outside_repo": 86
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-execution-20261023",
+    "entries": 44,
+    "verified": 44,
+    "in_repo": 10,
+    "outside_repo": 34
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-observer-20261023",
+    "entries": 40,
+    "verified": 40,
+    "in_repo": 16,
+    "outside_repo": 24
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-owned-stack-20261023",
+    "entries": 64,
+    "verified": 64,
+    "in_repo": 18,
+    "outside_repo": 46
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-process-trace-20261023",
+    "entries": 49,
+    "verified": 49,
+    "in_repo": 16,
+    "outside_repo": 33
+  },
+  {
+    "packet": "docs/phase-e/dev-baseline-workflow-review-20261023",
+    "entries": 48,
+    "verified": 48,
+    "in_repo": 13,
+    "outside_repo": 35
+  },
+  {
+    "packet": "docs/phase-e/dev-boundaries-20261022",
+    "entries": 62,
+    "verified": 62,
+    "in_repo": 13,
+    "outside_repo": 49
+  },
+  {
+    "packet": "docs/phase-e/dev-pooling-integration-20261024",
+    "entries": 64,
+    "verified": 64,
+    "in_repo": 29,
+    "outside_repo": 35
+  },
+  {
+    "packet": "docs/phase-e/dev-recovery-20261022",
+    "entries": 7,
+    "verified": 7,
+    "in_repo": 6,
+    "outside_repo": 1
+  },
+  {
+    "packet": "docs/phase-e/dev-workflows-20261022",
+    "entries": 20,
+    "verified": 20,
+    "in_repo": 8,
+    "outside_repo": 12
+  },
+  {
+    "packet": "docs/phase-e/local-pooling-experiment-20261024",
+    "entries": 15,
+    "verified": 15,
+    "in_repo": 12,
+    "outside_repo": 3
+  },
+  {
+    "packet": "docs/phase-e/local-risk-check-20261024",
+    "entries": 17,
+    "verified": 17,
+    "in_repo": 13,
+    "outside_repo": 4
+  }
+]

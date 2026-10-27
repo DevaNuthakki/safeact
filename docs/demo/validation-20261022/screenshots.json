@@ -1,0 +1,20 @@
+{
+  "source_run": "ui/test-results/local-2026-10-22T23-40-26-706Z",
+  "files": [
+    {
+      "path": "replacement-completed.png",
+      "source_path": "ui/test-results/local-2026-10-22T23-40-26-706Z/workflows-replacement-work-66939-follow-evidence-and-refresh/replacement-completed.png",
+      "sha256": "cda30fc52317ffbf0c843b418f95caa159170ca8500a5aba78940ec32cfd531d"
+    },
+    {
+      "path": "refund-confirmed.png",
+      "source_path": "ui/test-results/local-2026-10-22T23-40-26-706Z/workflows-replacement-work-c3612-ed-without-false-completion/compensated_verified.png",
+      "sha256": "989cf6641725e2e38deff72231db628dc26993733a819057849ea53df5c0ee85"
+    },
+    {
+      "path": "replacement-unresolved.png",
+      "source_path": "ui/test-results/local-2026-10-22T23-40-26-706Z/workflows-replacement-work-2acf2-ed-without-false-completion/unresolved.png",
+      "sha256": "d2f77c144c2dd198b2b4ab5784165891375c3f47d5e76c94b6eed48e384f6012"
+    }
+  ]
+}

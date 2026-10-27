@@ -1,0 +1,60 @@
+{
+  "scope": "Benchmark-only pooling adapter; production code unchanged",
+  "modes": [
+    {
+      "name": "fresh_default",
+      "pooled": false,
+      "prepare_threshold": 5
+    },
+    {
+      "name": "pooled_disabled",
+      "pooled": true,
+      "prepare_threshold": null
+    },
+    {
+      "name": "pooled_auto",
+      "pooled": true,
+      "prepare_threshold": 5
+    },
+    {
+      "name": "pooled_immediate",
+      "pooled": true,
+      "prepare_threshold": 0
+    }
+  ],
+  "concurrency": [
+    1,
+    4
+  ],
+  "pool_capacity_per_role": 4,
+  "max_overflow": 0,
+  "warmups_per_configuration": 32,
+  "measured_per_configuration": 100,
+  "blocks": 10,
+  "requests_per_block": 10,
+  "ordering": "Rotate configuration order by block; reverse on odd blocks; same provider and fixture",
+  "preparation": "Fresh default=5; pooled disabled=None, automatic=5, immediate=0",
+  "connection_lifetime": "Same benchmark adapter for every mode; check out native psycopg connection, execute unchanged _execute, return with rollback-on-return",
+  "fallback": "Original worker observation/retry connections remain fresh and role-bound",
+  "timer": "perf_counter_ns; same cursor and provider timing in every mode",
+  "percentiles": "nearest rank; 100 samples/configuration, descriptive p99 only",
+  "exclusions": [
+    "Public API/authentication",
+    "Celery/Redis/relay scheduling",
+    "Startup/warmup/cleanup",
+    "Production capacity"
+  ],
+  "external_provider_calls": 0,
+  "paid_calls": 0,
+  "manifest_sha256": "2fdb8e036709eb77f4d993b285d47fa2311f7bb9afed38f0ef5f7654271630f4",
+  "source_sha256": "5b69c18b051cdea7996d1183b9265bab401b22a5ed0fccb886cafbd1d986b7dd",
+  "script_sha256": "c4f9576fb1c08936ca26e997934e76b8dcb8b16acab5c6fa3b22fa2aeb26af38",
+  "python": "3.13.1",
+  "os": "Darwin",
+  "cpu_count": 12,
+  "load_start": [
+    1.74169921875,
+    2.3583984375,
+    2.70751953125
+  ]
+}

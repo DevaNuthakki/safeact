@@ -1,0 +1,30 @@
+{
+  "scope": "Negative coverage check; no critical interleavings credited from database-only adapter records",
+  "cases": [
+    {
+      "case": "test_actual_hidden_inverse_stays_unresolved_and_preserves_effect",
+      "observed_coverage": [],
+      "reason": "Selected database adapter records lack process-side HTTP/broker/execution observations"
+    },
+    {
+      "case": "test_actual_inverse_with_distinct_provider_accounts_passes_the_common_oracle",
+      "observed_coverage": [],
+      "reason": "Selected database adapter records lack process-side HTTP/broker/execution observations"
+    },
+    {
+      "case": "test_actual_lost_inverse_reply_requires_matching_lookup_before_restoration",
+      "observed_coverage": [],
+      "reason": "Selected database adapter records lack process-side HTTP/broker/execution observations"
+    },
+    {
+      "case": "test_actual_normal_workflow_passes_the_common_oracle",
+      "observed_coverage": [],
+      "reason": "Selected database adapter records lack process-side HTTP/broker/execution observations"
+    },
+    {
+      "case": "test_actual_rejected_inverse_does_not_claim_restoration",
+      "observed_coverage": [],
+      "reason": "Selected database adapter records lack process-side HTTP/broker/execution observations"
+    }
+  ]
+}

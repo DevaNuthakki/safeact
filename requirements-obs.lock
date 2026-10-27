@@ -1,0 +1,4 @@
+# SafeAct observability dependency snapshot.
+# Generated from the project Python 3.13 environment.
+# Refresh deliberately and review dependency diffs.
+prometheus-client==0.26.0

@@ -1,0 +1,226 @@
+[
+  {
+    "mode": "fresh_default",
+    "role": "worker",
+    "backend_pid": 39842,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "worker",
+    "backend_pid": 39843,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "worker",
+    "backend_pid": 39844,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "worker",
+    "backend_pid": 39845,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "admission",
+    "backend_pid": 39846,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "admission",
+    "backend_pid": 39847,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "admission",
+    "backend_pid": 39854,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "fresh_default",
+    "role": "admission",
+    "backend_pid": 39855,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "worker",
+    "backend_pid": 39142,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "worker",
+    "backend_pid": 39143,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "worker",
+    "backend_pid": 39145,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "worker",
+    "backend_pid": 39168,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "admission",
+    "backend_pid": 39147,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "admission",
+    "backend_pid": 39148,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "admission",
+    "backend_pid": 39146,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "role": "admission",
+    "backend_pid": 39149,
+    "prepared_statement_count": 0,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "worker",
+    "backend_pid": 39150,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "worker",
+    "backend_pid": 39152,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "worker",
+    "backend_pid": 39153,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "worker",
+    "backend_pid": 39151,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "admission",
+    "backend_pid": 39156,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "admission",
+    "backend_pid": 39155,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "admission",
+    "backend_pid": 39154,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_auto",
+    "role": "admission",
+    "backend_pid": 39157,
+    "prepared_statement_count": 5,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "worker",
+    "backend_pid": 39159,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "worker",
+    "backend_pid": 39158,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "worker",
+    "backend_pid": 39172,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "worker",
+    "backend_pid": 39161,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "admission",
+    "backend_pid": 39163,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "admission",
+    "backend_pid": 39165,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "admission",
+    "backend_pid": 39164,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "role": "admission",
+    "backend_pid": 39162,
+    "prepared_statement_count": 6,
+    "role_matches": true
+  }
+]

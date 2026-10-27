@@ -1,0 +1,49 @@
+{
+  "start": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792704924.4876769,
+      "load_1": 2.57,
+      "load_5": 3.5,
+      "load_15": 4.22
+    },
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t100%; charged; 0:00 remaining present: true",
+    "caffeinate_active": false,
+    "docker": "29.2.1"
+  },
+  "slots": 1,
+  "arms": [
+    "safeact"
+  ],
+  "corpus": "dev",
+  "scenarios": 16,
+  "scope": "development; qualification not complete",
+  "workdir": "/var/folders/4z/ggk6_v350m9dh0s88mvhm07w0000gn/T/safeact-qual-kaxgsrhl",
+  "end": {
+    "platform": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+    "machine": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load": {
+      "at": 1792705319.110983,
+      "load_1": 24.53,
+      "load_5": 28.35,
+      "load_15": 16.32
+    },
+    "cpu_model": "Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz",
+    "memory_bytes": "34359738368",
+    "model": "MacBookPro15,1",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t100%; charged; 0:00 remaining present: true",
+    "caffeinate_active": false,
+    "docker": "29.2.1"
+  },
+  "seconds": 394.7,
+  "errors": [],
+  "exit_code": 0
+}

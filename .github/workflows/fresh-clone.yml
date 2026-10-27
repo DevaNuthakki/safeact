@@ -1,0 +1,35 @@
+# Fresh-clone check (blueprint A12): from an empty directory the Compose
+# stack builds, starts healthy and passes the smoke test (sign in, refund
+# SUCCEEDED through REST and SSE, metrics targets up, MCP tools listed), and
+# is then removed with its volumes. The same script runs locally:
+# deploy/fresh_clone_check.sh. Never on pull requests (M5 decision).
+#
+# Throwaway passwords are generated inside the run; no repository secrets.
+# Actions are pinned to full commit SHAs and images by digest.
+
+name: fresh-clone
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fresh-clone-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fresh-clone:
+    name: Compose stack from a fresh clone
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Build, start, smoke-test and remove the stack
+        run: deploy/fresh_clone_check.sh "${GITHUB_WORKSPACE}" "${GITHUB_SHA}"

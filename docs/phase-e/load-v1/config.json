@@ -1,0 +1,36 @@
+{
+  "steps_per_second": [
+    10.0,
+    20.0,
+    40.0,
+    80.0,
+    120.0,
+    160.0
+  ],
+  "step_seconds": 30,
+  "limited_rate": 50,
+  "breaker_rate": 10,
+  "breaker_429s": 8,
+  "workers": 4,
+  "latency_ms": 20,
+  "poll_seconds": 0.2,
+  "drain_timeout_seconds": 600,
+  "pause_seconds": 5,
+  "mix": [
+    "payments",
+    "payments",
+    "payments",
+    "crm",
+    "email"
+  ],
+  "resources": 50,
+  "sessions": 8,
+  "contracts": {
+    "steps": "v1, no F16 limits",
+    "limited": "payments v2: 25 dispatches/s, burst 25",
+    "breaker": "payments v2: breaker 5 failures, 30 s cool-down; backoff base 1 s, cap 60 s"
+  },
+  "client": "asyncio + httpx2 in the harness process, open loop, 8 sessions, in-flight cap 4000",
+  "clock_tolerance_ms": 250,
+  "limits": "one laptop; loopback; Docker Desktop PostgreSQL, Redis and Toxiproxy; mock providers with a fixed added latency; one API process; no TLS"
+}

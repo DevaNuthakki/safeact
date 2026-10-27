@@ -1,0 +1,22 @@
+[
+  {
+    "path": "config.json",
+    "sha256": "08102fdfa14c5425210be0618aa034e6aee26b23f1846d09d37006fcd4b1f2af"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "18973887eeef90a60361a35eb5285a994c4c96d3c8cb0f5cc2b35cfce004d769"
+  },
+  {
+    "path": "requests.jsonl.gz",
+    "sha256": "382a65a04c7bcf4c79d0efba4acabdaa65c52606cc5de6c3154c587b4cd21c16"
+  },
+  {
+    "path": "samples.jsonl.gz",
+    "sha256": "f198c6f231c2323952efd6d768ae4914695715467d63c78c128d0c6b38f1899b"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "ea4f7926d1d1e241f41a4bd9542cc86d0ae0505cc0062535a005270c94114112"
+  }
+]

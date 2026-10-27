@@ -1,0 +1,123 @@
+{
+  "scope": "STOP 2 completed local regression; diagnostic originals retained separately",
+  "python_tests": 1626,
+  "console_tests": 51,
+  "integration_skips": 0,
+  "checks": [
+    {
+      "check": "phase-a",
+      "tests": 901,
+      "passed": true,
+      "log": "regressions/final-phase-a-ci-amendment.log"
+    },
+    {
+      "check": "integration",
+      "tests": 693,
+      "passed": true,
+      "log": "regressions/final-integration-corrected.log"
+    },
+    {
+      "check": "isolated",
+      "tests": 21,
+      "passed": true,
+      "log": "regressions/final-isolated.log"
+    },
+    {
+      "check": "api",
+      "tests": 9,
+      "passed": true,
+      "log": "regressions/final-api.log"
+    },
+    {
+      "check": "agent",
+      "tests": 2,
+      "passed": true,
+      "log": "regressions/final-agent.log"
+    },
+    {
+      "check": "browser",
+      "exit_code": 0,
+      "elapsed_seconds": 149.3257304748986,
+      "command": [
+        "npx",
+        "--no-install",
+        "playwright",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "regressions/final-browser.log",
+      "passed": true,
+      "tests": 14
+    },
+    {
+      "check": "console-unit",
+      "exit_code": 0,
+      "elapsed_seconds": 7.466094715986401,
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "regressions/final-console-unit.log",
+      "passed": true,
+      "tests": 37
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "elapsed_seconds": 5.0515057949814945,
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "regressions/final-typecheck.log",
+      "passed": true
+    },
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "elapsed_seconds": 5.445043211104348,
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "regressions/final-lint.log",
+      "passed": true
+    },
+    {
+      "check": "build",
+      "exit_code": 0,
+      "elapsed_seconds": 5.001104621915147,
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "regressions/final-build.log",
+      "passed": true
+    }
+  ],
+  "integration_elapsed_seconds": 1288.1322534410283,
+  "hosted_ci_executed": false,
+  "workflow_yaml_parse_passed": true,
+  "workflow_yaml_log": "regressions/workflow-yaml.log",
+  "source_proof": "integration-source-proof.json",
+  "original_diagnostics": "regression-log-files.json",
+  "index_empty": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "frozen_execution_started": false,
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "commits_created": 0,
+  "pushes": 0
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "raw.jsonl",
+    "bytes": 48127403,
+    "sha256": "4c248f3dd12f85ed50d4b3405210c610d68e82198f86e29fbbf535f8429ee1b1",
+    "location": "working tree (gitignored); content of raw.jsonl.gz"
+  },
+  {
+    "path": "raw.jsonl.gz",
+    "bytes": 3039654,
+    "sha256": "eeb3a3905eaf33c32e185e23b5fa2ad6ce355a1f0180274430912b989120f719",
+    "location": "~/safeact-evidence/docs/phase-e/qual-v1/diagnostics/"
+  },
+  {
+    "path": "qualify-diagnostic.log",
+    "bytes": 27900,
+    "sha256": "e6bed498b77a2ae134f4866f7429486194486e92504209231d76723982e7e0d3",
+    "location": "~/safeact-evidence/docs/phase-e/qual-v1/diagnostics/"
+  }
+]

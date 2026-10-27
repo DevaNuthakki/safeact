@@ -1,0 +1,256 @@
+[
+  {
+    "scenario_id": "Q-F01-0003",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0000",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F01-0003",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0000",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0001",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0002",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0003",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F04-0001",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0001",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F04-0002",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0002",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0003",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F04-0000",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F03-0001",
+    "arm": "b2",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F04-0000",
+    "arm": "b2",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0000",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0000",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0000",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0001",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0001",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0000",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0001",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0002",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F08-0008",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family",
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F10-0000",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F10-0001",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F10-0002",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F10-0003",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0000",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0000",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0003",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0003",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0001",
+    "arm": "b0",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0003",
+    "arm": "b2",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  },
+  {
+    "scenario_id": "Q-F13-0001",
+    "arm": "b1",
+    "reasons": [
+      "load_above_core_count"
+    ]
+  }
+]

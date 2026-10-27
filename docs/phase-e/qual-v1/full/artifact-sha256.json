@@ -1,0 +1,46 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "d5ce2d72b9389ab1340c7c79c2f2d58c3941fe53b62630c06f5b82b64d23bc82"
+  },
+  {
+    "path": "boundary-details.json",
+    "sha256": "915bb80233cd824a8cc12484c9d5a38f4a12c54f2ecc675badf776aeb54cc892"
+  },
+  {
+    "path": "coverage.json",
+    "sha256": "ed392a918d0afe61d24630bd18bac7741d032c5c5e3348b60e52e847d71daa80"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "92e08964db34f75954ccba5cf7c3285d090bb5611c7049fe46aa76661b3246d3"
+  },
+  {
+    "path": "failure-rows.jsonl",
+    "sha256": "d739de8bb180b9ae194185fe5f30667a4df2315a9629b967fd8441b65cd15e33"
+  },
+  {
+    "path": "load-suspect.json",
+    "sha256": "8aa6c67de4159fa1482afa690f57a56fec7481e043a5a4bcc2fd9c5afe8c0bcd"
+  },
+  {
+    "path": "outside-repo.json",
+    "sha256": "c04af7baab5ce75b4e89fb72785ae16bfd4e4e182d3c0baa3b2c12abd0cb82d2"
+  },
+  {
+    "path": "report.md",
+    "sha256": "3199451b17bd3c45cd1c35c791a0b80de39625c4e2831341eb2f5ec80446c3e2"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "46364fe0d94be8380e41e0779a0ff738f8797c9d5b708cc3bcf8385220da21bf"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "34c68b03375e29b028cd448c0b43bcb0ae8c0ad0358a4b2297339d7c0cc5afae"
+  },
+  {
+    "path": "traces-failing-unstable.jsonl",
+    "sha256": "0008e0215e4ffc1231e945755fd3c96d9bd927e13a94729371922bc9f7cf20b3"
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "scope": "Synthetic mutations of saved observations; not execution, coverage or additional unittest cases",
+  "cases": 27,
+  "rejected": 27,
+  "results": [
+    {
+      "mutation": "request:tenant_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:requester_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:request_key",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:customer_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:case_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:sku",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:fee_minor",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:payments_account_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:crm_account_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:charge_contract",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:order_contract",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "request:compensation_contract",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:tenant_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:requester_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:request_key",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:resource_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:provider_account_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:contract_version",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "inverse:compensates_operation_id",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "missing_precursor",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "uncertain_precursor",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "missing_inverse_effect",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "duplicate_inverse_effect",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "unknown_representation",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "missing_committed_binding",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": [
+        "Missing independently committed workflow binding"
+      ]
+    },
+    {
+      "mutation": "wrong_refund_amount",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    },
+    {
+      "mutation": "wrong_charge_reference",
+      "rejected": true,
+      "safety_failures": true,
+      "harness_errors": []
+    }
+  ]
+}

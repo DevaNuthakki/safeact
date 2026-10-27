@@ -1,0 +1,125 @@
+[
+  {
+    "check": "isolated",
+    "exit_code": 0,
+    "elapsed_seconds": 12.169421055121347,
+    "command": [
+      "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/isolated",
+      "-t",
+      ".",
+      "-p",
+      "test_*.py"
+    ],
+    "enabled_flags": [
+      "SAFEACT_RUN_ISOLATED_CLUSTER_TESTS"
+    ],
+    "log": "final-isolated.log"
+  },
+  {
+    "check": "api",
+    "exit_code": 0,
+    "elapsed_seconds": 31.74065884691663,
+    "command": [
+      "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/e2e_api",
+      "-t",
+      ".",
+      "-p",
+      "test_*.py"
+    ],
+    "enabled_flags": [
+      "SAFEACT_RUN_API_E2E"
+    ],
+    "log": "final-api.log"
+  },
+  {
+    "check": "agent",
+    "exit_code": 0,
+    "elapsed_seconds": 167.80942271300592,
+    "command": [
+      "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/e2e_agent",
+      "-t",
+      ".",
+      "-p",
+      "test_*.py"
+    ],
+    "enabled_flags": [
+      "SAFEACT_RUN_AGENT_HARNESS"
+    ],
+    "log": "final-agent.log"
+  },
+  {
+    "check": "browser",
+    "exit_code": 0,
+    "elapsed_seconds": 133.72413581516594,
+    "command": [
+      "npx",
+      "--no-install",
+      "playwright",
+      "test"
+    ],
+    "enabled_flags": [],
+    "log": "final-browser.log"
+  },
+  {
+    "check": "console-unit",
+    "exit_code": 0,
+    "elapsed_seconds": 7.199241852853447,
+    "command": [
+      "npm",
+      "test"
+    ],
+    "enabled_flags": [],
+    "log": "final-console-unit.log"
+  },
+  {
+    "check": "typecheck",
+    "exit_code": 0,
+    "elapsed_seconds": 4.7829596400260925,
+    "command": [
+      "npm",
+      "run",
+      "typecheck"
+    ],
+    "enabled_flags": [],
+    "log": "final-typecheck.log"
+  },
+  {
+    "check": "lint",
+    "exit_code": 0,
+    "elapsed_seconds": 4.747555634006858,
+    "command": [
+      "npm",
+      "run",
+      "lint"
+    ],
+    "enabled_flags": [],
+    "log": "final-lint.log"
+  },
+  {
+    "check": "build",
+    "exit_code": 0,
+    "elapsed_seconds": 4.789255826966837,
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "enabled_flags": [],
+    "log": "final-build.log"
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "format": "safeact-qual-v1",
+  "version": "qual_v1",
+  "review_status": "awaiting_STOP_2",
+  "scope": "Frozen inputs only; no qualification scenario has executed",
+  "seed": 510112026,
+  "family_counts": {
+    "CONTROL": 60,
+    "F01": 64,
+    "F02": 64,
+    "F03": 64,
+    "F04": 64,
+    "F05": 64,
+    "F06": 64,
+    "F07": 64,
+    "F08": 64,
+    "F09": 64,
+    "F10": 64,
+    "F11": 64,
+    "F12": 64,
+    "F13": 63,
+    "F14": 63,
+    "F15": 63,
+    "F16": 63,
+    "F06+F07": 20,
+    "F05+F08": 20,
+    "F16+F11": 20,
+    "F09+F03": 20,
+    "F13+F12": 20,
+    "F04x8": 20
+  },
+  "scenarios": 1200,
+  "arms": [
+    "safeact",
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "corpus_digest": "15868d4d06d53454d5b8a1f84eec04866092c69e43d8080f071048b5ab5a457e",
+  "smoke_ids": [
+    "Q-CONTROL-0000",
+    "Q-CONTROL-0001",
+    "Q-CONTROL-0002",
+    "Q-F01-0000",
+    "Q-F01-0001",
+    "Q-F01-0002",
+    "Q-F01-0003",
+    "Q-F02-0000",
+    "Q-F02-0001",
+    "Q-F02-0002",
+    "Q-F02-0003",
+    "Q-F03-0000",
+    "Q-F03-0001",
+    "Q-F03-0002",
+    "Q-F03-0003",
+    "Q-F04-0000",
+    "Q-F04-0001",
+    "Q-F04-0002",
+    "Q-F04-0003",
+    "Q-F05-0000",
+    "Q-F05-0001",
+    "Q-F05-0002",
+    "Q-F05-0003",
+    "Q-F06-0000",
+    "Q-F06-0001",
+    "Q-F06-0002",
+    "Q-F06-0003",
+    "Q-F07-0000",
+    "Q-F07-0001",
+    "Q-F07-0003",
+    "Q-F07-0004",
+    "Q-F08-0000",
+    "Q-F08-0006",
+    "Q-F08-0008",
+    "Q-F08-0012",
+    "Q-F09-0000",
+    "Q-F09-0001",
+    "Q-F09-0002",
+    "Q-F09-0003",
+    "Q-F10-0000",
+    "Q-F10-0001",
+    "Q-F10-0002",
+    "Q-F10-0003",
+    "Q-F11-0000",
+    "Q-F11-0001",
+    "Q-F11-0002",
+    "Q-F11-0003",
+    "Q-F12-0000",
+    "Q-F12-0001",
+    "Q-F12-0002",
+    "Q-F12-0003",
+    "Q-F13-0000",
+    "Q-F13-0001",
+    "Q-F13-0002",
+    "Q-F13-0003",
+    "Q-F13-0004",
+    "Q-F14-0000",
+    "Q-F14-0001",
+    "Q-F14-0002",
+    "Q-F14-0003",
+    "Q-F15-0000",
+    "Q-F15-0001",
+    "Q-F15-0002",
+    "Q-F15-0003",
+    "Q-F16-0000",
+    "Q-F16-0001",
+    "Q-F16-0003",
+    "Q-F16-0004",
+    "Q-F06+F07-0000",
+    "Q-F06+F07-0001",
+    "Q-F05+F08-0000",
+    "Q-F05+F08-0001",
+    "Q-F16+F11-0000",
+    "Q-F16+F11-0001",
+    "Q-F09+F03-0000",
+    "Q-F09+F03-0001",
+    "Q-F13+F12-0000",
+    "Q-F13+F12-0001",
+    "Q-F04x8-0000",
+    "Q-F04x8-0001"
+  ],
+  "inputs": {
+    "scenarios": {
+      "path": "chaos/scenarios_qual_v1.jsonl",
+      "sha256": "80732f1c73fabf55717df19eba56f3f203d8288e7924e7e34311dacb6e621df8"
+    },
+    "contracts": {
+      "path": "chaos/contracts_qual_v1.json",
+      "sha256": "782cd51976aa0d6cebaff79d4c2a4d0b9be2bcb46fde37fc654f0b8ebf78103d"
+    },
+    "combinations": {
+      "path": "chaos/combinations.json",
+      "sha256": "92b114a83ac26fa3a51bf2ad1e8988b0ddd378a9bd8a358e6db657f46355627a"
+    },
+    "coverage": {
+      "path": "chaos/coverage_qual_v1.json",
+      "sha256": "9448f72be2db4139b3ee1917375d790d4463355e67222784624f03cc54f26b32"
+    },
+    "applicability": {
+      "path": "chaos/applicability_qual_v1.json",
+      "sha256": "da88a56a3a54ba8222973a60f2d467ab9181f87beaa0c91ff6a2b99d4667d2dc"
+    },
+    "source": {
+      "path": "chaos/source_qual_v1.json",
+      "sha256": "5b69c18b051cdea7996d1183b9265bab401b22a5ed0fccb886cafbd1d986b7dd"
+    },
+    "timing": {
+      "path": "chaos/profiles.py",
+      "sha256": "a856c780ed59d62e8896191d93aab1440b1da8579d8452bedc6aa1cd1e3651b8"
+    },
+    "scoring": {
+      "path": "chaos/scoring.py",
+      "sha256": "87976bd31d3a6c150cf521378c714942518637e4b0c2611f9cb66676d299678a"
+    },
+    "oracle": {
+      "path": "chaos/oracle.py",
+      "sha256": "280712d635cae056d4d57f56c62703c46146493acc0ebea43e9a071653203a25"
+    },
+    "workflow_oracle": {
+      "path": "chaos/workflow_oracle.py",
+      "sha256": "de254bc0d2f8915414a0a94b0d14e1c8a9fda56d1f384fa50077e874bc0aba84"
+    },
+    "generator": {
+      "path": "chaos/scenarios.py",
+      "sha256": "2d2a71ca5a0efca9738ca5014cd2b1ce18077084696e1a5c2b783cc3cf4b0762"
+    }
+  },
+  "scoring_version": 2,
+  "headline": "Primary originals only; diagnostics never replace failures",
+  "budget": {
+    "primary_scenario_arms": 6000,
+    "wall_seconds": 86400,
+    "maximum_slots": 7,
+    "primary_invocations": 1,
+    "execution_ledger_dir": "docs/phase-e/qual-v1/executions",
+    "external_provider_cost_usd": 0,
+    "paid_model_cost_usd": 0
+  },
+  "calibration": {
+    "candidates": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "full_slots": null,
+    "phase": "After STOP 2; before full outcomes",
+    "selection": "Highest candidate with every sampled one-minute load strictly below CPU count; outcomes unused"
+  },
+  "load_suspect": {
+    "families": [
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F11",
+      "F16"
+    ],
+    "above_cpu_count": true,
+    "observation_overrun_seconds": 1,
+    "headline_replacement": false
+  },
+  "environment": {
+    "per_scenario": [
+      "load_1",
+      "load_5",
+      "load_15",
+      "available_memory_bytes"
+    ],
+    "laptop_full_run": [
+      "AC power",
+      "active caffeinate",
+      "same calibrated machine and OS"
+    ]
+  },
+  "production_execution": false,
+  "stripe_calls": 0,
+  "paid_model_calls": 0
+}

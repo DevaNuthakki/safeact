@@ -1,0 +1,24 @@
+{
+  "scope": "Observed request-to-finished harness gate intervals in selected development cases, including deliberate pauses; no latency benchmark or cross-arm comparison",
+  "unit": "nanoseconds",
+  "completed_gates": 12,
+  "minimum": 44705730,
+  "median": 48086139.5,
+  "maximum": 90320460,
+  "intervals": [
+    44705730,
+    45640260,
+    45749689,
+    46055678,
+    46742497,
+    47699604,
+    48472675,
+    48642142,
+    49432801,
+    50057158,
+    50525648,
+    90320460
+  ],
+  "process_generations": 34,
+  "publications": 12
+}

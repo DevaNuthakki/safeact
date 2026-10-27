@@ -1,0 +1,110 @@
+{
+  "note": "Shared snapshots redact 64-hex strings, including digests and provider correlations. Redaction never changes source logs; prior completed runs are retained separately. Counts and exception types are preserved.",
+  "files": [
+    {
+      "path": "logs/phase-a-before.log",
+      "original_sha256": "791672ce5fd9272692c7041ebc01d51ca8d72ce0c235d7821c4f84b697753c8e",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/phase-a.log",
+      "original_sha256": "eead9ed887c6a5dc22d86dfbfd2bbcb040859e257a138df04c636a0b584886c9",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/integration-intermediate.log",
+      "original_sha256": "b4e6e662d3b6df0054151845ac3b4f0945b191d216022baa08b569f27b712ff1",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/isolated-security.log",
+      "original_sha256": "43c3e2106ff87351062e7820d3bfd516c8c4a515ad2fea90b46e7dfe95ea5e91",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/api-initial-missing-csrf.log",
+      "original_sha256": "8fe078dc7b10d1a3f6a570238dfdd416ce68fb736bb47790a1e5b9eb71ab275b",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/api-changed-fee-counterexample.log",
+      "original_sha256": "d1e12c18118a9d1488c956a3c4d5ab19e2830118c6fb8ffbc368d691e33362a7",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/api-hidden-thread-error.log",
+      "original_sha256": "87a472747a0adce277bbc640e47c9b087b5cd747e700da1ccd2756cf3dfdc6d9",
+      "hex64_redactions": 2
+    },
+    {
+      "path": "logs/api-final.log",
+      "original_sha256": "2f9f6e1feb7d88efdabe8ca0ff14b26889aaee63bb68a3aabc8720e80df198ef",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/scripted-agent.log",
+      "original_sha256": "a2a7b77b6e520f8592cea2e324b1039d5a65e3de74ddac4c23209c495300c492",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/browser-initial-13.log",
+      "original_sha256": "a45fe406851b3febe3f64412e0248c7584366cce3b8bcf9126bb512314d70de4",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/browser-prior-14.log",
+      "original_sha256": "b9eaf3ce1361b913711877a7b9704d46e1d189d5ab685aa4b5311082432d1c6d",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/console-unit-prior-34.log",
+      "original_sha256": "b236bf553911fc1901294c8f27606f5540eb2aef32c886cf74f532c51ae43b8f",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/console-build-prior.log",
+      "original_sha256": "7d56df1beb180134eed76031a392cbedc114f7bf92586c698870020c01ff33d0",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/migration-initial-header-error.log",
+      "original_sha256": "db5a4a1ab84d08677be145310e96b320b58fdfb9f93211d8fee12ecc29c2f449",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/workflow-binding.log",
+      "original_sha256": "d5729c3705e0fc5eefa99e7cc55e00b0f02ed81e6bfdb43cb71311de74bc76e7",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/internal-workflow.log",
+      "original_sha256": "8589592d57ba872c4e760c2fe84221b2630c9d8e3b4211bffe1c94cda72db8df",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/admission-races.log",
+      "original_sha256": "248b374260272c558e8664cc59fb82fabe14828665934f14a4c025bc4c4ae309",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/console-unit.log",
+      "original_sha256": "caa694259fbf548614ed03ff93f264ba044d46c2d913a15b90333978b789a67f",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/browser-final-14.log",
+      "original_sha256": "0a287234f4e8ec5d6df87a6242c1a4e7e1fffc88acc14b68e85e4429ea30450e",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/console-build.log",
+      "original_sha256": "b6b03fa36fdd97c95611cb1e039f1afea7319c5491438192392f5ee8e379e023",
+      "hex64_redactions": 0
+    },
+    {
+      "path": "logs/integration-final.log",
+      "original_sha256": "6ed3c85121e738c1f7810a7897be998ccba3209f689306235dc4fe29b5aa6e56",
+      "hex64_redactions": 0
+    }
+  ]
+}

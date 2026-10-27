@@ -1,0 +1,989 @@
+{
+ "by_family": {
+  "CONTROL": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 60,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 60,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 60,
+     "completed": 60
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 60,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 60,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 60,
+     "completed": 60
+    }
+   }
+  },
+  "F01": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 51,
+     "completed": 51
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 51,
+     "completed": 51
+    }
+   }
+  },
+  "F02": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F03": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 43,
+     "completed": 43
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 43,
+     "completed": 43
+    }
+   }
+  },
+  "F04": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F04x8": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 20,
+     "completed": 20
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 20,
+     "completed": 20
+    }
+   }
+  },
+  "F05": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 44,
+     "completed": 44
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 44,
+     "completed": 44
+    }
+   }
+  },
+  "F05+F08": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 18,
+     "completed": 18
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 18,
+     "completed": 18
+    }
+   }
+  },
+  "F06": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F06+F07": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 20,
+     "completed": 20
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 20,
+     "completed": 20
+    }
+   }
+  },
+  "F07": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F08": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F09": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 0,
+     "completed": 0
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 0,
+     "completed": 0
+    }
+   }
+  },
+  "F09+F03": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 0,
+     "completed": 0
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 0,
+     "completed": 0
+    }
+   }
+  },
+  "F10": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 64,
+     "completed": 64
+    }
+   }
+  },
+  "F11": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 52,
+     "completed": 52
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 52,
+     "completed": 52
+    }
+   }
+  },
+  "F12": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 27,
+     "completed": 27
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 64,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 64,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 27,
+     "completed": 27
+    }
+   }
+  },
+  "F13": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 63,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 25,
+     "completed": 25
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 63,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 25,
+     "completed": 25
+    }
+   }
+  },
+  "F13+F12": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 9,
+     "completed": 9
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 20,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 9,
+     "completed": 9
+    }
+   }
+  },
+  "F14": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 63,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 63,
+     "completed": 63
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 63,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 63,
+     "completed": 63
+    }
+   }
+  },
+  "F16": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 255,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 33,
+     "completed": 18
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 255,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 63,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 33,
+     "completed": 28
+    }
+   }
+  },
+  "F16+F11": {
+   "b3": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 109,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 25,
+     "completed": 7
+    }
+   },
+   "safeact": {
+    "changed_accepted": 0,
+    "compensation_duplicates": 0,
+    "false_claims": 0,
+    "invalid_compensation_effects": 0,
+    "operations": 109,
+    "orphan_effects": 0,
+    "prohibited_duplicates": 0,
+    "rows_with_errors": 0,
+    "safety_failure_rows": 0,
+    "scenarios": 20,
+    "unaccounted": 0,
+    "usefulness": {
+     "achievable": 25,
+     "completed": 17
+    }
+   }
+  }
+ },
+ "differing_scenarios": [
+  {
+   "achievable": 5,
+   "b3": 1,
+   "family": "F16+F11",
+   "safeact": 3,
+   "scenario_id": "Q-F16+F11-0010"
+  },
+  {
+   "achievable": 6,
+   "b3": 0,
+   "family": "F16+F11",
+   "safeact": 4,
+   "scenario_id": "Q-F16+F11-0011"
+  },
+  {
+   "achievable": 3,
+   "b3": 2,
+   "family": "F16+F11",
+   "safeact": 1,
+   "scenario_id": "Q-F16+F11-0013"
+  },
+  {
+   "achievable": 7,
+   "b3": 0,
+   "family": "F16+F11",
+   "safeact": 5,
+   "scenario_id": "Q-F16+F11-0018"
+  },
+  {
+   "achievable": 6,
+   "b3": 4,
+   "family": "F16",
+   "safeact": 6,
+   "scenario_id": "Q-F16-0031"
+  },
+  {
+   "achievable": 8,
+   "b3": 6,
+   "family": "F16",
+   "safeact": 8,
+   "scenario_id": "Q-F16-0032"
+  },
+  {
+   "achievable": 8,
+   "b3": 1,
+   "family": "F16",
+   "safeact": 4,
+   "scenario_id": "Q-F16-0051"
+  },
+  {
+   "achievable": 7,
+   "b3": 3,
+   "family": "F16",
+   "safeact": 6,
+   "scenario_id": "Q-F16-0052"
+  }
+ ],
+ "not_achievable_families": [
+  "F09",
+  "F09+F03"
+ ],
+ "one_arm_coverage": {
+  "F15": {
+   "arm": "safeact",
+   "changed_accepted": 0,
+   "compensation_duplicates": 0,
+   "false_claims": 0,
+   "invalid_compensation_effects": 0,
+   "operations": 63,
+   "orphan_effects": 0,
+   "prohibited_duplicates": 0,
+   "reasons": [
+    "No guarded agent credential surface"
+   ],
+   "rows_with_errors": 0,
+   "safety_failure_rows": 0,
+   "scenarios": 63,
+   "unaccounted": 0,
+   "usefulness": {
+    "achievable": 63,
+    "completed": 63
+   }
+  }
+ },
+ "paired": {
+  "b3": {
+   "changed_accepted": 0,
+   "compensation_duplicates": 0,
+   "false_claims": 0,
+   "invalid_compensation_effects": 0,
+   "operations": 1418,
+   "orphan_effects": 0,
+   "prohibited_duplicates": 0,
+   "rows_with_errors": 0,
+   "safety_failure_rows": 0,
+   "scenarios": 1137,
+   "unaccounted": 0,
+   "usefulness": {
+    "achievable": 874,
+    "completed": 841
+   }
+  },
+  "safeact": {
+   "changed_accepted": 0,
+   "compensation_duplicates": 0,
+   "false_claims": 0,
+   "invalid_compensation_effects": 0,
+   "operations": 1418,
+   "orphan_effects": 0,
+   "prohibited_duplicates": 0,
+   "rows_with_errors": 0,
+   "safety_failure_rows": 0,
+   "scenarios": 1137,
+   "unaccounted": 0,
+   "usefulness": {
+    "achievable": 874,
+    "completed": 861
+   }
+  }
+ },
+ "rule": "chaos.scoring.aggregate on scenarios applicable to both arms",
+ "scope": "post-hoc analysis of the frozen primary run v1; committed scored rows, no re-execution; does not replace the headline",
+ "source": "docs/phase-e/qual-v1/full/results.jsonl",
+ "unstable_at_scoring": {
+  "in_differing_scenarios": 0,
+  "rows": [
+   [
+    "Q-F09-0020",
+    "b3"
+   ],
+   [
+    "Q-F09-0052",
+    "b3"
+   ],
+   [
+    "Q-F11-0051",
+    "b3"
+   ],
+   [
+    "Q-F12-0006",
+    "b3"
+   ],
+   [
+    "Q-F12-0007",
+    "b3"
+   ],
+   [
+    "Q-F12-0013",
+    "b3"
+   ],
+   [
+    "Q-F13-0011",
+    "b3"
+   ],
+   [
+    "Q-F13-0023",
+    "b3"
+   ],
+   [
+    "Q-F16+F11-0005",
+    "b3"
+   ],
+   [
+    "Q-F16+F11-0009",
+    "b3"
+   ],
+   [
+    "Q-F16+F11-0016",
+    "b3"
+   ],
+   [
+    "Q-F16-0012",
+    "b3"
+   ],
+   [
+    "Q-F16-0016",
+    "b3"
+   ],
+   [
+    "Q-F16-0027",
+    "b3"
+   ],
+   [
+    "Q-F16-0061",
+    "b3"
+   ],
+   [
+    "Q-F16-0062",
+    "b3"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "Read-only replay of selected process observation checks; not frozen family coverage or comparison",
+  "cases": [
+    {
+      "case": "test_actual_http_calls_follow_committed_fences_for_all_connectors",
+      "effects": 3,
+      "http_dispatches": 3,
+      "http_lookups": 0,
+      "observed_interleavings": []
+    },
+    {
+      "case": "test_actual_lost_fence_ack_has_committed_attempt_but_no_http_send",
+      "effects": 0,
+      "http_dispatches": 0,
+      "http_lookups": 0,
+      "observed_interleavings": [
+        "commit_ack_lost"
+      ]
+    },
+    {
+      "case": "test_actual_lost_outcome_ack_joins_committed_audit_and_replay_without_resend",
+      "effects": 1,
+      "http_dispatches": 1,
+      "http_lookups": 0,
+      "observed_interleavings": [
+        "commit_ack_lost"
+      ]
+    },
+    {
+      "case": "test_actual_sigkill_after_http_effect_then_recovery_is_credited_without_resend",
+      "effects": 1,
+      "http_dispatches": 1,
+      "http_lookups": 1,
+      "observed_interleavings": [
+        "worker_crashed_after_send"
+      ]
+    },
+    {
+      "case": "test_real_prefork_delivery_signals_bind_worker_http_to_committed_delivery",
+      "effects": 1,
+      "http_dispatches": 1,
+      "http_lookups": 0,
+      "observed_interleavings": []
+    },
+    {
+      "case": "test_separate_reconciler_records_matching_http_lookup_and_committed_result",
+      "effects": 1,
+      "http_dispatches": 1,
+      "http_lookups": 1,
+      "observed_interleavings": [
+        "effect_applied_response_lost"
+      ]
+    },
+    {
+      "case": "test_workflow_commit_observations_keep_native_workflow_identity",
+      "effects": 2,
+      "http_dispatches": 2,
+      "http_lookups": 0,
+      "observed_interleavings": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "path": "calibration-sequence.log",
+    "bytes": 715,
+    "sha256": "45f3a60fad87f5c12058f9ed1afd4a41c99f70f14e598178be922c330758349e"
+  },
+  {
+    "path": "slots-1/qualify.log",
+    "bytes": 19071,
+    "sha256": "fa6640b89a0c2c326260d460c38d6729e235075c9c22b238907c7801073e85ef"
+  },
+  {
+    "path": "slots-1/raw.jsonl",
+    "bytes": 74249579,
+    "sha256": "7311760568fa418d161c9bcdcc4fe96fd3c435916d7a85963f5418fca08b1ba3"
+  },
+  {
+    "path": "slots-2/qualify.log",
+    "bytes": 19071,
+    "sha256": "f27c3a82bfe58d252fb6083a914290e8bd687b8c7cc4552b1922868a8571f645"
+  },
+  {
+    "path": "slots-2/raw.jsonl",
+    "bytes": 73830186,
+    "sha256": "e3aa1599f79a5bd755168b50bc75cb1ed56009c8a770de81d22cbb8d04273900"
+  },
+  {
+    "path": "slots-4/qualify.log",
+    "bytes": 19071,
+    "sha256": "37c49fbdabc53553668b106ea7340eb56e107b1cd7d806c3494aadf952dc9c86"
+  },
+  {
+    "path": "slots-4/raw.jsonl",
+    "bytes": 74769479,
+    "sha256": "907daf029f6b84fd47040fb016cceb771d3bb5fc4fe50542419d4a2ace11ad52"
+  },
+  {
+    "path": "slots-6/qualify.log",
+    "bytes": 19069,
+    "sha256": "9b2ed0e46394a134cf3f0dccb479fbb0dd77c0b7ea05c3b31cb81074d47dfdd7"
+  },
+  {
+    "path": "slots-6/raw.jsonl",
+    "bytes": 68813966,
+    "sha256": "773b8dd1f33c011bbd7d8f419c0335bbc215a004debc2c2ec70d1ae54b61677c"
+  },
+  {
+    "path": "slots-7/qualify.log",
+    "bytes": 19067,
+    "sha256": "b099f9ccb3ebc8286a3633e220fc911a1bb3082e100a6d4a35cb909e32f2443e"
+  },
+  {
+    "path": "slots-7/raw.jsonl",
+    "bytes": 65515600,
+    "sha256": "fd4bf71730de20b6a6a9efad0eb5ac521e3d1dbd6ab65e2ddc84d5b22a14ec94"
+  }
+]

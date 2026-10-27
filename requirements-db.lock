@@ -1,0 +1,11 @@
+# SafeAct database dependency snapshot.
+# Generated from isolated Python 3.13 environment.
+# Refresh deliberately and review dependency diffs.
+alembic==1.20.0
+greenlet==3.5.6
+Mako==1.4.3
+MarkupSafe==3.0.4
+psycopg==3.3.6
+psycopg-binary==3.3.6
+SQLAlchemy==2.0.54
+typing_extensions==4.16.0

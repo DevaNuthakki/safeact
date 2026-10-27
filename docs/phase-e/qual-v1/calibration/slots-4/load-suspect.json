@@ -1,0 +1,65 @@
+[
+  {
+    "scenario_id": "Q-F05-0000",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0001",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0000",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F05-0001",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0000",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0001",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0000",
+    "arm": "b2",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F06-0002",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  },
+  {
+    "scenario_id": "Q-F08-0008",
+    "arm": "b1",
+    "reasons": [
+      "timing_sensitive_family"
+    ]
+  }
+]

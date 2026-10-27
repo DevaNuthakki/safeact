@@ -1,0 +1,42 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "e95daa03b2ab000382d022d50f2e35188c0e68f9ff0059ca1c64a2a58e0e36b6"
+  },
+  {
+    "path": "compare_rerun.py",
+    "sha256": "1305a491543c1e932f1351528fbac1f3ad7a7c72440654979738021683905ecd"
+  },
+  {
+    "path": "comparison.json",
+    "sha256": "8f4ec3c26e7ff27a385897b5f6e9e649f9c1397965e378241c0a51ff330a45ac"
+  },
+  {
+    "path": "coverage.json",
+    "sha256": "aceae9d5a8dcb93db0bd1efa523a119eaddd216f175d66d3f9fb29b151fd20bf"
+  },
+  {
+    "path": "difference-history.json",
+    "sha256": "6514534f3e2f36c84d3aa54b4c7dd306eecc14698da961e70de930d9a0e7ca54"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "1c3506bb0122abf9d9aae323233c796b28dbf326e22b3eabaa768776a54e9a95"
+  },
+  {
+    "path": "outside-repo.json",
+    "sha256": "4b04e34e4ecbadd7d2a0eae01bc90d8dabd902d53488af6193d93f85da593b9d"
+  },
+  {
+    "path": "report.md",
+    "sha256": "0508cbd03844f355110f2d3bb14e28d86a9ae98cf401a0ea37493d1181a4c66c"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "4df757dbbf78954b0e89509aacbbaf892a23a3b393ba41ecf8a6bc3bee3ad999"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "ed3b1d4d10b616d43e906aaf72f795c49ce1ea404dd1f8e4f2a79a0cc9e7346a"
+  }
+]

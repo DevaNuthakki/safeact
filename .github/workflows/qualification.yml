@@ -1,0 +1,118 @@
+# Prepared for post-STOP-2 use. Never triggered by a push or pull request.
+name: qualification
+
+on:
+  workflow_dispatch:
+    inputs:
+      review_approved:
+        description: STOP 2 review is complete and this frozen run is authorized
+        type: boolean
+        required: true
+        default: false
+      scope:
+        description: Frozen sample, slot calibration, or full comparison
+        type: choice
+        options: [smoke, calibration, full]
+        default: smoke
+      slots:
+        description: Reserved local slot count (1 through 7)
+        type: string
+        default: "1"
+      calibration:
+        description: Repository path to the verified calibration amendment (full only)
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qualification-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    if: inputs.review_approved
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      FROZEN_SCOPE: ${{ inputs.scope }}
+      FROZEN_SLOTS: ${{ inputs.slots }}
+      FROZEN_CALIBRATION: ${{ inputs.calibration }}
+      SAFEACT_RUN_FROZEN_QUALIFICATION: "1"
+      SAFEACT_RUN_DB_INTEGRATION: "1"
+      SAFEACT_RUN_DISPOSABLE_DB_TESTS: "1"
+      SAFEACT_RUN_BROKER_TESTS: "1"
+      SAFEACT_TOXIPROXY_UPSTREAM_HOST: "127.0.0.1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13.1"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: ui/.nvmrc
+      - name: Install pinned local dependencies
+        run: >-
+          python -m pip install -r requirements-db.lock -r requirements-broker.lock
+          -r requirements-api.lock -r requirements-mcp.lock -r requirements-agent.lock
+          -r requirements-obs.lock -r deploy/security/requirements-identity.txt
+      - name: Create disposable local services
+        run: |
+          db_password="$(openssl rand -hex 24)"
+          redis_password="$(openssl rand -hex 24)"
+          echo "::add-mask::${db_password}"
+          echo "::add-mask::${redis_password}"
+          umask 077
+          {
+            echo "SAFEACT_DEV_DB_PORT=55432"
+            echo "SAFEACT_DEV_DB_PASSWORD=${db_password}"
+            echo "SAFEACT_DEV_REDIS_PORT=56379"
+            echo "SAFEACT_DEV_REDIS_PASSWORD=${redis_password}"
+          } > .env
+          docker run -d --name safeact-postgres -e POSTGRES_USER=safeact_dev \
+            -e POSTGRES_PASSWORD="${db_password}" -e POSTGRES_DB=safeact_dev \
+            -p 127.0.0.1:55432:5432 postgres:17.11-bookworm
+          docker run -d --name safeact-redis -e REDISCLI_AUTH="${redis_password}" \
+            -p 127.0.0.1:56379:6379 redis:7.4.2-bookworm \
+            redis-server --requirepass "${redis_password}" --appendonly yes
+          docker run -d --name safeact-toxiproxy --network host \
+            ghcr.io/shopify/toxiproxy:2.12.0@sha256:9378ed52a28bc50edc1350f936f518f31fa95f0d15917d6eb40b8e376d1a214e \
+            -host=127.0.0.1
+          for _ in $(seq 1 60); do
+            if docker exec safeact-postgres pg_isready -U safeact_dev -d safeact_dev >/dev/null 2>&1 \
+              && docker exec safeact-redis redis-cli ping 2>/dev/null | grep -q PONG \
+              && curl --fail --silent http://127.0.0.1:8474/version >/dev/null; then
+              exit 0
+            fi
+            sleep 2
+          done
+          exit 1
+      - name: Migrate and provision disposable database
+        run: |
+          python -m alembic upgrade head
+          docker exec -i safeact-postgres \
+            psql -U safeact_dev -d safeact_dev -v ON_ERROR_STOP=1 -1 -q -f - \
+            < deploy/security/provision_local_admission_role.sql
+      - name: Verify inputs and run authorized scope
+        run: |
+          extra=()
+          if [ -n "${FROZEN_CALIBRATION}" ]; then
+            extra+=(--calibration "${FROZEN_CALIBRATION}")
+          fi
+          python -m chaos.qualify --manifest chaos/manifest_qual_v1.json \
+            --scope "${FROZEN_SCOPE}" --slots "${FROZEN_SLOTS}" \
+            --out qualification-results "${extra[@]}"
+      - name: Scan evidence before upload
+        id: scan
+        if: always()
+        run: python -m deploy.evaluation.agent_v1.secret_scan qualification-results
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always() && steps.scan.outcome == 'success'
+        with:
+          name: qualification-${{ inputs.scope }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: qualification-results/
+          if-no-files-found: ignore
+          retention-days: 30

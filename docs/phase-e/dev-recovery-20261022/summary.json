@@ -1,0 +1,488 @@
+{
+  "scope": "development only; qualification incomplete",
+  "scoring_frozen": false,
+  "by_arm": {
+    "safeact": {
+      "scenario_arms": 16,
+      "not_applicable": 0,
+      "applicable_operations": 29,
+      "accepted_local_ids": 29,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 17,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 29,
+      "provider_dispatch_calls": 63,
+      "provider_lookup_calls": 157,
+      "provider_calls": 220,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_failure": 7,
+        "confirmed_success": 14,
+        "escalated_unresolved": 8
+      },
+      "usefulness": {
+        "completed": 14,
+        "achievable": 22,
+        "fraction": 0.6363636363636364
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 21,
+          "invalid": 0,
+          "p50": 7.361,
+          "p95": 37.413,
+          "maximum": 39.184
+        },
+        "escalation_seconds": {
+          "count": 10,
+          "invalid": 0,
+          "p50": 9.483,
+          "p95": 12.664,
+          "maximum": 12.664
+        },
+        "queue_wait_seconds": {
+          "count": 29,
+          "invalid": 0,
+          "p50": 0.452,
+          "p95": 32.079,
+          "maximum": 39.178
+        },
+        "verification_delay_seconds": {
+          "count": 13,
+          "invalid": 0,
+          "p50": 10.203290451,
+          "p95": 12.53158299,
+          "maximum": 12.53158299
+        }
+      }
+    }
+  },
+  "by_family": {
+    "CONTROL": {
+      "scenario_arms": 3,
+      "not_applicable": 0,
+      "applicable_operations": 3,
+      "accepted_local_ids": 3,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 3,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 3,
+      "provider_dispatch_calls": 3,
+      "provider_lookup_calls": 0,
+      "provider_calls": 3,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_success": 3
+      },
+      "usefulness": {
+        "completed": 3,
+        "achievable": 3,
+        "fraction": 1.0
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 3,
+          "invalid": 0,
+          "p50": 0.185,
+          "p95": 0.279,
+          "maximum": 0.279
+        },
+        "escalation_seconds": {
+          "count": 0,
+          "invalid": 0,
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "queue_wait_seconds": {
+          "count": 3,
+          "invalid": 0,
+          "p50": 0.182,
+          "p95": 0.276,
+          "maximum": 0.276
+        },
+        "verification_delay_seconds": {
+          "count": 0,
+          "invalid": 0,
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    },
+    "F07": {
+      "scenario_arms": 5,
+      "not_applicable": 0,
+      "applicable_operations": 5,
+      "accepted_local_ids": 5,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 5,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 5,
+      "provider_dispatch_calls": 11,
+      "provider_lookup_calls": 41,
+      "provider_calls": 52,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_success": 5
+      },
+      "usefulness": {
+        "completed": 5,
+        "achievable": 5,
+        "fraction": 1.0
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 8.362,
+          "p95": 10.447,
+          "maximum": 10.447
+        },
+        "escalation_seconds": {
+          "count": 2,
+          "invalid": 0,
+          "p50": 8.529,
+          "p95": 10.108,
+          "maximum": 10.108
+        },
+        "queue_wait_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 0.239,
+          "p95": 0.349,
+          "maximum": 0.349
+        },
+        "verification_delay_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 1.164419915,
+          "p95": 1.215470093,
+          "maximum": 1.215470093
+        }
+      }
+    },
+    "F09": {
+      "scenario_arms": 3,
+      "not_applicable": 0,
+      "applicable_operations": 3,
+      "accepted_local_ids": 3,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 3,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 3,
+      "provider_dispatch_calls": 9,
+      "provider_lookup_calls": 32,
+      "provider_calls": 41,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "escalated_unresolved": 3
+      },
+      "usefulness": {
+        "completed": 0,
+        "achievable": 0,
+        "fraction": null
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 0,
+          "invalid": 0,
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "escalation_seconds": {
+          "count": 3,
+          "invalid": 0,
+          "p50": 11.533,
+          "p95": 12.664,
+          "maximum": 12.664
+        },
+        "queue_wait_seconds": {
+          "count": 3,
+          "invalid": 0,
+          "p50": 0.256,
+          "p95": 0.288,
+          "maximum": 0.288
+        },
+        "verification_delay_seconds": {
+          "count": 3,
+          "invalid": 0,
+          "p50": 10.203290451,
+          "p95": 11.01828324,
+          "maximum": 11.01828324
+        }
+      }
+    },
+    "F16": {
+      "scenario_arms": 5,
+      "not_applicable": 0,
+      "applicable_operations": 18,
+      "accepted_local_ids": 18,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 6,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 18,
+      "provider_dispatch_calls": 40,
+      "provider_lookup_calls": 84,
+      "provider_calls": 124,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_failure": 7,
+        "confirmed_success": 6,
+        "escalated_unresolved": 5
+      },
+      "usefulness": {
+        "completed": 6,
+        "achievable": 14,
+        "fraction": 0.42857142857142855
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 13,
+          "invalid": 0,
+          "p50": 11.941,
+          "p95": 39.184,
+          "maximum": 39.184
+        },
+        "escalation_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 9.346,
+          "p95": 12.193,
+          "maximum": 12.193
+        },
+        "queue_wait_seconds": {
+          "count": 18,
+          "invalid": 0,
+          "p50": 0.835,
+          "p95": 39.178,
+          "maximum": 39.178
+        },
+        "verification_delay_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 11.888061602,
+          "p95": 12.53158299,
+          "maximum": 12.53158299
+        }
+      }
+    }
+  },
+  "by_connector": {
+    "crm": {
+      "scenario_arms": 4,
+      "not_applicable": 0,
+      "applicable_operations": 6,
+      "accepted_local_ids": 6,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 2,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 6,
+      "provider_dispatch_calls": 6,
+      "provider_lookup_calls": 57,
+      "provider_calls": 63,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_success": 2,
+        "escalated_unresolved": 4
+      },
+      "usefulness": {
+        "completed": 2,
+        "achievable": 2,
+        "fraction": 1.0
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 2,
+          "invalid": 0,
+          "p50": 8.362,
+          "p95": 8.844,
+          "maximum": 8.844
+        },
+        "escalation_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 8.736,
+          "p95": 9.483,
+          "maximum": 9.483
+        },
+        "queue_wait_seconds": {
+          "count": 6,
+          "invalid": 0,
+          "p50": 0.349,
+          "p95": 1.272,
+          "maximum": 1.272
+        },
+        "verification_delay_seconds": {
+          "count": 6,
+          "invalid": 0,
+          "p50": 10.47528459,
+          "p95": 12.53158299,
+          "maximum": 12.53158299
+        }
+      }
+    },
+    "email": {
+      "scenario_arms": 1,
+      "not_applicable": 0,
+      "applicable_operations": 1,
+      "accepted_local_ids": 1,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 1,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 1,
+      "provider_dispatch_calls": 1,
+      "provider_lookup_calls": 0,
+      "provider_calls": 1,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_success": 1
+      },
+      "usefulness": {
+        "completed": 1,
+        "achievable": 1,
+        "fraction": 1.0
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 1,
+          "invalid": 0,
+          "p50": 0.185,
+          "p95": 0.185,
+          "maximum": 0.185
+        },
+        "escalation_seconds": {
+          "count": 0,
+          "invalid": 0,
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "queue_wait_seconds": {
+          "count": 1,
+          "invalid": 0,
+          "p50": 0.182,
+          "p95": 0.182,
+          "maximum": 0.182
+        },
+        "verification_delay_seconds": {
+          "count": 0,
+          "invalid": 0,
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        }
+      }
+    },
+    "payments": {
+      "scenario_arms": 11,
+      "not_applicable": 0,
+      "applicable_operations": 22,
+      "accepted_local_ids": 22,
+      "rows_with_errors": 0,
+      "safety_failure_rows": 0,
+      "effects": 14,
+      "prohibited_duplicates": 0,
+      "orphan_effects": 0,
+      "unaccounted": 0,
+      "changed_accepted": 0,
+      "false_claims": 0,
+      "operations_with_database_evidence": 22,
+      "provider_dispatch_calls": 56,
+      "provider_lookup_calls": 100,
+      "provider_calls": 156,
+      "provider_call_cost_usd": 0.0,
+      "provider_cost_basis": "mock_only_zero_external_cost",
+      "outcomes": {
+        "confirmed_failure": 7,
+        "confirmed_success": 11,
+        "escalated_unresolved": 4
+      },
+      "usefulness": {
+        "completed": 11,
+        "achievable": 19,
+        "fraction": 0.5789473684210527
+      },
+      "latency_seconds": {
+        "resolution_seconds": {
+          "count": 18,
+          "invalid": 0,
+          "p50": 7.052,
+          "p95": 39.184,
+          "maximum": 39.184
+        },
+        "escalation_seconds": {
+          "count": 5,
+          "invalid": 0,
+          "p50": 11.533,
+          "p95": 12.664,
+          "maximum": 12.664
+        },
+        "queue_wait_seconds": {
+          "count": 22,
+          "invalid": 0,
+          "p50": 0.46,
+          "p95": 32.079,
+          "maximum": 39.178
+        },
+        "verification_delay_seconds": {
+          "count": 7,
+          "invalid": 0,
+          "p50": 9.92732699,
+          "p95": 11.842625198,
+          "maximum": 11.842625198
+        }
+      }
+    }
+  },
+  "pending_metrics": [
+    "workflow and compensation effect attribution",
+    "outage/retention/escalation evidence review",
+    "achievable-completion declaration audit (including the original F16 rejection budget)"
+  ],
+  "latency_method": "nearest-rank percentiles; invalid measurements counted separately",
+  "provider_cost_method": "Mock qualification providers have no external charge; provider calls are counted from provider-side observations and cost is recorded as $0.00, not extrapolated to Stripe or other real providers."
+}

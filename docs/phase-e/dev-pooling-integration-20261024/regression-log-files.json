@@ -1,0 +1,146 @@
+[
+  {
+    "path": "regressions/final-agent.log",
+    "original_sha256": "aac56786bcfa742b0a7707f630da4360c2315a2a3a3a67f5b32f7488ed20e592",
+    "shared_sha256": "aac56786bcfa742b0a7707f630da4360c2315a2a3a3a67f5b32f7488ed20e592",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-api.log",
+    "original_sha256": "d39db184256ad0515b09bca76f2912891ebcd5e18e069fa98c2a807e71771e66",
+    "shared_sha256": "d39db184256ad0515b09bca76f2912891ebcd5e18e069fa98c2a807e71771e66",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-browser.log",
+    "original_sha256": "9543a526fda4d5431675d4ccdba8f9e9acbb8d00d9abf71d13cb064d5409c8f2",
+    "shared_sha256": "9543a526fda4d5431675d4ccdba8f9e9acbb8d00d9abf71d13cb064d5409c8f2",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-build.log",
+    "original_sha256": "3709e2be8425564dce8718331f90419d52e5d711001a1da0fd4aa010cd541b57",
+    "shared_sha256": "3709e2be8425564dce8718331f90419d52e5d711001a1da0fd4aa010cd541b57",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-console-unit.log",
+    "original_sha256": "63e93ee1bda60f5044b2976c1ff7f4cf43b8440e4a80135a69d280d5a0492bb8",
+    "shared_sha256": "63e93ee1bda60f5044b2976c1ff7f4cf43b8440e4a80135a69d280d5a0492bb8",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-integration.log",
+    "original_sha256": "dca1dd803b941264e6929e39d0a17a12ada53cf4bfbe383690295ce2bde9daf7",
+    "shared_sha256": "dca1dd803b941264e6929e39d0a17a12ada53cf4bfbe383690295ce2bde9daf7",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-isolated.log",
+    "original_sha256": "0d4a8d729774c9ef829d44e0065f09f8ab314d81d335697148bd7f71a7bfe60a",
+    "shared_sha256": "0d4a8d729774c9ef829d44e0065f09f8ab314d81d335697148bd7f71a7bfe60a",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-lint.log",
+    "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+    "shared_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-phase-a-socket-enabled.log",
+    "original_sha256": "0f67ed0b02a033e88bff0a65779f397b1b7a85d744c60afa9ddc15e37f252aab",
+    "shared_sha256": "0f67ed0b02a033e88bff0a65779f397b1b7a85d744c60afa9ddc15e37f252aab",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-phase-a.log",
+    "original_sha256": "13e75b6bbb02374655ed1649136407a7e8618097fb975b78f0553812c1cacb3f",
+    "shared_sha256": "13e75b6bbb02374655ed1649136407a7e8618097fb975b78f0553812c1cacb3f",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/final-typecheck.log",
+    "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+    "shared_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/first-final-integration.log",
+    "original_sha256": "408ddf4efc5afb4de938be07c7ac310c46fa1446cea1335583a6847cc6d7813e",
+    "shared_sha256": "408ddf4efc5afb4de938be07c7ac310c46fa1446cea1335583a6847cc6d7813e",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/first-final-phase-a-socket-enabled.log",
+    "original_sha256": "8e52973f9b9ecab8a5f7e21ac74a69dc19d7afa1a955a7562eac432062bc0bf7",
+    "shared_sha256": "8e52973f9b9ecab8a5f7e21ac74a69dc19d7afa1a955a7562eac432062bc0bf7",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/first-validation-pipeline.log",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shared_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/focused-unit-first.log",
+    "original_sha256": "01b5ab86a6b13c3da97b3db7fbbb21d608b0c9f0a84cbe6c8c214468562afa46",
+    "shared_sha256": "01b5ab86a6b13c3da97b3db7fbbb21d608b0c9f0a84cbe6c8c214468562afa46",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/latency-progress.log",
+    "original_sha256": "fd81bbf4315b9edf36191c18d7baf11c4ddced5f059184285c3a03ddd7da413f",
+    "shared_sha256": "fd81bbf4315b9edf36191c18d7baf11c4ddced5f059184285c3a03ddd7da413f",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-api-integration-corrected.log",
+    "original_sha256": "4ff6c41cf5490f98745d5d857be52fedc47c9478cb0f950ea808c08f793ac807",
+    "shared_sha256": "4ff6c41cf5490f98745d5d857be52fedc47c9478cb0f950ea808c08f793ac807",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-api-integration-lifespan-corrected.log",
+    "original_sha256": "580b99a5484b2589dadcbc4defb7c8f2bf0af325c8a1aaf9acdf9fde47df4f78",
+    "shared_sha256": "580b99a5484b2589dadcbc4defb7c8f2bf0af325c8a1aaf9acdf9fde47df4f78",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-api-unit-lifespan-corrected.log",
+    "original_sha256": "1139aaab787bbb43dd29c6fb037a80833a1931b99a47b6f8bb99b842cca96193",
+    "shared_sha256": "1139aaab787bbb43dd29c6fb037a80833a1931b99a47b6f8bb99b842cca96193",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-integration-first.log",
+    "original_sha256": "315cd6ebf54f0ba30cc9663ba3ad4da6b113dbb42d87d9812e5680d556eb3b7a",
+    "shared_sha256": "315cd6ebf54f0ba30cc9663ba3ad4da6b113dbb42d87d9812e5680d556eb3b7a",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-shutdown-corrected.log",
+    "original_sha256": "095572702559eef7251a353d1ea1b916dd19895bfe69ea1958195911d57e47f4",
+    "shared_sha256": "095572702559eef7251a353d1ea1b916dd19895bfe69ea1958195911d57e47f4",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/pool-unit-first.log",
+    "original_sha256": "b031ee3171c156125574dc77419e61ca26a3200a5671ec3f6c2174982435114c",
+    "shared_sha256": "b031ee3171c156125574dc77419e61ca26a3200a5671ec3f6c2174982435114c",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/surface-progress.log",
+    "original_sha256": "df669c5a2bb752a36b0d8e41f8f6a95ff011fcbfc5d555656cf88593f03778fe",
+    "shared_sha256": "df669c5a2bb752a36b0d8e41f8f6a95ff011fcbfc5d555656cf88593f03778fe",
+    "hex64_redactions": 0
+  },
+  {
+    "path": "regressions/validation-pipeline.log",
+    "original_sha256": "0c7f093830140d3c8f24d84a827cf12a78ba653450b49219c2192c1257d5f4e0",
+    "shared_sha256": "0c7f093830140d3c8f24d84a827cf12a78ba653450b49219c2192c1257d5f4e0",
+    "hex64_redactions": 0
+  }
+]

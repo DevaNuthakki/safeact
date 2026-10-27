@@ -1,0 +1,73 @@
+{
+  "scope": "Local risk checks only; no frozen execution",
+  "files": [
+    {
+      "path": "RESULTS.md",
+      "sha256": "4f896f624f5460691bd99f2832298ef838100eb605b82c926dbe6e273ffedc3c"
+    },
+    {
+      "path": "benchmark-protocol.json",
+      "sha256": "43eeb51eac993d2cf35ae7710be4c1f88ba761e8f1119c7adbea71dacb3214ed"
+    },
+    {
+      "path": "cleanup.json",
+      "sha256": "c6151a5aebafdb3daa57f68b9c6208eef838fea48adda92d93408ce8979e2b76"
+    },
+    {
+      "path": "latency-blocks.json",
+      "sha256": "8e811dbb1ef38ab2d7a1d5243e5b0f572fbeea751b797ad8b0fd12ccdf32fe47"
+    },
+    {
+      "path": "latency-check.py",
+      "sha256": "e6723b259a09a2a2867272539deb2c648dea2de04a66f1dd62717300e2d607c1"
+    },
+    {
+      "path": "latency-samples.jsonl",
+      "sha256": "b8b34f495b59f6ab4f7ca89bf70c53337322ce462500185ddfe1c6e204a06463"
+    },
+    {
+      "path": "latency-summary.json",
+      "sha256": "026ad7282f936a8930390bbf17fbafdbf8a5aba08770d6c532a00338aaebc3bb"
+    },
+    {
+      "path": "log-files.json",
+      "sha256": "fb6d9da3f330c95fb94bee53c8d1a52750d9d47e02c5025642af455d331aa753"
+    },
+    {
+      "path": "package-evidence.py",
+      "sha256": "8fcbccd25ce8f1b76faa2a187d9f15e185a994f3947bce6924438dce5f07d778"
+    },
+    {
+      "path": "policy-and-contracts.log",
+      "sha256": "9b832a39fd722c300e63a48d036ff8033624dec91939080dd5cb31e2c14ff35c"
+    },
+    {
+      "path": "provider-ledger.json",
+      "sha256": "235f08ffb92fe2b773f35c4fa9e633f5a38e989b7a98b034769cc2e98b3bf7c1"
+    },
+    {
+      "path": "recovery-integration.log",
+      "sha256": "d846b8f05871e08baa5ac1e9babde925344b97e63e63a45426bfad33c44a0e46"
+    },
+    {
+      "path": "source-sha256.json",
+      "sha256": "5b69c18b051cdea7996d1183b9265bab401b22a5ed0fccb886cafbd1d986b7dd"
+    },
+    {
+      "path": "targeted-tests.py",
+      "sha256": "4a5b487488abd6cd94607a5bfb9047a833a909d131c01a2abc09d90b65f638a5"
+    },
+    {
+      "path": "test-checks.json",
+      "sha256": "2c758639cf782257c0d39dc596481b6e99e06609bbdec30554f71ab9c451963c"
+    },
+    {
+      "path": "unchanged-packets.json",
+      "sha256": "02f25a8d5e8a01cb2631e1c9f3e470985601779634720d96477b8fa4934b8593"
+    },
+    {
+      "path": "verification.json",
+      "sha256": "e5bdd8f5137d6121b3217f2f6ade7ddfc0919db2c469f626e9b023f86d49c704"
+    }
+  ]
+}

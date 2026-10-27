@@ -1,0 +1,128 @@
+{
+  "qualified_source": "chaos/source_qual_v1.json, pinned by the manifest below; system under test at 415d410, pinned inventory unchanged through 33242f6",
+  "manifest_sha256": "b779fa720fc3a71fe9c26cd529f9199a9be0aed2779dbaa2c8c7968522df51af",
+  "rule": "The primary full run v1 describes the pinned inventory only. Every later difference from it is listed here with its sub-step and reason; tests/phase_a/test_qualification_freeze.py checks that the list is exact and that no entry touches the lifecycle SQL, migrations, core/lifecycle.py or provider keys. chaos.qualify refuses to run from a tree with any difference, so a diagnostic of v1 runs from a worktree at 33242f6.",
+  "changes": [
+    {
+      "path": "chaos/load.py",
+      "change": "added",
+      "step": "M5.13",
+      "reason": "Load test harness. A separate command; nothing qualification executes imports it."
+    },
+    {
+      "path": "deploy/compose.yaml",
+      "change": "changed",
+      "step": "M5.13",
+      "reason": "Development PostgreSQL preloads pg_stat_statements so the load test can report top statements. Preloading alone changes no behaviour; the extension exists only during a load run."
+    },
+    {
+      "path": ".github/workflows/fresh-clone.yml",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "Fresh-clone check workflow (A12): push to main and manual dispatch only."
+    },
+    {
+      "path": "deploy/compose.stack.yaml",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "Compose packaging (DEMO ONLY): a new way to start the same components; qualification runs natively and never reads it."
+    },
+    {
+      "path": "deploy/docker/bootstrap.py",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "One-shot stack bootstrap: alembic head, admission-role provisioning, demo rebuild (the documented sequence)."
+    },
+    {
+      "path": "deploy/docker/prometheus.yml",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "Prometheus scrape configuration for the Compose stack."
+    },
+    {
+      "path": "deploy/docker/smoke.py",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "Fresh-clone smoke test run inside the Compose stack."
+    },
+    {
+      "path": "deploy/docker/__init__.py",
+      "change": "added",
+      "step": "M5.14",
+      "reason": "Package marker for deploy/docker (bootstrap and smoke modules)."
+    },
+    {
+      "path": "api/actions.py",
+      "change": "changed",
+      "step": "M5.15",
+      "reason": "Stripe test-mode demo profile: the submit route accepts the console-only refund_stripe_test_payment and admits it as its spec's action (refund_payment). Every existing action has no override (action_type None), so what it admits is unchanged; agents (MCP) still use catalog.ACTIONS only."
+    },
+    {
+      "path": "api/catalog.py",
+      "change": "changed",
+      "step": "M5.15",
+      "reason": "Stripe test-mode demo profile: CONSOLE_ACTIONS = ACTIONS plus refund_stripe_test_payment (stripe-test, PaymentIntent payload); ActionSpec gains an optional action_type override. ACTIONS and its specs are unchanged."
+    },
+    {
+      "path": "deploy/demo/bootstrap.py",
+      "change": "changed",
+      "step": "M5.15; post-M5 console polish round 2 (2026-10-26)",
+      "reason": "Stripe test-mode demo profile: --stripe registers the demo Stripe contract and grants the north requester the two fixture PaymentIntents. Default (no flag) is unchanged. Console polish round 2: each demo account gets a fixed principal id and a persona display name (for example Alex Rivera), so the console can show names where the API returns principal ids (ui/src/demo/directory.ts). Usernames, tenants, roles, grants, agent-key scopes and every rule are unchanged; chaos/arms/safeact.py imports DEMO_ACCOUNTS, so qualification-arm principals carry the new names and ids (display data only)."
+    },
+    {
+      "path": "deploy/demo/run_stack.py",
+      "change": "changed",
+      "step": "M5.15",
+      "reason": "Stripe test-mode demo profile: --stripe (in-process stack only) adds the gated adapter as an extra connector; a live-mode object stops the stack. Default is unchanged."
+    },
+    {
+      "path": "deploy/demo/stripe_demo.py",
+      "change": "added",
+      "step": "M5.15",
+      "reason": "Stripe test-mode demo profile: fixtures, exact grants, dropped-first-response wrapper, setup/check commands; every Stripe call passes the existing key and sandbox gates."
+    },
+    {
+      "path": "deploy/demo/walkthrough.py",
+      "change": "added",
+      "step": "M5.15; publish readiness (2026-10-26)",
+      "reason": "Demo walkthrough seed: drives a running demo stack through the public API and MCP with the demo credentials; no SafeAct component imports it. Publish readiness: the timeout-after-success refund is now $2,450.00 (245000 cents) for a damaged order, so the demo shows what a naive retry would cost; same resource, same fault, same catalog limits."
+    }
+  ],
+  "outside_pinned_inventory": [
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "UI comprehension round (2026-10-26, branch ui/comprehension-round)",
+      "reason": "Presentation only, from a read-only review with screenshots: success worded by success_provenance (a reviewer attestation is never shown as provider confirmation); accurate post-escalation next-check wording (bounded paced lookups, then none); approved proposals no longer flagged as changed; evidence summarised by kind instead of a raw count; review empty state, refusal meaning first, README limits and denominators on the results page, one role name (Reviewer), Auto-updating, $2,450.00 / $4,900.00 total, technical state as small text, refund requester; phone layout (stacked tables, header, results card) with a 390px overflow check; fresh-clone preparation steps and stricter evidence-copy checks. Outside ui/ and outside the pinned inventory: README and docs wording, .dockerignore excluding the generated case index, and a Phase A wrapper running the preparation helper's tests. No API, backend, lifecycle, migration, policy or sealed evaluation change."
+    },
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "guided desktop portfolio walkthrough (2026-10-26)",
+      "reason": "Five-chapter presentation with one reviewer sign-in, current operation/proposal reads, connected agent-email/human decision, explicitly recorded refusal output, recorded results and limits, and secondary workflow documentation. A frontend-owned preparation helper calls existing local mock API/MCP paths as the existing separate demo identities, reuses cases without a reset, and writes an ignored public ID/trace index without credentials. The helper leaves the email decision to the reviewer; it was made once through the reviewer form on 2026-10-26 (email SUCCEEDED, human_attested). No backend, API, lifecycle, migration, policy, sealed evaluation or paid-provider change."
+    },
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "post-M5 console polish (2026-10-26)",
+      "reason": "Presentation only, before the demo video: design tokens, light default theme with a remembered Light/Dark switch, header and navigation, human-readable labels, summary counts read through the existing GET /actions, plain-language timeline, evidence cards, review comparison, inline form validation. No API, backend, lifecycle, migration or rule change; every rule stays enforced server-side. The console is outside the pinned inventory (chaos.frozen.SOURCE_ROOTS), so it is listed here rather than under changes."
+    },
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "post-M5 console polish round 2 (2026-10-26)",
+      "reason": "Presentation only, for non-technical viewers: friendly names for resources, connectors, tenants and demo people, money as currency, specific review titles, raw facts folded into Technical details, user menu, split sign-in page, How SafeAct works card, visual summary tiles, action detail hero with a progress stepper and tabs, compact workflow flow, card-style reviews, favicon and page titles; amount inputs in dollars converted exactly to the same integer cents field. No API, backend, lifecycle, migration or rule change; every rule stays enforced server-side."
+    },
+    {
+      "path": "ui/",
+      "change": "changed",
+      "kind": "UI-only",
+      "step": "publish readiness (2026-10-26)",
+      "reason": "Presentation only: a SUCCEEDED Stripe test-mode refund now says that Stripe accepted the request and created the refund, and shows the refund status Stripe reported at response time (details.provider.refund_status, already returned by GET /actions/{id}), labelled as not a live value, with settlement out of scope; evidence cards show the same reported status. Unrecognized values are shown verbatim as text. Nothing decides from it. No API, backend, lifecycle, migration or rule change."
+    }
+  ]
+}

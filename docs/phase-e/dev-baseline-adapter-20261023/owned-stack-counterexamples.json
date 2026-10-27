@@ -1,0 +1,139 @@
+{
+  "scope": "Saved-data mutation refusals only; no qualification runs or extra unittest denominator",
+  "cases": 33,
+  "rejected": 33,
+  "mutations": [
+    {
+      "case": "cleanup_schema_dropped",
+      "rejected": true
+    },
+    {
+      "case": "cleanup_private_config_removed",
+      "rejected": true
+    },
+    {
+      "case": "cleanup_private_directory_removed",
+      "rejected": true
+    },
+    {
+      "case": "cleanup_controller_stopped",
+      "rejected": true
+    },
+    {
+      "case": "cleanup_processes_stopped",
+      "rejected": true
+    },
+    {
+      "case": "missing_registration_requested",
+      "rejected": true
+    },
+    {
+      "case": "missing_registration_acknowledged",
+      "rejected": true
+    },
+    {
+      "case": "missing_registration_finished",
+      "rejected": true
+    },
+    {
+      "case": "missing_registration_database",
+      "rejected": true
+    },
+    {
+      "case": "wrong_ack_pid",
+      "rejected": true
+    },
+    {
+      "case": "wrong_ack_xid",
+      "rejected": true
+    },
+    {
+      "case": "foreign_ack_schema",
+      "rejected": true
+    },
+    {
+      "case": "refused_ack_with_finished_wait",
+      "rejected": true
+    },
+    {
+      "case": "stale_ack_time",
+      "rejected": true
+    },
+    {
+      "case": "sensitive_ack_field",
+      "rejected": true
+    },
+    {
+      "case": "publication_before_registration",
+      "rejected": true
+    },
+    {
+      "case": "missing_committed_delivery",
+      "rejected": true
+    },
+    {
+      "case": "missing_real_commit_return",
+      "rejected": true
+    },
+    {
+      "case": "registration_query_before_request",
+      "rejected": true
+    },
+    {
+      "case": "wrong_binding_sha256",
+      "rejected": true
+    },
+    {
+      "case": "wrong_correlation_sha256",
+      "rejected": true
+    },
+    {
+      "case": "wrong_contract_version",
+      "rejected": true
+    },
+    {
+      "case": "missing_native_binding",
+      "rejected": true
+    },
+    {
+      "case": "missing_stopped_generation",
+      "rejected": true
+    },
+    {
+      "case": "drain_before_execution_stop",
+      "rejected": true
+    },
+    {
+      "case": "missing_worker_kill_request",
+      "rejected": true
+    },
+    {
+      "case": "invented_worker_kill_returncode",
+      "rejected": true
+    },
+    {
+      "case": "missing_relay_kill_request",
+      "rejected": true
+    },
+    {
+      "case": "invented_relay_kill_returncode",
+      "rejected": true
+    },
+    {
+      "case": "invented_lost_ack_exception",
+      "rejected": true
+    },
+    {
+      "case": "held_effect_before_execution_stops",
+      "rejected": true
+    },
+    {
+      "case": "erased_controller_integrity_failure",
+      "rejected": true
+    },
+    {
+      "case": "undeclared_controller_failure",
+      "rejected": true
+    }
+  ]
+}

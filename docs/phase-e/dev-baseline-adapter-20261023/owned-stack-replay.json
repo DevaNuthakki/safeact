@@ -1,0 +1,143 @@
+{
+  "scope": "Offline development evidence joins; not qualification coverage, scoring or latency comparison",
+  "cases": [
+    {
+      "case": "test_admission_rollback_cannot_register_or_publish_an_uncommitted_intent",
+      "expected_integrity_refusal": false,
+      "process_generations": 2,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        44705730
+      ]
+    },
+    {
+      "case": "test_changed_registered_binding_refuses_a_later_batch",
+      "expected_integrity_refusal": true,
+      "process_generations": 2,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        48642142
+      ]
+    },
+    {
+      "case": "test_controller_death_is_retained_and_never_silently_bypassed",
+      "expected_integrity_refusal": true,
+      "process_generations": 2,
+      "publications": 0,
+      "completed_gates": 0,
+      "effects": 0,
+      "gate_wait_ns": []
+    },
+    {
+      "case": "test_failed_mock_registration_leaves_accepted_intent_accounted_without_publication",
+      "expected_integrity_refusal": true,
+      "process_generations": 2,
+      "publications": 0,
+      "completed_gates": 0,
+      "effects": 0,
+      "gate_wait_ns": []
+    },
+    {
+      "case": "test_held_late_effect_drains_after_execution_stops_before_schema_drop",
+      "expected_integrity_refusal": false,
+      "process_generations": 2,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        46742497
+      ]
+    },
+    {
+      "case": "test_lost_publication_ack_replays_registration_and_preserves_intent",
+      "expected_integrity_refusal": false,
+      "process_generations": 3,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        48472675
+      ]
+    },
+    {
+      "case": "test_owned_review_api_health_and_human_login",
+      "expected_integrity_refusal": false,
+      "process_generations": 5,
+      "publications": 0,
+      "completed_gates": 0,
+      "effects": 0,
+      "gate_wait_ns": []
+    },
+    {
+      "case": "test_prefork_worker_restart_keeps_old_group_for_verified_cleanup",
+      "expected_integrity_refusal": false,
+      "process_generations": 3,
+      "publications": 2,
+      "completed_gates": 2,
+      "effects": 2,
+      "gate_wait_ns": [
+        50525648,
+        49432801
+      ]
+    },
+    {
+      "case": "test_registration_blocks_publication_without_holding_database_locks",
+      "expected_integrity_refusal": false,
+      "process_generations": 2,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        90320460
+      ]
+    },
+    {
+      "case": "test_relay_restart_uses_a_fresh_generation_and_keeps_every_owned_pid",
+      "expected_integrity_refusal": false,
+      "process_generations": 3,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 1,
+      "gate_wait_ns": [
+        50057158
+      ]
+    },
+    {
+      "case": "test_shutdown_cancels_a_waiting_relay_without_publishing",
+      "expected_integrity_refusal": false,
+      "process_generations": 2,
+      "publications": 0,
+      "completed_gates": 0,
+      "effects": 0,
+      "gate_wait_ns": []
+    },
+    {
+      "case": "test_unrequested_clean_exit_cannot_be_hidden_by_a_replacement",
+      "expected_integrity_refusal": true,
+      "process_generations": 2,
+      "publications": 1,
+      "completed_gates": 1,
+      "effects": 0,
+      "gate_wait_ns": [
+        47699604
+      ]
+    },
+    {
+      "case": "test_workflow_advancer_registers_charge_and_separate_refund_children",
+      "expected_integrity_refusal": false,
+      "process_generations": 4,
+      "publications": 3,
+      "completed_gates": 3,
+      "effects": 2,
+      "gate_wait_ns": [
+        46055678,
+        45749689,
+        45640260
+      ]
+    }
+  ]
+}

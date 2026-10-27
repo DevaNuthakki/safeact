@@ -1,0 +1,129 @@
+{
+  "files": [
+    {
+      "path": "safeact-prestop2-b3-protected-capture/test_review_protected_retry.json",
+      "sha256": "41d53feeb5552244967d81d43dc96067a31dc1ee3c28655d418ce15d676b79a7",
+      "bytes": 753546
+    },
+    {
+      "path": "safeact-prestop2-b3-review-corrected-capture/test_review_concurrent.json",
+      "sha256": "87b1dfc0a8006d87ae5ec73e059d5eee8fa5a22d0fc31cc188a94ed39faa9901",
+      "bytes": 1051430
+    },
+    {
+      "path": "safeact-prestop2-b3-review-corrected-capture/test_review_protected_retry.json",
+      "sha256": "c11b7758fe877aa4ae267355d51dee9aeb9a1d756872484baa4c227a1533c1e3",
+      "bytes": 234601
+    },
+    {
+      "path": "safeact-prestop2-b3-review-corrected-capture/test_review_stale.json",
+      "sha256": "d467a15a9b029fb7ba89ae6c06b37abd48c66f4d4ae6d95dcfd526b1512d885d",
+      "bytes": 1019368
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_changed_request_is_not_given_an_invented_durable_conflict_guard.json",
+      "sha256": "446311e0bb42dd87ea25787c165f65fb13e067e046bea09712d4ee3bb9bc01d5",
+      "bytes": 15026
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_concurrent_copies_are_independent_unguarded_calls.json",
+      "sha256": "822a65f6967cc6030cc703ba51906963642b3f54dff499f2dc4ca4354df0ff10",
+      "bytes": 25861
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_fixed_workflow_control_has_actual_process_binding.json",
+      "sha256": "003fb0443e4d89a3bc096e58f0c699fd81a4ccfb543a2bf20883dd495b5c61fd",
+      "bytes": 30581
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_killed_caller_retains_observed_acceptance_and_actual_effect.json",
+      "sha256": "8da32184f489fb171e75ddc8dc59f1408085ab5fd70f83c4353f22606c7aac33",
+      "bytes": 11009
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_lost_refund_reply_retains_both_inverse_effects.json",
+      "sha256": "92c645e31075c10a87df108cf26c40abe078bc9f25e38003282da7f3ee91eb5c",
+      "bytes": 62201
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_lost_reply_retries_with_a_fresh_native_key.json",
+      "sha256": "29db674513584e7e13423f2230935b1ece2fb902360c68444af03dcc0a0e7f5a",
+      "bytes": 13704
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_pre_send_kill_never_invents_a_provider_effect.json",
+      "sha256": "91a38fc5d7f34e68ddf0942cecaccd42927a737b9a31a131dede0e8283424814",
+      "bytes": 7902
+    },
+    {
+      "path": "safeact-prestop2-naive-first-capture/test_synchronous_control_has_no_database_or_broker_evidence.json",
+      "sha256": "a315239d9818f687b06142383ead436579545e668f82203a7c8f74e44bc424ea",
+      "bytes": 9631
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_collapses_identical_durable_submissions.json",
+      "sha256": "d97607a8dda9db36df08999568b9e826efd57d0059271fbf3350a3acc9933c34",
+      "bytes": 88228
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_early_redelivery_executes_the_duplicate.json",
+      "sha256": "c057dcba5e19545af2ac40d3b15110efb0d4cacf92878d60d4bce0b3e9bf9545",
+      "bytes": 98069
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_fresh_native_keys_repeat_an_applied_request.json",
+      "sha256": "75dcba56f68e831461655ca7715167238dd9dbce9f414485c0e2cbb033fdffdd",
+      "bytes": 121024
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_inverse_retries_remain_attributed_to_the_inverse.json",
+      "sha256": "bef8cc3ba8984e9cdfa3add524e8c0d832f5ac807c768eaa42e92c7d23590936",
+      "bytes": 439816
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_non_native_retries_can_duplicate.json",
+      "sha256": "7589b058a6e83f6308252653ef036c88c76740594e1d87729ee2b9aa017cfdbb",
+      "bytes": 111640
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_recovers_a_queued_broker_loss.json",
+      "sha256": "310130a60221c074778731e98b24dce54e3185a82769e18cb9c458a1472bae10",
+      "bytes": 163960
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b1_refuses_changed_durable_intent.json",
+      "sha256": "6a11d7427e02a265486b50f79c70e6a3f6e95585823ce3cfed2b0f5b412a1697",
+      "bytes": 66176
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b2_does_not_invent_native_support_for_crm.json",
+      "sha256": "2100fbdb74fb2a5f6856a021ff9914785ae7c4937927d599a34c49e94baf20d7",
+      "bytes": 107597
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b2_early_redelivery_preserves_native_protection.json",
+      "sha256": "129f51bebfa297313ec1b7501198ff3d11d235d4733f61a20257ea044c245b3d",
+      "bytes": 102372
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b2_inverse_replay_can_complete_without_a_lookup.json",
+      "sha256": "119245775063e88788a9f5f9f1b4e78dc598794b5d26a4390361f349785049dc",
+      "bytes": 414431
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b2_records_actual_lost_commit_ack.json",
+      "sha256": "64eb2a15318e717dbd6aa084b818812158b797ba57ed2b68a295aae996581958",
+      "bytes": 66549
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_b2_stable_native_key_can_match_safe_execution.json",
+      "sha256": "2310464090f7c2702ba56f1a763d7be472de354bc1327e1a9d1e143845c5791f",
+      "bytes": 112706
+    },
+    {
+      "path": "safeact-prestop2-queue-first-capture/test_neither_queue_mode_reads_the_provider_lookup_surface.json",
+      "sha256": "639507273719fbb38affbf0d8deddceaa79a5df1101e2767c9e43d72e9315261",
+      "bytes": 112723
+    }
+  ]
+}

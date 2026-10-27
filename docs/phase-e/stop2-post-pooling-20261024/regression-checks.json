@@ -1,0 +1,89 @@
+{
+  "commit": "fb896043559a43fd2397acf1e231b681d5047e6d",
+  "date": "2026-10-24",
+  "machine": "author laptop (macOS, Darwin 24.4.0)",
+  "checks": [
+    {
+      "check": "Phase A",
+      "tests": 908,
+      "result": "OK"
+    },
+    {
+      "check": "PostgreSQL + broker + adapters (incl. isolated Redis)",
+      "tests": 715,
+      "result": "OK",
+      "skips": 0,
+      "elapsed_seconds": 1266.973,
+      "log": "integration-final.log"
+    },
+    {
+      "check": "Isolated security (PostgreSQL 14.23)",
+      "tests": 21,
+      "result": "OK",
+      "log": "isolated-final.log"
+    },
+    {
+      "check": "API end to end",
+      "tests": 9,
+      "result": "OK",
+      "log": "e2e-final.log"
+    },
+    {
+      "check": "Scripted agent harness",
+      "tests": 2,
+      "result": "OK",
+      "log": "agent-final.log"
+    },
+    {
+      "check": "Console unit (Vitest)",
+      "tests": 37,
+      "result": "OK"
+    },
+    {
+      "check": "Browser end to end (Playwright + axe)",
+      "tests": 14,
+      "result": "OK",
+      "log": "playwright-final.log"
+    },
+    {
+      "check": "typecheck, lint, build, OpenAPI/types drift, git diff --check",
+      "result": "OK"
+    },
+    {
+      "check": "Phase A on each of the 7 commits own tree",
+      "result": "OK",
+      "tests_per_commit": [
+        499,
+        499,
+        499,
+        499,
+        508,
+        902,
+        908
+      ]
+    }
+  ],
+  "logs_outside_repo": "~/safeact-evidence/docs/phase-e/stop2-post-pooling-20261024/regressions",
+  "logs": [
+    {
+      "name": "agent-final.log",
+      "sha256": "03a900967cd3d6fab5b9bc37ac1b3e7aa1f7c992baa3a458f95576a2c5d0c336"
+    },
+    {
+      "name": "e2e-final.log",
+      "sha256": "2a3106ceec749cf8d7387649799c6e2c3c8d7f256a4f269e458aadf47c748cbe"
+    },
+    {
+      "name": "integration-final.log",
+      "sha256": "ed864eb82720b2290f1cbbf4eb0dfc457ad12b3d09a7eb925600876fb88804c0"
+    },
+    {
+      "name": "isolated-final.log",
+      "sha256": "76aab2c18c1e4ceb45a7bcf12e39b8ef3f0dcb477bc8cb1589e3e6dcd531cd2a"
+    },
+    {
+      "name": "playwright-final.log",
+      "sha256": "51b5586117bf524051400cb5fd4c4ca42fe9438e8bf8addcc1be464fe6fe22c5"
+    }
+  ]
+}

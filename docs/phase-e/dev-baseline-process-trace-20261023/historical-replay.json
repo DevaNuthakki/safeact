@@ -1,0 +1,35 @@
+{
+  "native": [
+    {
+      "case": "test_actual_hidden_inverse_stays_unresolved_and_preserves_effect",
+      "result_sha256": "659e35444b03fc60ad670c4fb76045b7570f99f8d009a4269d468c5f00ff7914"
+    },
+    {
+      "case": "test_actual_inverse_with_distinct_provider_accounts_passes_the_common_oracle",
+      "result_sha256": "2965e692cebf3a5e7e43a6672610e47fd2f4ef6da9bfc44214724c25e113c9d9"
+    },
+    {
+      "case": "test_actual_lost_inverse_reply_requires_matching_lookup_before_restoration",
+      "result_sha256": "869e66e56d3961f496d033a3df208543a65c4107a8e7db840f4b4073769f7101"
+    },
+    {
+      "case": "test_actual_normal_workflow_passes_the_common_oracle",
+      "result_sha256": "9448139a33b9e3e48e95be9a868d435e29406c8843f822496a245ae6a5d375f8"
+    },
+    {
+      "case": "test_actual_rejected_inverse_does_not_claim_restoration",
+      "result_sha256": "563b886f43817378fbe80c345750fc01667957e2a8e4fe9acb1773c5ea724ba2"
+    }
+  ],
+  "historical": [
+    {
+      "packet": "dev-workflows-20261022",
+      "unchanged_rows": 8
+    },
+    {
+      "packet": "dev-boundaries-20261022",
+      "unchanged_rows": 9
+    }
+  ],
+  "scope": "Read-only development replay; no qualification run"
+}

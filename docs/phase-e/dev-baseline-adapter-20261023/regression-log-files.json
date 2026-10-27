@@ -1,0 +1,852 @@
+{
+  "scope": "Retained diagnostics and passing reruns; original digests precede shared-log redaction",
+  "files": [
+    {
+      "path": "regressions/b0-oracle-unit.log",
+      "original_sha256": "5b2a02ee9180bb39e549465806042b06f497db3ef28054a20d98f2480dffd992",
+      "shared_sha256": "5b2a02ee9180bb39e549465806042b06f497db3ef28054a20d98f2480dffd992",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b1-development-lifecycle-corrected.log",
+      "original_sha256": "d78969a78cd88c7b1f6233930c73a81f418356ccd3c6025eb76dc69d0a73af84",
+      "shared_sha256": "d78969a78cd88c7b1f6233930c73a81f418356ccd3c6025eb76dc69d0a73af84",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-arm-corrected.log",
+      "original_sha256": "c48e20ef488bfe28c2c3417c9fc748fe0dd270de78a1b259919487394c889dda",
+      "shared_sha256": "c48e20ef488bfe28c2c3417c9fc748fe0dd270de78a1b259919487394c889dda",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-arm-first.log",
+      "original_sha256": "7e424e0ffd275a80c49d37fc4ccb1397300f8829af03205486ab8f2b49f8b088",
+      "shared_sha256": "7e424e0ffd275a80c49d37fc4ccb1397300f8829af03205486ab8f2b49f8b088",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-arm-second.log",
+      "original_sha256": "c7a5a65a09550feb38c73b6807a52332022cabfe790f69c5da87874e5540f06c",
+      "shared_sha256": "c7a5a65a09550feb38c73b6807a52332022cabfe790f69c5da87874e5540f06c",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-development-audit.log",
+      "original_sha256": "caef02db5afb419b26acab23b516e3d457ea863ae11d9293e3c2566c2a8c71f8",
+      "shared_sha256": "caef02db5afb419b26acab23b516e3d457ea863ae11d9293e3c2566c2a8c71f8",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-development-first.log",
+      "original_sha256": "e30e8b09fba8488be57ddc6a02f59d5367c31f26b5fb7dee73f9863346746d83",
+      "shared_sha256": "e30e8b09fba8488be57ddc6a02f59d5367c31f26b5fb7dee73f9863346746d83",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-protected-first.log",
+      "original_sha256": "1e26ce511097673070c731f03a76a2b393943c9d9caab9884660aa8a7c943a82",
+      "shared_sha256": "1e26ce511097673070c731f03a76a2b393943c9d9caab9884660aa8a7c943a82",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/b3-review-corrected.log",
+      "original_sha256": "880abdafa87da6a3c41515c64bcdf6a35855079b7bf733559a6c0f3f76016804",
+      "shared_sha256": "880abdafa87da6a3c41515c64bcdf6a35855079b7bf733559a6c0f3f76016804",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/boundary-freeze-unit-first.log",
+      "original_sha256": "fdef5fe571e9e8e89c63479906e64f8760cf1ad4804de503393a1cf118220c6e",
+      "shared_sha256": "fdef5fe571e9e8e89c63479906e64f8760cf1ad4804de503393a1cf118220c6e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/boundary-unit.log",
+      "original_sha256": "027e322ab0540c7c52e338a068e551159f6261aa2117f7c56ed562fdd83cb875",
+      "shared_sha256": "027e322ab0540c7c52e338a068e551159f6261aa2117f7c56ed562fdd83cb875",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/breaker-development-first.log",
+      "original_sha256": "dbb9af8b886adb6f7e04e65185c65c3265964f3fecca43b7a2555a6756b61118",
+      "shared_sha256": "dbb9af8b886adb6f7e04e65185c65c3265964f3fecca43b7a2555a6756b61118",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/bundle-development.log",
+      "original_sha256": "a30d322c0c484f8fc90e4957bd0f0065702397a13ec1959e0b4a95d1e9bdfb00",
+      "shared_sha256": "a30d322c0c484f8fc90e4957bd0f0065702397a13ec1959e0b4a95d1e9bdfb00",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/candidate-ci-transport-final.log",
+      "original_sha256": "d2beaf468aa8ee4e94fa3d04c4782f91582046725569571819f72c012ce67eac",
+      "shared_sha256": "e25748dbb082d91c3d95f4dd5c91d60cd226dcff19820365f3d501e5ca3a89bf",
+      "redactions": {
+        "hex64": 1,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/candidate-decoder-corrected.log",
+      "original_sha256": "127635638967bad5e11ce5435995eb3ffb36009a152ebd445b5bcfc0d8d0352c",
+      "shared_sha256": "e25748dbb082d91c3d95f4dd5c91d60cd226dcff19820365f3d501e5ca3a89bf",
+      "redactions": {
+        "hex64": 1,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/candidate-final-budget.log",
+      "original_sha256": "8a963f2da16d44779b3e0af66f1326098f972f82589aa8e31a4097ef7cba6def",
+      "shared_sha256": "e25748dbb082d91c3d95f4dd5c91d60cd226dcff19820365f3d501e5ca3a89bf",
+      "redactions": {
+        "hex64": 1,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/candidate-final.log",
+      "original_sha256": "0045c40c0808ceb06a9dc9d46166428aba6e460f3aa9c0c20d9516b05364a386",
+      "shared_sha256": "e25748dbb082d91c3d95f4dd5c91d60cd226dcff19820365f3d501e5ca3a89bf",
+      "redactions": {
+        "hex64": 1,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/candidate-first.log",
+      "original_sha256": "6720ea5db0ed13c1a12f40877b9d029240d0fa3dd2c1f47462b74639e7ebf93a",
+      "shared_sha256": "e25748dbb082d91c3d95f4dd5c91d60cd226dcff19820365f3d501e5ca3a89bf",
+      "redactions": {
+        "hex64": 1,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/ci-source-proof.log",
+      "original_sha256": "49dd546b88e92e11aa0372773128d490b91d250b8e658517907a1a8e19577d96",
+      "shared_sha256": "49dd546b88e92e11aa0372773128d490b91d250b8e658517907a1a8e19577d96",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/common-first.log",
+      "original_sha256": "d0cb48a6ac8302e626559eb236d847c1e805ca4ed1bec70a4f0fb88e588db3b4",
+      "shared_sha256": "d0cb48a6ac8302e626559eb236d847c1e805ca4ed1bec70a4f0fb88e588db3b4",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/common-unit-second.log",
+      "original_sha256": "eddc813e5e42c7d04dec97b738f8f7ad5e918bb739a712178d45aff0b1628011",
+      "shared_sha256": "eddc813e5e42c7d04dec97b738f8f7ad5e918bb739a712178d45aff0b1628011",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/comparison-audit-final.log",
+      "original_sha256": "0fc34143cfcc5b0d34c399fc7eb4ece30ef18f2308460a781fe42f96458ae38a",
+      "shared_sha256": "0fc34143cfcc5b0d34c399fc7eb4ece30ef18f2308460a781fe42f96458ae38a",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/comparison-counterexamples.log",
+      "original_sha256": "a2453e60d5fb429feaecd0d8c3daf551a2352148a78c7c2ff6749be17aee6511",
+      "shared_sha256": "a2453e60d5fb429feaecd0d8c3daf551a2352148a78c7c2ff6749be17aee6511",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/comparison-unit-corrected.log",
+      "original_sha256": "e7caabddae0c9524357f4cb13489a704c398750bf42888f9468d1a3ba8768222",
+      "shared_sha256": "e7caabddae0c9524357f4cb13489a704c398750bf42888f9468d1a3ba8768222",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/comparison-unit-first.log",
+      "original_sha256": "d902e3d740aaf39d63f987ab2835afa3260eff377741c98986c18751b9e2d84a",
+      "shared_sha256": "d902e3d740aaf39d63f987ab2835afa3260eff377741c98986c18751b9e2d84a",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/contract-audit-final.log",
+      "original_sha256": "d901391c6052c3a772b28d0d897af5db62f3f737a1b49ca46753e03cec7b2a1c",
+      "shared_sha256": "d901391c6052c3a772b28d0d897af5db62f3f737a1b49ca46753e03cec7b2a1c",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/corrected-integration-progress.log",
+      "original_sha256": "3ba0568f556178e5cd1a3d5b97355320129c77183952770e581ccebda3b52079",
+      "shared_sha256": "3ba0568f556178e5cd1a3d5b97355320129c77183952770e581ccebda3b52079",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-agent.log",
+      "original_sha256": "f0ea9e798598e1b3525c3a9441994306167858a6a3b7b060dc3deb4c3ab0af3b",
+      "shared_sha256": "f0ea9e798598e1b3525c3a9441994306167858a6a3b7b060dc3deb4c3ab0af3b",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-api.log",
+      "original_sha256": "fcd3bf8cf271036a11d4feaf0bf8fb411a108f25bb1090ed0feaebaa4f601b59",
+      "shared_sha256": "fcd3bf8cf271036a11d4feaf0bf8fb411a108f25bb1090ed0feaebaa4f601b59",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-broker-protocol-corrected.log",
+      "original_sha256": "42b3f3e4c52e7c7ec702e930a0fbf30be65b70d62d7782ebe7573ae5c2434a54",
+      "shared_sha256": "42b3f3e4c52e7c7ec702e930a0fbf30be65b70d62d7782ebe7573ae5c2434a54",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-browser.log",
+      "original_sha256": "19c0b224db8958f2dfa43aa1641dc74341e555b35dd0ba77be1adfa547a45d36",
+      "shared_sha256": "19c0b224db8958f2dfa43aa1641dc74341e555b35dd0ba77be1adfa547a45d36",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-build.log",
+      "original_sha256": "4a9a5e96e22a3d2dd4cbf945546f6c8d7b39b201f83ee5482b5c0c5fc520fe13",
+      "shared_sha256": "4a9a5e96e22a3d2dd4cbf945546f6c8d7b39b201f83ee5482b5c0c5fc520fe13",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-console-unit.log",
+      "original_sha256": "45b357b6d7bb266ac76c6104af7e6ce1d2cb742d43fda7f9e5738d2a631870da",
+      "shared_sha256": "45b357b6d7bb266ac76c6104af7e6ce1d2cb742d43fda7f9e5738d2a631870da",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-integration-corrected.log",
+      "original_sha256": "53dda4c4f4839b8758c33acf84886b4cdfe86c629f05ddac3eae14922e07bdde",
+      "shared_sha256": "53dda4c4f4839b8758c33acf84886b4cdfe86c629f05ddac3eae14922e07bdde",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-integration.log",
+      "original_sha256": "58d2459b91268205c5c6455d6692ba02f55c92198cd12f3d2e50ef3e6c8f6ad1",
+      "shared_sha256": "58d2459b91268205c5c6455d6692ba02f55c92198cd12f3d2e50ef3e6c8f6ad1",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-isolated.log",
+      "original_sha256": "49922fb87c7d97de313841aa1705034e30844666fefd273e9517c51033dadca8",
+      "shared_sha256": "49922fb87c7d97de313841aa1705034e30844666fefd273e9517c51033dadca8",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-lint.log",
+      "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "shared_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-phase-a-ci-amendment.log",
+      "original_sha256": "9b524eb8c22705254a96898bb950ef809b1c7fcdf8c6d2d667c066a4bd06fbc2",
+      "shared_sha256": "9b524eb8c22705254a96898bb950ef809b1c7fcdf8c6d2d667c066a4bd06fbc2",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-phase-a-corrected.log",
+      "original_sha256": "0752500dc87e7e478a216f34e12c1a05fc2b977dafb30855bb32aaf316a06e92",
+      "shared_sha256": "0752500dc87e7e478a216f34e12c1a05fc2b977dafb30855bb32aaf316a06e92",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-phase-a-decoder-corrected.log",
+      "original_sha256": "a77bc11b2e0e4c40b03f5fb33a4bce7afedba6dcef5b65b50e598178afe9b92e",
+      "shared_sha256": "a77bc11b2e0e4c40b03f5fb33a4bce7afedba6dcef5b65b50e598178afe9b92e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-phase-a-sealed-inputs.log",
+      "original_sha256": "c10fe0b1d88b80b9b006424b36af371514ebb48c5749b10d463be095a807dde3",
+      "shared_sha256": "c10fe0b1d88b80b9b006424b36af371514ebb48c5749b10d463be095a807dde3",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-phase-a.log",
+      "original_sha256": "783651bcaa010c06693b888b277c29769344026b30fae9ce3244f4675fcd9425",
+      "shared_sha256": "783651bcaa010c06693b888b277c29769344026b30fae9ce3244f4675fcd9425",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/final-typecheck.log",
+      "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "shared_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/freeze-audit-final-unit.log",
+      "original_sha256": "614eed58e9c3cc939286ae4b431972db7f54548c7d5b5b93fceea1357b795299",
+      "shared_sha256": "614eed58e9c3cc939286ae4b431972db7f54548c7d5b5b93fceea1357b795299",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/freeze-unit-first.log",
+      "original_sha256": "feb1976eb8b60b868efd58ebc447a6f59720601beb04770c3da43d4cbeaee68e",
+      "shared_sha256": "feb1976eb8b60b868efd58ebc447a6f59720601beb04770c3da43d4cbeaee68e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/generic-decoder-unit.log",
+      "original_sha256": "00dfb26afbc50fd472de4e2739d12e00856c75250aaafcebc44acfb1c632a3b5",
+      "shared_sha256": "00dfb26afbc50fd472de4e2739d12e00856c75250aaafcebc44acfb1c632a3b5",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/historical-replay.log",
+      "original_sha256": "280e77369be4ac851d9a8df672957ae20d43292bdd734bf2de7624e2df8c3397",
+      "shared_sha256": "280e77369be4ac851d9a8df672957ae20d43292bdd734bf2de7624e2df8c3397",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/mode-unit.log",
+      "original_sha256": "bb8a70ba06da51174ad1041d01e4b7b7933a474dd0bc66cf40037adce8cc6bef",
+      "shared_sha256": "bb8a70ba06da51174ad1041d01e4b7b7933a474dd0bc66cf40037adce8cc6bef",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/naive-first.log",
+      "original_sha256": "9c78d75048d805732fe28b224a43ec85ec356857d642b0c4201b3fb6ef95258c",
+      "shared_sha256": "9c78d75048d805732fe28b224a43ec85ec356857d642b0c4201b3fb6ef95258c",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/native-boundary-unit-second.log",
+      "original_sha256": "0f730fd5b75443ba7da9e3f4fc3af337ce52abe742e11d7ef71ac392f02c0aa9",
+      "shared_sha256": "0f730fd5b75443ba7da9e3f4fc3af337ce52abe742e11d7ef71ac392f02c0aa9",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/native-boundary-unit.log",
+      "original_sha256": "7447298b41d1e2f3083cdab0475dce02d524f17ec9b263795d15358fa0fcc472",
+      "shared_sha256": "7447298b41d1e2f3083cdab0475dce02d524f17ec9b263795d15358fa0fcc472",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/native-scoring-unit.log",
+      "original_sha256": "5554660f151c289d4c6ab6f886e10baf1051d7edcce8a4e73e593c700b6a7c78",
+      "shared_sha256": "5554660f151c289d4c6ab6f886e10baf1051d7edcce8a4e73e593c700b6a7c78",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/native-workflow-unit.log",
+      "original_sha256": "5f87a8c0dda0f5eb896a0eb905763a77a6dad02ad08f2b10af9f7cc1821a22bd",
+      "shared_sha256": "5f87a8c0dda0f5eb896a0eb905763a77a6dad02ad08f2b10af9f7cc1821a22bd",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/owned-stack-counterexamples.log",
+      "original_sha256": "bde1f4a2be190f514110f65761d9c7ae719b62f98931b49b0291f82aa4d7809e",
+      "shared_sha256": "bde1f4a2be190f514110f65761d9c7ae719b62f98931b49b0291f82aa4d7809e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/owned-stack-replay.log",
+      "original_sha256": "e2765d2d12b04e022ed4b15525ecaac9df6915f3950e72021f4abf22fad476c9",
+      "shared_sha256": "e2765d2d12b04e022ed4b15525ecaac9df6915f3950e72021f4abf22fad476c9",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/phase-a-audit-corrected.log",
+      "original_sha256": "b5d02c9cd9359d6f9b212716c1933893ee674cef3aaec98161f7021a4715ff21",
+      "shared_sha256": "b5d02c9cd9359d6f9b212716c1933893ee674cef3aaec98161f7021a4715ff21",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/phase-a-audit-first.log",
+      "original_sha256": "dcb903b3c7e336a6f90f85ff7cb814a87079039d2183739da75fef63b57e1cd2",
+      "shared_sha256": "dcb903b3c7e336a6f90f85ff7cb814a87079039d2183739da75fef63b57e1cd2",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/phase-a-freeze-first.log",
+      "original_sha256": "c4ca6afa40e6703c4131be6151c37151b32d770073718c9d052c9486aeeafc91",
+      "shared_sha256": "c4ca6afa40e6703c4131be6151c37151b32d770073718c9d052c9486aeeafc91",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/prepare-packet.log",
+      "original_sha256": "4784dfb9e2484815106a10019baad15d80bddca177fa9b4e60372f13c3b4e15a",
+      "shared_sha256": "4784dfb9e2484815106a10019baad15d80bddca177fa9b4e60372f13c3b4e15a",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/process-race-unit-corrected.log",
+      "original_sha256": "edd648dfbedcc0b8094c7073057f3e9cbb2643f3a93e4d1a183025ec6959b87d",
+      "shared_sha256": "edd648dfbedcc0b8094c7073057f3e9cbb2643f3a93e4d1a183025ec6959b87d",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/process-race-unit.log",
+      "original_sha256": "663d6f3f5670c97364a572ce90e3c635fdbd86d4a019a293704476fc811f5f05",
+      "shared_sha256": "663d6f3f5670c97364a572ce90e3c635fdbd86d4a019a293704476fc811f5f05",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/protocol-unit.log",
+      "original_sha256": "b7372f1bc5b8d99fbee2273a5175a7f5c0c0a5357429a3f323c63059c0684a96",
+      "shared_sha256": "b7372f1bc5b8d99fbee2273a5175a7f5c0c0a5357429a3f323c63059c0684a96",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/queue-config-unit.log",
+      "original_sha256": "df09a19e6b799b31fddf8b1f5f413e0307a200d12b078d305cd92b02894a976c",
+      "shared_sha256": "df09a19e6b799b31fddf8b1f5f413e0307a200d12b078d305cd92b02894a976c",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/queue-first.log",
+      "original_sha256": "04bb0915f22895cb920cc41e26453d567ad81f3c21f4743b65671586fac99051",
+      "shared_sha256": "04bb0915f22895cb920cc41e26453d567ad81f3c21f4743b65671586fac99051",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/queue-transport-unit.log",
+      "original_sha256": "273801b94da74d8fb768140795bbc808821c294596e05b2958ed7fe4b7924ffd",
+      "shared_sha256": "273801b94da74d8fb768140795bbc808821c294596e05b2958ed7fe4b7924ffd",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/safeact-development-first.log",
+      "original_sha256": "b1713d70c16159d756f00ac3a46ec2ae94fd70759c9ed022cf5fc68a811d1633",
+      "shared_sha256": "b1713d70c16159d756f00ac3a46ec2ae94fd70759c9ed022cf5fc68a811d1633",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/selected-replay-corrected.log",
+      "original_sha256": "10f3a6de25f1321baee0531bf977948ebbe5b821a046ac18fc34b9ac9b9e3e23",
+      "shared_sha256": "10f3a6de25f1321baee0531bf977948ebbe5b821a046ac18fc34b9ac9b9e3e23",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/selected-replay.log",
+      "original_sha256": "1f2bc1628b389b5a11c5ba69cec887946b778b61112cbc5372e0732a0178ef65",
+      "shared_sha256": "1f2bc1628b389b5a11c5ba69cec887946b778b61112cbc5372e0732a0178ef65",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/source-audit-unit-corrected.log",
+      "original_sha256": "49d102308d6026601539d4b9ddb7b937a112c06ad2d9b24bc57b381ba8431691",
+      "shared_sha256": "49d102308d6026601539d4b9ddb7b937a112c06ad2d9b24bc57b381ba8431691",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/source-audit-unit-first.log",
+      "original_sha256": "9f9fdf802b57a906331d7cf4d5d84c79322e5d0c1e2de84ca6aa22a4718172e5",
+      "shared_sha256": "9f9fdf802b57a906331d7cf4d5d84c79322e5d0c1e2de84ca6aa22a4718172e5",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/surface-progress.log",
+      "original_sha256": "403ea6c30d29e9cfa45b587ad44d5090bb83ce4786401a4a925af67a7eddabeb",
+      "shared_sha256": "403ea6c30d29e9cfa45b587ad44d5090bb83ce4786401a4a925af67a7eddabeb",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/weaker-development-corrected.log",
+      "original_sha256": "1f9735f7e775d45fe583c353869f6590224d6473a8a3183ff6bb03e2bf913220",
+      "shared_sha256": "1f9735f7e775d45fe583c353869f6590224d6473a8a3183ff6bb03e2bf913220",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/weaker-development-first.log",
+      "original_sha256": "389b48fe017a8bfebe177b20a9f927e3dd6384fd78cc36444af645517308cb4e",
+      "shared_sha256": "389b48fe017a8bfebe177b20a9f927e3dd6384fd78cc36444af645517308cb4e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/workflow-accounting-development.log",
+      "original_sha256": "c294e2e748728c5c9cab0f1f5801fed8531645a26b81b2ca401da0abb3197d40",
+      "shared_sha256": "c294e2e748728c5c9cab0f1f5801fed8531645a26b81b2ca401da0abb3197d40",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/workflow-accounting-final-unit.log",
+      "original_sha256": "fac75a7c66d27cf70f47797d6c1e1bddae1e6ce3b0581b685baad206f862d75a",
+      "shared_sha256": "fac75a7c66d27cf70f47797d6c1e1bddae1e6ce3b0581b685baad206f862d75a",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/workflow-audit-unit.log",
+      "original_sha256": "65836e70a9e12d597213edaf0d3a35a5742f869c70411c6fc10244153bb9a750",
+      "shared_sha256": "65836e70a9e12d597213edaf0d3a35a5742f869c70411c6fc10244153bb9a750",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    },
+    {
+      "path": "regressions/workflow-yaml.log",
+      "original_sha256": "5a6e455162a5b231e65a718df05b7b9c7c19d4eae99fb1da5570ba17897ab42e",
+      "shared_sha256": "5a6e455162a5b231e65a718df05b7b9c7c19d4eae99fb1da5570ba17897ab42e",
+      "redactions": {
+        "hex64": 0,
+        "openai_key": 0,
+        "agent_key": 0,
+        "stripe_key": 0
+      }
+    }
+  ]
+}

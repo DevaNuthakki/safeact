@@ -1,0 +1,12 @@
+{
+  "families": [
+    "F06+F07",
+    "F05+F08",
+    "F16+F11",
+    "F09+F03",
+    "F13+F12",
+    "F04x8"
+  ],
+  "cases_per_family": 20,
+  "executed_during_development": false
+}

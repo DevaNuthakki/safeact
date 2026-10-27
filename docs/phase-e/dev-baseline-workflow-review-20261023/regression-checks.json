@@ -1,0 +1,336 @@
+{
+  "scope": "B3 workflow/review development verification; not frozen qualification, a registered comparison arm or a load result",
+  "uncommitted": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "distinct_python_tests": 1473,
+  "python_breakdown": {
+    "phase-a": 817,
+    "integration": 624,
+    "isolated": 21,
+    "api": 9,
+    "agent": 2
+  },
+  "console_unit_tests": 37,
+  "browser_tests": 14,
+  "console_total": 51,
+  "source_files": 410,
+  "base_only_files": 4,
+  "development_cases": 12,
+  "synthetic_verifier_counterexamples": 15,
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "final_qualification_started": false,
+  "executed": [
+    {
+      "check": "development",
+      "exit_code": 0,
+      "elapsed_seconds": 83.17427636589855,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "docs/phase-e/dev-baseline-workflow-review-20261023/devcheck.py",
+        "--out",
+        "/tmp/safeact-b3-workflow-review-development"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_BASELINE_DEV_CHECK",
+        "SAFEACT_RUN_DB_INTEGRATION",
+        "SAFEACT_RUN_DISPOSABLE_DB_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-workflow-review-development.log"
+    },
+    {
+      "check": "phase-a",
+      "exit_code": 0,
+      "elapsed_seconds": 14.1577164970804,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/phase_a",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-phase-a.log"
+    },
+    {
+      "check": "isolated",
+      "exit_code": 0,
+      "elapsed_seconds": 12.859176106052473,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/isolated",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_ISOLATED_CLUSTER_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-workflow-review-isolated.log"
+    },
+    {
+      "check": "api",
+      "exit_code": 0,
+      "elapsed_seconds": 34.34878107300028,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/e2e_api",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_API_E2E"
+      ],
+      "log": "/tmp/safeact-b3-workflow-review-api.log"
+    },
+    {
+      "check": "agent",
+      "exit_code": 0,
+      "elapsed_seconds": 168.69115931214765,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/e2e_agent",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_AGENT_HARNESS"
+      ],
+      "log": "/tmp/safeact-b3-workflow-review-agent.log"
+    },
+    {
+      "check": "browser",
+      "exit_code": 0,
+      "elapsed_seconds": 146.05555509403348,
+      "command": [
+        "npx",
+        "--no-install",
+        "playwright",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-browser.log"
+    },
+    {
+      "check": "integration",
+      "exit_code": 0,
+      "elapsed_seconds": 967.340685860021,
+      "command": [
+        "/Users/deva/Documents/personal-projects/safeact/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact",
+      "enabled_flags": [
+        "SAFEACT_RUN_DB_INTEGRATION",
+        "SAFEACT_RUN_DISPOSABLE_DB_TESTS",
+        "SAFEACT_RUN_DB_SECURITY_TESTS",
+        "SAFEACT_RUN_BROKER_TESTS",
+        "SAFEACT_RUN_ISOLATED_REDIS_TESTS"
+      ],
+      "log": "/tmp/safeact-b3-workflow-review-integration.log"
+    },
+    {
+      "check": "console-unit",
+      "exit_code": 0,
+      "elapsed_seconds": 6.050401133019477,
+      "command": [
+        "npm",
+        "test"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-console-unit.log"
+    },
+    {
+      "check": "typecheck",
+      "exit_code": 0,
+      "elapsed_seconds": 4.242701225914061,
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-typecheck.log"
+    },
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "elapsed_seconds": 4.427288756007329,
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-lint.log"
+    },
+    {
+      "check": "build",
+      "exit_code": 0,
+      "elapsed_seconds": 4.435952346073464,
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "cwd": "/Users/deva/Documents/personal-projects/safeact/ui",
+      "enabled_flags": [],
+      "log": "/tmp/safeact-b3-workflow-review-build.log"
+    }
+  ],
+  "logs": {
+    "development": {
+      "original_path": "/tmp/safeact-b3-workflow-review-development.log",
+      "original_sha256": "2da1c9ebf54bab6538eb60d44bcfc92a6527232828ab014c418d2b134fee16d6",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "phase-a": {
+      "original_path": "/tmp/safeact-b3-workflow-review-phase-a.log",
+      "original_sha256": "932734586726964f30528245cf9ebf7d1f694e4e18b3fd83f438940e857d4ece",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "isolated": {
+      "original_path": "/tmp/safeact-b3-workflow-review-isolated.log",
+      "original_sha256": "1b30ff3216b30d05759be402c75b10191bde38f67cbec8692326752b2ca4e98a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "api": {
+      "original_path": "/tmp/safeact-b3-workflow-review-api.log",
+      "original_sha256": "cc62cabbf56131e1ed7df7290de00d45e77129ff5edef5c97c162b2e6f5ed257",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "agent": {
+      "original_path": "/tmp/safeact-b3-workflow-review-agent.log",
+      "original_sha256": "d598010439404c822f168d2c02fc51432cc0e67160fcaa93aef21ef7eae4543d",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "browser": {
+      "original_path": "/tmp/safeact-b3-workflow-review-browser.log",
+      "original_sha256": "cc9101688a038d9d6288445368250c1739ad3e49ef72e44e73939cb960f844a0",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "integration": {
+      "original_path": "/tmp/safeact-b3-workflow-review-integration.log",
+      "original_sha256": "caa3103a4cfe90ab5e58b79268c17eb539711adfd7163b50300d5fb1780e1027",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-unit": {
+      "original_path": "/tmp/safeact-b3-workflow-review-console-unit.log",
+      "original_sha256": "732440ffe6371a6c18c52b41e56647f8783e3dfd6e38b3d00ab035522bf14f2e",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "typecheck": {
+      "original_path": "/tmp/safeact-b3-workflow-review-typecheck.log",
+      "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "lint": {
+      "original_path": "/tmp/safeact-b3-workflow-review-lint.log",
+      "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "build": {
+      "original_path": "/tmp/safeact-b3-workflow-review-build.log",
+      "original_sha256": "9ad18469a57b45b6f2cdb5b47110269bc8bc6747bb17e2624630b4db2d7b6a55",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "existing-b3-first": {
+      "original_path": "/tmp/safeact-b3-workflow-review-existing-first.log",
+      "original_sha256": "3fa2f287186a5a1b8477e99785ae9e2452fa2b094eda6c8ec3892f82b98cf835",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "workflow-first-failed": {
+      "original_path": "/tmp/safeact-b3-workflow-review-workflow-first.log",
+      "original_sha256": "36e560b69debe948be638e95872fca92431d9043a63f7c390a599179ff43b504",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "combined-first-failed": {
+      "original_path": "/tmp/safeact-b3-workflow-review-combined-first.log",
+      "original_sha256": "8e28baa86534b7083586694026e77c7998fd0b62937ba7fdc4ff62ea10fedd8a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "combined-corrected": {
+      "original_path": "/tmp/safeact-b3-workflow-review-combined-second.log",
+      "original_sha256": "f78b52b77d1582df532deaf9e72b8145e97ecdd3f28c6b6fa0f06a81e0598933",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "focused-first-failed": {
+      "original_path": "/tmp/safeact-b3-workflow-review-focused-final.log",
+      "original_sha256": "f97409a1e9188c573645ee4907fafcf8da3dcbbb1b07e31e572ceb2e6b6120be",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "rate-contract-corrected": {
+      "original_path": "/tmp/safeact-b3-workflow-review-rate-contract.log",
+      "original_sha256": "1d51d85072a1d56e5bcbee7d0b6911634a9a4217c3a44c742b5ccff9762086b5",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "new-unit": {
+      "original_path": "/tmp/safeact-b3-workflow-review-unit.log",
+      "original_sha256": "b95b5805bef96b568b1b2424b637003cd6f306e6312d682e4f2e4e23f635b26a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "replay-first-failed": {
+      "original_path": "/tmp/safeact-b3-workflow-review-replay-first-failed.log",
+      "original_sha256": "52b9b7c37ae4715ebe8508fb032fe85c829a89af85cbf7361462a7138707a099",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    }
+  }
+}

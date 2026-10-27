@@ -1,0 +1,17 @@
+{
+  "mode": "stripe sandbox (test mode)",
+  "stripe_version": "2026-09-30.endive",
+  "manifest_sha256": "fb7160a5f2314fe8a8912477c791380a3352811ceabba64dca452b2c5bdfa29f",
+  "started": "2026-10-21T21:16:54.482105+00:00",
+  "finished": "2026-10-21T21:19:37.894799+00:00",
+  "calls": 77,
+  "call_budget": 150,
+  "results": {
+    "PASS": 16,
+    "DIFFERENT": 0,
+    "ERROR": 0
+  },
+  "client": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+  "python": "3.13.1",
+  "cost_usd": "0 (Stripe sandbox; no charges)"
+}

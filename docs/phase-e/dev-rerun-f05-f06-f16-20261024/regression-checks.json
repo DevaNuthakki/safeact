@@ -1,0 +1,64 @@
+{
+  "commit": "a485860",
+  "clean_tree": true,
+  "results": {
+    "phase_a": 936,
+    "postgresql_broker": 715,
+    "isolated": 21,
+    "api_e2e": 9,
+    "agent_harness": 2,
+    "vitest": 37,
+    "playwright": 14,
+    "typecheck": "clean",
+    "lint": "clean",
+    "build": "clean"
+  },
+  "skipped": 0,
+  "logs_outside_repo": "~/safeact-evidence/docs/phase-e/dev-rerun-f05-f06-f16-20261024/regressions",
+  "logs": [
+    {
+      "name": "agent.log",
+      "sha256": "fabcb5b617b09c90648616c6887b0b27e328b948b6222e58b8546ffa859fdec8"
+    },
+    {
+      "name": "api-e2e.log",
+      "sha256": "f009689af1c2b765e1fa516a2cc224dd87ce3a10cce56ddafc290b22f3485c80"
+    },
+    {
+      "name": "build.log",
+      "sha256": "47959a7f60070727b0f03ba235df5d87fd0abf0ce2d64ffbce2eccec783a2a9f"
+    },
+    {
+      "name": "integration.log",
+      "sha256": "abe69d5b0cf366f8551cd4f757f874e259a1caee63abefeead3ed4b88c8be606"
+    },
+    {
+      "name": "isolated.log",
+      "sha256": "28fd86e80e6978635f28ef91f776b11b2db2c54867a443694a04560690e0cd54"
+    },
+    {
+      "name": "lint.log",
+      "sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7"
+    },
+    {
+      "name": "phase-a.log",
+      "sha256": "3680840c14fee797a1969ae42e6170402b75953bf0ab8cba5ea6f074dc381be6"
+    },
+    {
+      "name": "playwright.log",
+      "sha256": "975ceea729ebe792b02fe0d8054c1b2cd53ed240dfd69474d9f73517c4a08f41"
+    },
+    {
+      "name": "status.txt",
+      "sha256": "eec68afbdae52e703432db7d14ff6625aa8ac79557777c1b0db3e9efbe1fce3b"
+    },
+    {
+      "name": "typecheck.log",
+      "sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619"
+    },
+    {
+      "name": "vitest.log",
+      "sha256": "72239fc04b49a0302bf6e76a98614d3c645104fb985d150db9abef2a21981463"
+    }
+  ]
+}

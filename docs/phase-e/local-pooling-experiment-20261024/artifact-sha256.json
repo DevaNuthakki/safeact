@@ -1,0 +1,65 @@
+{
+  "scope": "Local pooling/preparation experiment; no runtime rollout or qualification",
+  "files": [
+    {
+      "path": "RESULTS.md",
+      "sha256": "263bd8f0c2d007532430145ca1c63e4988e4af6eb3413e1e2ff2bd2b4f4b16b3"
+    },
+    {
+      "path": "blocks.json",
+      "sha256": "f64337b65c0843cee82b1f616a2fb26d3541938ceabbe2d3967792fa598569ca"
+    },
+    {
+      "path": "cleanup.json",
+      "sha256": "5156a1d0a286e113a98adc120b0b46351d6451e3eebb4373c79072c817ea7fab"
+    },
+    {
+      "path": "execution.log",
+      "sha256": "94c2872ad36909e0c3b58db81e7847e31078ef17b991556e2ce726b0eda6175b"
+    },
+    {
+      "path": "experiment.py",
+      "sha256": "c4f9576fb1c08936ca26e997934e76b8dcb8b16acab5c6fa3b22fa2aeb26af38"
+    },
+    {
+      "path": "package-evidence.py",
+      "sha256": "f70804018335ab6470add25667bab65f60f8cbc4f02f7c9b8448d805bd85a890"
+    },
+    {
+      "path": "pool-safety-checks.json",
+      "sha256": "fd3ca24b22c80435f0773b3910b56d4e6f5495f7cb586e865bcf05b42a7397d3"
+    },
+    {
+      "path": "prepared-statements.json",
+      "sha256": "4a74fb7384ee14f448ab7a2456ddbe41ee59cebefc4a32a3192233f945d31b38"
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "8e4f4a032c27195d896d5808cb1f57539d7cefd057f4f1c8fea2e2783f5b0b7b"
+    },
+    {
+      "path": "provider-ledger.json",
+      "sha256": "715ed90d82b231c1ad46cd61efe9f70017ae15f7adf30f1618eb38876143453d"
+    },
+    {
+      "path": "samples.jsonl",
+      "sha256": "f75fea5d6d2b0fa9f0116d4a62a24311c15da115e11a4e93b159fc2860cc04f4"
+    },
+    {
+      "path": "source-sha256.json",
+      "sha256": "5b69c18b051cdea7996d1183b9265bab401b22a5ed0fccb886cafbd1d986b7dd"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "cd69f1b2c2077d1cb669d6c09da7a749bfa1ab805a42164969d10e4f4d2cfaa2"
+    },
+    {
+      "path": "unchanged-packets.json",
+      "sha256": "882e4b9d99de416419707840978c95e53b1292085bb1aa2769ea4fe95d91fc89"
+    },
+    {
+      "path": "verification.json",
+      "sha256": "c48ebeefab6c4918197d6789187215d9a36c4518da8efe3fcad72a5d679cd51d"
+    }
+  ]
+}

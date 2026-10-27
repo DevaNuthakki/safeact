@@ -1,0 +1,192 @@
+{
+  "run": "Stripe test-mode demo profile, first real run",
+  "date": "2026-10-25",
+  "mode": "Stripe test mode: both PaymentIntents reported livemode false at creation; no live-mode object was observed in any response",
+  "stripe_version": "2026-09-30.endive",
+  "git_base": "3d78981 plus the call log change committed with this packet",
+  "amounts_minor": {
+    "payment_intent": 2000,
+    "refund": 500
+  },
+  "cases": {
+    "normal": {
+      "payment_intent": "pi_3UUbA1DnpP0MDY8U4RYP3jpm",
+      "operation_id": "f8f47ac1-dcf3-4633-b178-19fa1350471c",
+      "state": "SUCCEEDED",
+      "success_provenance": "provider_verified",
+      "action_type": "refund_payment",
+      "connector_id": "stripe-test",
+      "contract_version": "v1-demo",
+      "path": [
+        "CLAIMED",
+        "DISPATCHING",
+        "SUCCEEDED"
+      ],
+      "reasons": [
+        "claimed",
+        "dispatch_risk_committed",
+        "provider_confirmed"
+      ],
+      "attempts": 1,
+      "attempt_outcomes": [
+        [
+          {
+            "outcome": "confirmed_applied",
+            "evidence_kind": "applied"
+          }
+        ]
+      ],
+      "refund_posts": [
+        {
+          "at": "2026-10-25T23:49:42.999952+00:00",
+          "request_id": "req_QbeYYZ6EmdU39C",
+          "status": 200,
+          "replayed": null
+        }
+      ],
+      "key_tag": "d4bada1e45cb7bc9",
+      "stripe_refunds": [
+        {
+          "id": "re_3UUbA1DnpP0MDY8U4MnuTsYQ",
+          "amount": 500,
+          "status": "succeeded"
+        }
+      ],
+      "stripe_refund_count": 1
+    },
+    "response_lost": {
+      "payment_intent": "pi_3UUbA2DnpP0MDY8U0R6eGrx5",
+      "operation_id": "497a777c-c90b-43ec-b729-1e477776de16",
+      "state": "SUCCEEDED",
+      "success_provenance": "provider_verified",
+      "action_type": "refund_payment",
+      "connector_id": "stripe-test",
+      "contract_version": "v1-demo",
+      "path": [
+        "CLAIMED",
+        "DISPATCHING",
+        "UNKNOWN",
+        "VERIFYING",
+        "SUCCEEDED"
+      ],
+      "reasons": [
+        "claimed",
+        "dispatch_risk_committed",
+        "ambiguous_no_response",
+        "verify_with_provider",
+        "provider_effect_confirmed"
+      ],
+      "attempts": 1,
+      "attempt_outcomes": [
+        [
+          {
+            "outcome": "may_have_dispatched",
+            "evidence_kind": null
+          },
+          {
+            "outcome": "confirmed_applied",
+            "evidence_kind": "applied"
+          }
+        ]
+      ],
+      "refund_posts": [
+        {
+          "at": "2026-10-25T23:49:45.062891+00:00",
+          "request_id": "req_BiLvrB1WPbI0PE",
+          "status": 200,
+          "replayed": null
+        }
+      ],
+      "key_tag": "592f86aa62cee4c3",
+      "stripe_refunds": [
+        {
+          "id": "re_3UUbA2DnpP0MDY8U0uNzzhJ3",
+          "amount": 500,
+          "status": "succeeded"
+        }
+      ],
+      "stripe_refund_count": 1
+    }
+  },
+  "stripe_check": "PASS: exactly one refund per PaymentIntent",
+  "calls": [
+    {
+      "at": "2026-10-25T23:49:08.585779+00:00",
+      "key_tag": null,
+      "latency_ms": 1202.6,
+      "method": "POST",
+      "path": "/v1/payment_intents",
+      "replayed": null,
+      "request_id": "req_8ZF5DiGWqyWx93",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:09.790450+00:00",
+      "key_tag": null,
+      "latency_ms": 732.3,
+      "method": "POST",
+      "path": "/v1/payment_intents",
+      "replayed": null,
+      "request_id": "req_yRZayfSaWnA6Qw",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:42.999952+00:00",
+      "key_tag": "d4bada1e45cb7bc9",
+      "latency_ms": 1072.7,
+      "method": "POST",
+      "path": "/v1/refunds",
+      "replayed": null,
+      "request_id": "req_QbeYYZ6EmdU39C",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:45.062891+00:00",
+      "key_tag": "592f86aa62cee4c3",
+      "latency_ms": 787.1,
+      "method": "POST",
+      "path": "/v1/refunds",
+      "replayed": null,
+      "request_id": "req_BiLvrB1WPbI0PE",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:46.371939+00:00",
+      "key_tag": null,
+      "latency_ms": 186.0,
+      "method": "GET",
+      "path": "/v1/refunds",
+      "replayed": null,
+      "request_id": "req_B3lA7qE8N5uAg5",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:57.204163+00:00",
+      "key_tag": null,
+      "latency_ms": 388.5,
+      "method": "GET",
+      "path": "/v1/refunds",
+      "replayed": null,
+      "request_id": "req_t5Mk07fIslVJPC",
+      "status": 200
+    },
+    {
+      "at": "2026-10-25T23:49:57.594665+00:00",
+      "key_tag": null,
+      "latency_ms": 175.2,
+      "method": "GET",
+      "path": "/v1/refunds",
+      "replayed": null,
+      "request_id": "req_1QaKDNUOzpKf4D",
+      "status": 200
+    }
+  ],
+  "call_counts": {
+    "POST /v1/payment_intents": 2,
+    "POST /v1/refunds": 2,
+    "GET /v1/refunds (reconciler lookup)": 1,
+    "GET /v1/refunds (check)": 2
+  },
+  "never_recorded": "the API key, the derived idempotency keys (16-char tags only), headers other than Request-Id and Idempotent-Replayed, request and response bodies",
+  "cost_usd": 0
+}

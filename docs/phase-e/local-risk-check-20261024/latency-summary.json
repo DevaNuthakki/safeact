@@ -1,0 +1,408 @@
+{
+  "scope": "Bounded local worker/HTTP microbenchmark; not qualification or production capacity",
+  "configurations": [
+    {
+      "path": "direct_http",
+      "concurrency": 1,
+      "measured_requests": 100,
+      "observed_provider_calls": 100,
+      "observed_provider_effects": 100,
+      "errors": 0,
+      "completed_requests_per_second": 478.53157799974997,
+      "metrics": {
+        "total_ms": {
+          "count": 100,
+          "mean": 2.02088482,
+          "p50": 1.982469,
+          "p95": 2.544525,
+          "p99": 2.965957,
+          "minimum": 1.580419,
+          "maximum": 3.518896
+        },
+        "admission_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "provider_http_ms": {
+          "count": 100,
+          "mean": 2.00723185,
+          "p50": 1.969817,
+          "p95": 2.532473,
+          "p99": 2.953178,
+          "minimum": 1.568304,
+          "maximum": 3.497956
+        },
+        "non_provider_ms": {
+          "count": 100,
+          "mean": 0.013652970000000018,
+          "p50": 0.01158999999999999,
+          "p95": 0.024252000000000162,
+          "p99": 0.04733400000000021,
+          "minimum": 0.00967600000000024,
+          "maximum": 0.054984000000000144
+        },
+        "worker_connection_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_sql_execute_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_commit_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      }
+    },
+    {
+      "path": "safeact_durable_worker",
+      "concurrency": 1,
+      "measured_requests": 100,
+      "observed_provider_calls": 100,
+      "observed_provider_effects": 100,
+      "errors": 0,
+      "completed_requests_per_second": 13.153679417006526,
+      "metrics": {
+        "total_ms": {
+          "count": 100,
+          "mean": 75.92322624,
+          "p50": 74.611857,
+          "p95": 87.392687,
+          "p99": 90.470192,
+          "minimum": 64.806564,
+          "maximum": 90.629543
+        },
+        "admission_ms": {
+          "count": 100,
+          "mean": 29.09430541,
+          "p50": 28.541405,
+          "p95": 34.13513,
+          "p99": 37.854407,
+          "minimum": 23.714571,
+          "maximum": 38.169862
+        },
+        "worker_ms": {
+          "count": 100,
+          "mean": 46.80362822,
+          "p50": 46.273012,
+          "p95": 54.081427,
+          "p99": 57.344854,
+          "minimum": 39.722538,
+          "maximum": 62.588494
+        },
+        "provider_http_ms": {
+          "count": 100,
+          "mean": 2.06854807,
+          "p50": 2.023547,
+          "p95": 2.390913,
+          "p99": 2.673226,
+          "minimum": 1.627196,
+          "maximum": 5.164823
+        },
+        "non_provider_ms": {
+          "count": 100,
+          "mean": 73.85467817,
+          "p50": 72.60882799999999,
+          "p95": 84.91870499999999,
+          "p99": 88.079279,
+          "minimum": 62.755984,
+          "maximum": 88.315533
+        },
+        "worker_connection_ms": {
+          "count": 100,
+          "mean": 13.866696489999999,
+          "p50": 13.618526,
+          "p95": 15.593515,
+          "p99": 16.928175,
+          "minimum": 12.712015,
+          "maximum": 17.537822
+        },
+        "worker_sql_execute_ms": {
+          "count": 100,
+          "mean": 25.03501931,
+          "p50": 24.767795,
+          "p95": 29.790464,
+          "p99": 33.785433,
+          "minimum": 20.224669000000002,
+          "maximum": 38.462994
+        },
+        "worker_commit_ms": {
+          "count": 100,
+          "mean": 4.99911412,
+          "p50": 4.94481,
+          "p95": 5.8703330000000005,
+          "p99": 6.108378,
+          "minimum": 3.9235599999999997,
+          "maximum": 7.507096000000001
+        },
+        "commit_by_stage_ms": {
+          "claim": {
+            "count": 100,
+            "mean": 1.74142653,
+            "p50": 1.743343,
+            "p95": 2.051483,
+            "p99": 2.199508,
+            "minimum": 1.365225,
+            "maximum": 2.527596
+          },
+          "fence": {
+            "count": 100,
+            "mean": 1.66226404,
+            "p50": 1.638982,
+            "p95": 2.017225,
+            "p99": 2.472935,
+            "minimum": 1.240618,
+            "maximum": 2.614298
+          },
+          "outcome": {
+            "count": 100,
+            "mean": 1.5954235499999998,
+            "p50": 1.554112,
+            "p95": 1.816982,
+            "p99": 2.421745,
+            "minimum": 1.153102,
+            "maximum": 3.612039
+          }
+        }
+      }
+    },
+    {
+      "path": "direct_http",
+      "concurrency": 4,
+      "measured_requests": 100,
+      "observed_provider_calls": 100,
+      "observed_provider_effects": 100,
+      "errors": 0,
+      "completed_requests_per_second": 499.3356838062641,
+      "metrics": {
+        "total_ms": {
+          "count": 100,
+          "mean": 7.11422956,
+          "p50": 6.891068,
+          "p95": 10.019523,
+          "p99": 12.639848,
+          "minimum": 3.850621,
+          "maximum": 17.068196
+        },
+        "admission_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "provider_http_ms": {
+          "count": 100,
+          "mean": 6.9649196600000005,
+          "p50": 6.801182,
+          "p95": 9.809034,
+          "p99": 12.59379,
+          "minimum": 3.603879,
+          "maximum": 17.04071
+        },
+        "non_provider_ms": {
+          "count": 100,
+          "mean": 0.14930989999999994,
+          "p50": 0.048778999999999684,
+          "p95": 0.46711800000000014,
+          "p99": 0.6863909999999995,
+          "minimum": 0.011281000000000319,
+          "maximum": 0.7131279999999993
+        },
+        "worker_connection_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_sql_execute_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "worker_commit_ms": {
+          "count": 100,
+          "mean": 0.0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      }
+    },
+    {
+      "path": "safeact_durable_worker",
+      "concurrency": 4,
+      "measured_requests": 100,
+      "observed_provider_calls": 100,
+      "observed_provider_effects": 100,
+      "errors": 0,
+      "completed_requests_per_second": 31.462099413031215,
+      "metrics": {
+        "total_ms": {
+          "count": 100,
+          "mean": 108.59075800000001,
+          "p50": 98.80569,
+          "p95": 155.350132,
+          "p99": 223.8213,
+          "minimum": 75.534193,
+          "maximum": 234.386457
+        },
+        "admission_ms": {
+          "count": 100,
+          "mean": 44.02828042,
+          "p50": 37.87262,
+          "p95": 67.975864,
+          "p99": 133.526196,
+          "minimum": 30.106607,
+          "maximum": 133.688286
+        },
+        "worker_ms": {
+          "count": 100,
+          "mean": 64.53003142,
+          "p50": 61.909093,
+          "p95": 89.12664,
+          "p99": 100.809927,
+          "minimum": 45.122844,
+          "maximum": 101.501102
+        },
+        "provider_http_ms": {
+          "count": 100,
+          "mean": 5.58951909,
+          "p50": 5.630552,
+          "p95": 9.793715,
+          "p99": 10.874195,
+          "minimum": 2.249264,
+          "maximum": 11.364255
+        },
+        "non_provider_ms": {
+          "count": 100,
+          "mean": 103.00123891,
+          "p50": 93.59473200000001,
+          "p95": 146.017931,
+          "p99": 217.36380200000002,
+          "minimum": 72.974085,
+          "maximum": 225.64082000000002
+        },
+        "worker_connection_ms": {
+          "count": 100,
+          "mean": 19.47728737,
+          "p50": 18.360768,
+          "p95": 25.579731,
+          "p99": 35.260445,
+          "minimum": 13.344825,
+          "maximum": 36.775205
+        },
+        "worker_sql_execute_ms": {
+          "count": 100,
+          "mean": 31.74814538,
+          "p50": 30.200658999999998,
+          "p95": 43.58309899999999,
+          "p99": 48.274665000000006,
+          "minimum": 23.559041999999998,
+          "maximum": 51.243344
+        },
+        "worker_commit_ms": {
+          "count": 100,
+          "mean": 6.73705079,
+          "p50": 6.498348,
+          "p95": 9.078699,
+          "p99": 11.099089,
+          "minimum": 4.34159,
+          "maximum": 14.02392
+        },
+        "commit_by_stage_ms": {
+          "claim": {
+            "count": 100,
+            "mean": 2.32346156,
+            "p50": 2.213122,
+            "p95": 3.234078,
+            "p99": 3.982792,
+            "minimum": 1.480754,
+            "maximum": 4.580732
+          },
+          "fence": {
+            "count": 100,
+            "mean": 2.31885551,
+            "p50": 2.189365,
+            "p95": 4.041079,
+            "p99": 4.407314,
+            "minimum": 1.272647,
+            "maximum": 7.52255
+          },
+          "outcome": {
+            "count": 100,
+            "mean": 2.0947337200000002,
+            "p50": 1.994916,
+            "p95": 3.198119,
+            "p99": 3.376894,
+            "minimum": 1.137214,
+            "maximum": 3.660911
+          }
+        }
+      }
+    }
+  ],
+  "total_requests_including_warmup": 420,
+  "measured_requests": 400,
+  "errors": 0,
+  "prohibited_duplicate_effects": 0,
+  "load_end": [
+    2.34765625,
+    2.65673828125,
+    2.84228515625
+  ],
+  "sql_timing_note": "Worker execute spans cover protected SQL calls; admission total also includes its SQL and connections. Non-provider time is not exclusively SQL.",
+  "external_calls": 0,
+  "paid_calls": 0,
+  "frozen_scopes_executed": []
+}

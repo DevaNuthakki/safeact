@@ -1,0 +1,14 @@
+[
+  {
+    "path": "docs/phase-e/dev-boundaries-20261022",
+    "artifacts": 62,
+    "artifact_manifest_sha256": "4633fabdd34415d7bdeb3c5a589804ce595e2a706864f9745876ff56edb59486",
+    "all_hashes_unchanged": true
+  },
+  {
+    "path": "docs/demo/validation-20261022",
+    "artifacts": 30,
+    "artifact_manifest_sha256": "441000ad6cb477510a99467e19c79893045eedcb6d784a0c8830e39075793533",
+    "all_hashes_unchanged": true
+  }
+]

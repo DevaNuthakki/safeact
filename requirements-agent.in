@@ -1,0 +1,7 @@
+# SafeAct Milestone 4: the OpenAI Python SDK for the agent runner's
+# tool-calling model. Installed on top of requirements-api.lock and
+# requirements-mcp.lock. openai 3.24.0 was released 2026-10-02 and uses
+# httpx2; it resolved against the existing pins with no change to them
+# (pip check clean). CI installs it but never calls the real model.
+
+openai==3.24.0

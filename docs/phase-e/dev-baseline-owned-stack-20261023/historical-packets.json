@@ -1,0 +1,42 @@
+[
+  {
+    "path": "docs/demo/validation-20261022",
+    "artifact_manifest_sha256": "441000ad6cb477510a99467e19c79893045eedcb6d784a0c8830e39075793533",
+    "artifacts": 30
+  },
+  {
+    "path": "docs/phase-e/dev-baseline-execution-20261023",
+    "artifact_manifest_sha256": "54a86b6899113f2a0975d4df89f183253410c550db1e737851948b2a11ca66f2",
+    "artifacts": 44
+  },
+  {
+    "path": "docs/phase-e/dev-baseline-observer-20261023",
+    "artifact_manifest_sha256": "7e33115eeede240cd39fa0d3f515de4861bbd4f6027e99ba5e225a31ea66c90b",
+    "artifacts": 40
+  },
+  {
+    "path": "docs/phase-e/dev-baseline-workflow-review-20261023",
+    "artifact_manifest_sha256": "692cc6474b98f30d61fefb671fc4125fcfd073a69554935255c44f5f7c9aa280",
+    "artifacts": 48
+  },
+  {
+    "path": "docs/phase-e/dev-boundaries-20261022",
+    "artifact_manifest_sha256": "4633fabdd34415d7bdeb3c5a589804ce595e2a706864f9745876ff56edb59486",
+    "artifacts": 62
+  },
+  {
+    "path": "docs/phase-e/dev-recovery-20261022",
+    "artifact_manifest_sha256": "be8802ad63f96de631ce80d3281f6f2313a5a13083ee43c66f35534919e5d462",
+    "artifacts": 7
+  },
+  {
+    "path": "docs/phase-e/dev-workflows-20261022",
+    "artifact_manifest_sha256": "9a2a66656e88be2b35c990df84063fd9747a1043a4a76fffe624a6c593702238",
+    "artifacts": 20
+  },
+  {
+    "path": "docs/phase-e/dev-baseline-process-trace-20261023",
+    "artifact_manifest_sha256": "b83a2565a0fad6899e83d1ed9b3600987cf264cad088f440df965bbe906fbe5e",
+    "artifacts": 49
+  }
+]

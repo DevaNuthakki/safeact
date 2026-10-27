@@ -1,0 +1,33 @@
+{
+  "scope": "Saved-data counterexamples only; no execution",
+  "cases": 25,
+  "rejected": 25,
+  "mutations": [
+    "foreign_alias",
+    "other_arm_key_strategy",
+    "attempt_ordinal_gap",
+    "wrong_primary_identity",
+    "wrong_inverse_target",
+    "inverse_before_confirmed_order_failure",
+    "queue_snapshot_cannot_masquerade_as_b3",
+    "memory_snapshot_without_observed_acceptance",
+    "memory_snapshot_with_invented_database",
+    "missing_concurrent_return",
+    "expired_original_fence",
+    "weaker_arm_cannot_claim_fenced_refusal",
+    "claim_foreign_xid",
+    "claim_missing_independent_commit",
+    "fence_foreign_xid",
+    "fence_missing_independent_commit",
+    "outcome_foreign_xid",
+    "outcome_missing_independent_commit",
+    "closed_breaker",
+    "insufficient_breaker_failures",
+    "resolved_work_does_not_prove_pending_recovery",
+    "foreign_provider_breaker",
+    "native_review_missing_http_0",
+    "native_review_missing_http_1",
+    "native_review_missing_http_2"
+  ],
+  "final_qualification_started": false
+}

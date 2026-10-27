@@ -1,0 +1,95 @@
+{
+  "system_under_test_commit": "fb896043559a43fd2397acf1e231b681d5047e6d",
+  "manifest": "chaos/manifest_qual_v1.json",
+  "manifest_sha256": "ef427f4cb9bb7d384c657c51a383eebbfe96bcb1cae884b02346e5eb653585c2",
+  "review_status": "awaiting_STOP_2",
+  "corpus_digest": "15868d4d06d53454d5b8a1f84eec04866092c69e43d8080f071048b5ab5a457e",
+  "scenarios": 1200,
+  "smoke_cases": 80,
+  "arms": [
+    "safeact",
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "production_execution": false,
+  "stripe_calls": 0,
+  "paid_model_calls": 0,
+  "source_files": 231,
+  "unchanged_inputs": {
+    "scenarios": {
+      "sha256": "80732f1c73fabf55717df19eba56f3f203d8288e7924e7e34311dacb6e621df8"
+    },
+    "contracts": {
+      "sha256": "782cd51976aa0d6cebaff79d4c2a4d0b9be2bcb46fde37fc654f0b8ebf78103d"
+    },
+    "combinations": {
+      "sha256": "92b114a83ac26fa3a51bf2ad1e8988b0ddd378a9bd8a358e6db657f46355627a"
+    },
+    "coverage": {
+      "sha256": "9448f72be2db4139b3ee1917375d790d4463355e67222784624f03cc54f26b32"
+    },
+    "applicability": {
+      "sha256": "da88a56a3a54ba8222973a60f2d467ab9181f87beaa0c91ff6a2b99d4667d2dc"
+    },
+    "timing": {
+      "sha256": "a856c780ed59d62e8896191d93aab1440b1da8579d8452bedc6aa1cd1e3651b8"
+    },
+    "scoring": {
+      "sha256": "87976bd31d3a6c150cf521378c714942518637e4b0c2611f9cb66676d299678a"
+    },
+    "oracle": {
+      "sha256": "280712d635cae056d4d57f56c62703c46146493acc0ebea43e9a071653203a25"
+    },
+    "workflow_oracle": {
+      "sha256": "de254bc0d2f8915414a0a94b0d14e1c8a9fda56d1f384fa50077e874bc0aba84"
+    },
+    "generator": {
+      "sha256": "2d2a71ca5a0efca9738ca5014cd2b1ce18077084696e1a5c2b783cc3cf4b0762"
+    }
+  },
+  "history": [
+    {
+      "pin": "pre-pooling STOP 2 (docs/phase-e/dev-baseline-adapter-20261023)",
+      "manifest_sha256": "2fdb8e036709eb77f4d993b285d47fa2311f7bb9afed38f0ef5f7654271630f4",
+      "source_files": 230
+    },
+    {
+      "pin": "post-pooling amendment (docs/phase-e/dev-pooling-integration-20261024)",
+      "manifest_sha256": "391f085720eb1fb01ad8d410fa8955452eb4061a3418a903756a99f04ed73f07",
+      "source_files": 231
+    },
+    {
+      "pin": "this packet (review follow-ups)",
+      "manifest_sha256": "ef427f4cb9bb7d384c657c51a383eebbfe96bcb1cae884b02346e5eb653585c2",
+      "source_files": 231
+    }
+  ],
+  "source_changed_since_pre_pooling": [
+    "api/app.py",
+    "api/db.py",
+    "api/events.py",
+    "chaos/arms/safeact.py",
+    "chaos/baselines/arm.py",
+    "chaos/recovery_faults.py",
+    "connectors/base.py",
+    "deploy/demo/run_stack.py",
+    "deploy/stack/config.py",
+    "deploy/stack/loops.py",
+    "deploy/stack/worker.py",
+    "storage/connection_pool.py",
+    "storage/experimental_durable_execution.py",
+    "storage/experimental_recovery_worker.py",
+    "storage/experimental_workflow.py",
+    "storage/submission.py"
+  ],
+  "source_changed_since_post_pooling": [
+    "chaos/baselines/arm.py",
+    "chaos/recovery_faults.py",
+    "connectors/base.py",
+    "storage/experimental_recovery_worker.py",
+    "storage/submission.py"
+  ],
+  "qualification_executed": false
+}

@@ -1,0 +1,30 @@
+{
+  "added": [
+    "docs/phase-e/pooling-integration-plan.md",
+    "storage/connection_pool.py",
+    "tests/integration/test_connection_pool.py",
+    "tests/phase_a/test_connection_pool.py"
+  ],
+  "changed": [
+    "CLAUDE.md",
+    "README.md",
+    "api/app.py",
+    "api/db.py",
+    "api/events.py",
+    "chaos/arms/safeact.py",
+    "chaos/manifest_qual_v1.json",
+    "chaos/qualification_pin.py",
+    "chaos/source_qual_v1.json",
+    "deploy/demo/run_stack.py",
+    "deploy/stack/config.py",
+    "deploy/stack/loops.py",
+    "deploy/stack/worker.py",
+    "docs/phase-e/observations.md",
+    "storage/experimental_durable_execution.py",
+    "storage/experimental_recovery_worker.py",
+    "storage/experimental_workflow.py",
+    "tests/integration/api_fixture.py",
+    "tests/phase_a/test_api_skeleton.py"
+  ],
+  "removed": []
+}

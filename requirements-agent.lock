@@ -1,0 +1,7 @@
+# SafeAct agent-runner dependency snapshot (additions over
+# requirements-api.lock and requirements-mcp.lock).
+# Generated from isolated Python 3.13 environment.
+# Refresh deliberately and review dependency diffs.
+jiter==0.17.0
+openai==3.24.0
+sniffio==1.3.1

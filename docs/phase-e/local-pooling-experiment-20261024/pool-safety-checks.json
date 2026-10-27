@@ -1,0 +1,82 @@
+[
+  {
+    "mode": "pooled_disabled",
+    "case": "duplicate_delivery_one_effect",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "after_claim_commit_blocks_send",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "after_fence_commit_blocks_send",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "lost_outcome_ack_observes_without_resend",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "broken_connection_discarded_and_replaced",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "transaction_local_state_reset_and_role_preserved",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "foreign_process_refused_before_checkout",
+    "passed": true
+  },
+  {
+    "mode": "pooled_disabled",
+    "case": "ambiguous_non_idempotent_email_escalates_without_resend",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "duplicate_delivery_one_effect",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "after_claim_commit_blocks_send",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "after_fence_commit_blocks_send",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "lost_outcome_ack_observes_without_resend",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "broken_connection_discarded_and_replaced",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "transaction_local_state_reset_and_role_preserved",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "foreign_process_refused_before_checkout",
+    "passed": true
+  },
+  {
+    "mode": "pooled_immediate",
+    "case": "ambiguous_non_idempotent_email_escalates_without_resend",
+    "passed": true
+  }
+]

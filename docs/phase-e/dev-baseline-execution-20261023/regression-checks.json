@@ -1,0 +1,162 @@
+{
+  "scope": "Local B3 execution development verification, not a registered comparison arm, frozen qualification or load result",
+  "uncommitted": true,
+  "base_commit": "32693852af7f2deda9adf38c5803df26fec637f3",
+  "distinct_python_tests": 1430,
+  "python_breakdown": {
+    "phase-a-verified": 811,
+    "integration": 587,
+    "isolated": 21,
+    "api": 9,
+    "agent": 2
+  },
+  "console_unit_tests": 37,
+  "browser_tests": 14,
+  "console_total": 51,
+  "source_files": 401,
+  "base_only_files": 4,
+  "development_cases": 9,
+  "real_stripe_calls": 0,
+  "paid_model_calls": 0,
+  "final_qualification_started": false,
+  "retained_original_failures": [
+    "runtime-first-failed",
+    "lookup-completion-before-failed",
+    "phase-a-first-failed",
+    "phase-a-sandbox-failed"
+  ],
+  "logs": {
+    "phase-a-verified": {
+      "original_path": "/tmp/safeact-baseline-execution-phase-a-verified.log",
+      "original_sha256": "8afe1ba01bb7a94a977b7398be9aa023c1793d832cbd25a3ad4af228993a0e5f",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "integration": {
+      "original_path": "/tmp/safeact-baseline-execution-integration.log",
+      "original_sha256": "1f5d767c5c70beed1aa806e86318f280d42c01f75395f0c7e43993474f760927",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "isolated": {
+      "original_path": "/tmp/safeact-baseline-execution-isolated.log",
+      "original_sha256": "048c001fe0d600567b2e4c105b206f5c6bb1c2b43e8cef032c99d12627fdf6b0",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "api": {
+      "original_path": "/tmp/safeact-baseline-execution-api.log",
+      "original_sha256": "7ded6ee0501e7d05513732d46a81bfebcc8be8c923cef3c958c43ce3584d5487",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "agent": {
+      "original_path": "/tmp/safeact-baseline-execution-agent.log",
+      "original_sha256": "12fbac7dd05c7d378a6af353545724dd1ddfc2dfb6afc607a4997090fcb7ac74",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "focused-runtime-final": {
+      "original_path": "/tmp/safeact-baseline-execution-focused-final.log",
+      "original_sha256": "7911ee90bcf72cabb2a69f05ee82c5216352be80089d89813957e245edb522b6",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "runtime-first-failed": {
+      "original_path": "/tmp/safeact-baseline-runtime-first.log",
+      "original_sha256": "5e4e11f33bba4066b94d8a7b0442c6f973c964ec940456ca5dc91e38dbdadde0",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "runtime-second": {
+      "original_path": "/tmp/safeact-baseline-runtime-second.log",
+      "original_sha256": "f5aeaee1f37ef84643a5998317e621f70bb5806a2e2dfac2eb9e376ceaf25839",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "runtime-expanded": {
+      "original_path": "/tmp/safeact-baseline-runtime-expanded.log",
+      "original_sha256": "dfbde725c82809fa505a3a678f8ae2bdc704fa11f40f63b955d80fb39b1c1da8",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "runtime-retention": {
+      "original_path": "/tmp/safeact-baseline-runtime-retention.log",
+      "original_sha256": "3357db289c33184cd6de7cfad6256538b28ce12826ea612b7bb2384af97775d4",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "lookup-completion-before-failed": {
+      "original_path": "/tmp/safeact-lookup-completion-before.log",
+      "original_sha256": "791b3dd9e26720c6f27666a283ef7620c45eec9ac84360e3f34350f961ecdc60",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "lookup-completion-after": {
+      "original_path": "/tmp/safeact-lookup-completion-after.log",
+      "original_sha256": "6a3828c6c09c3132a093ec896b7deddcf84318e62febabff00cb8a405e670e38",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "phase-a-first-failed": {
+      "original_path": "/tmp/safeact-baseline-execution-phase-a.log",
+      "original_sha256": "390ff531d8ab6f96f58c6bb8ee162875ba2bc64f50833dd21252523c96fd5f7c",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "phase-a-sandbox-failed": {
+      "original_path": "/tmp/safeact-baseline-execution-phase-a-sandbox-failed.log",
+      "original_sha256": "53a460c388b5f5d3fcae1e32f507d026b39b67899183e158f3f89a6bd0226592",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": true
+    },
+    "phase-a-corrected": {
+      "original_path": "/tmp/safeact-baseline-execution-phase-a-final.log",
+      "original_sha256": "2b8d75077b6d5c071afe2e02aeea12b9ee955fa7f3999a35f0804dbc7e151ea7",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "celery-factory-isolation": {
+      "original_path": "/tmp/safeact-baseline-celery-isolation.log",
+      "original_sha256": "5d5f98070a572fd5d4ee1464a060ef068999634aa3ad506fdd356354b4c20927",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-unit": {
+      "original_path": "/tmp/safeact-baseline-execution-console-unit.log",
+      "original_sha256": "2ad7b3c92cd0e88fbd4ff6f0547057d384f56e4ed58cf3d385bd363fc2e6cf3a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "browser": {
+      "original_path": "/tmp/safeact-baseline-execution-browser.log",
+      "original_sha256": "f46ffc4084811d55190a58358e5a61ceb785e1d6a4612bfb83e769ff2ccf1af6",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-typecheck": {
+      "original_path": "/tmp/safeact-baseline-execution-typecheck.log",
+      "original_sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-lint": {
+      "original_path": "/tmp/safeact-baseline-execution-lint.log",
+      "original_sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "console-build": {
+      "original_path": "/tmp/safeact-baseline-execution-build.log",
+      "original_sha256": "8ab8cbd4d8c7bae3a8406caf75a1a5a7215df62476ff03297123c95f6ba9743a",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    },
+    "development-smoke": {
+      "original_path": "/tmp/safeact-baseline-execution-smoke-verified.log",
+      "original_sha256": "e370a94423b56be0ec7312384d05088f8edc8975614876febb831a66cda127e4",
+      "hex64_redactions": 0,
+      "retained_diagnostic_failure": false
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# SafeAct Milestone 4: the official MCP Python SDK (server and client).
+# Installed on top of requirements-api.lock and
+# deploy/security/requirements-identity.txt (it needs pyjwt[crypto],
+# already pinned there). mcp 2.3.0 was released 2026-10-02 and uses
+# httpx2, like the API stack; it resolved against the existing pins
+# with no change to them (pip check clean).
+
+mcp==2.3.0

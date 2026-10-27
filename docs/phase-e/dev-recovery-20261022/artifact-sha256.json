@@ -1,0 +1,30 @@
+[
+  {
+    "path": "coverage.json",
+    "sha256": "250eb062617fb7108b2746dd5d96d66dac9630066c9bc2cb0d3b86a1fefd7824"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "cbe1ad6bffa35f9bdccf027040a137bbbab07859e9c7f70ce65b382505882dc0"
+  },
+  {
+    "path": "raw.jsonl",
+    "sha256": "abc9a21eea656c6fecc8aca11ca2aca65f6bca2ffaf4f7011a7f988dd85a7c19"
+  },
+  {
+    "path": "report.md",
+    "sha256": "278ab6a6a977fb0940c5847e37b10ab1f2a0526ea84b2c5166bedd24cfb76687"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "8dfffc9270fe93b2222e484afbab97ffdb46779d6af464c8969ba8b6ad2c9977"
+  },
+  {
+    "path": "source-sha256.json",
+    "sha256": "ce121b0020f9769dbbdb8488db92fcad7ccb6b3f7af9f4c57b6172b6d05b104a"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "cc42b2af589259beb088af9c4496a51a96d7ab2fcf42c95c8b2de7e8b6321d3f"
+  }
+]

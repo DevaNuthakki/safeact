@@ -1,0 +1,170 @@
+{
+  "name": "stripe-sandbox-v1",
+  "note": "Frozen before any real Stripe call. 'one_of' marks an outcome the docs do not settle: FAILED_CONFIRMED when Stripe returns a documented error code, otherwise the conservative ESCALATED_UNRESOLVED. 'observed' fields are recorded, not judged. Amended 2026-10-21 at the STOP 1 review, before any real call: the refund status SafeAct records as evidence is expected for ST-01/ST-02; a refund that fails later, asynchronously, is outside what SafeAct verifies. Amended 2026-10-21 (M5.4), before any real call: the F16 limits registered with the run contract are pinned too.",
+  "stripe_version": "2026-09-30.endive",
+  "profile": {
+    "connector_id": "stripe-test",
+    "version": "v1-run",
+    "side_effect_class": "reversible_payment",
+    "native_idempotency": true,
+    "key_retention_seconds": 86400,
+    "key_safety_margin_seconds": 3600,
+    "key_binds_parameters": true,
+    "key_protects_concurrent": true,
+    "lookup_semantics": "eventual",
+    "request_deadline_seconds": 30,
+    "investigation_window_seconds": 60,
+    "post_escalation_check_interval_seconds": 10,
+    "post_escalation_horizon_seconds": 600,
+    "max_attempts": 3,
+    "max_reopens": 3,
+    "compensation_action": null,
+    "contract_reference": "stripe sandbox refunds v1-run, Stripe-Version 2026-09-30.endive; docs.stripe.com/api/idempotent_requests, /error-low-level, /rate-limits, /api/refunds (read 2026-10-20)"
+  },
+  "repeats": 2,
+  "call_budget": 150,
+  "scenarios": [
+    {
+      "id": "ST-01",
+      "title": "refund through SafeAct",
+      "kind": "through",
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "state": "SUCCEEDED",
+        "stripe_refunds": 1,
+        "refund_posts": 1,
+        "evidence_refund_status": {
+          "one_of": [
+            "pending",
+            "requires_action",
+            "succeeded"
+          ]
+        },
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-02",
+      "title": "timeout after success: Stripe applied the refund, the response is dropped",
+      "kind": "through",
+      "lose": true,
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "state": "SUCCEEDED",
+        "stripe_refunds": 1,
+        "refund_posts": 1,
+        "dropped_response_was": "applied",
+        "evidence_refund_status": {
+          "one_of": [
+            "pending",
+            "requires_action",
+            "succeeded"
+          ]
+        },
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-03",
+      "title": "same key, same parameters: replayed, one refund",
+      "kind": "replay",
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "same_reference": true,
+        "stripe_refunds": 1,
+        "replay_headers": [
+          null,
+          "true"
+        ],
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-04",
+      "title": "same key, other parameters: refused, one refund",
+      "kind": "changed_params",
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "first.kind": "applied",
+        "changed.reason": "ambiguous_key_conflict",
+        "stripe_refunds": 1,
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-05",
+      "title": "same key sent twice at once: one refund",
+      "kind": "concurrent",
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "stripe_refunds": 1,
+        "results": "observed",
+        "statuses": "observed",
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-06",
+      "title": "refund larger than the payment: nothing refunded",
+      "kind": "through",
+      "amount": 5000,
+      "total": 2000,
+      "expect": {
+        "state": {
+          "one_of": [
+            "FAILED_CONFIRMED",
+            "ESCALATED_UNRESOLVED"
+          ]
+        },
+        "stripe_refunds": 0,
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-07",
+      "title": "a second full refund of a refunded payment: still one refund",
+      "kind": "through_twice",
+      "total": 2000,
+      "expect": {
+        "first.state": "SUCCEEDED",
+        "second.state": {
+          "one_of": [
+            "FAILED_CONFIRMED",
+            "ESCALATED_UNRESOLVED"
+          ]
+        },
+        "stripe_refunds": 1,
+        "stripe_refund_statuses": "observed"
+      }
+    },
+    {
+      "id": "ST-08",
+      "title": "how soon a new refund is listed (lookup visibility)",
+      "kind": "visibility",
+      "amount": 500,
+      "total": 2000,
+      "expect": {
+        "stripe_refunds": 1,
+        "listed_after_ms": "observed",
+        "stripe_refund_statuses": "observed"
+      }
+    }
+  ],
+  "limits": {
+    "connector_id": "stripe-test",
+    "version": "v1-run",
+    "dispatch_rate_per_second": 10,
+    "dispatch_burst": 10,
+    "backoff_base_seconds": 1.0,
+    "backoff_cap_seconds": 60.0,
+    "lookup_interval_seconds": 5.0,
+    "lookup_interval_cap_seconds": 300.0,
+    "breaker_threshold": 5,
+    "breaker_cooldown_seconds": 30.0
+  }
+}

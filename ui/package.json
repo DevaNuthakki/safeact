@@ -1,0 +1,46 @@
+{
+  "name": "safeact-console",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SafeAct review console (Milestone 3). DEMO ONLY against local mock providers.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "gen:api": "openapi-typescript src/api/openapi.json -o src/api/schema.d.ts",
+    "check:api": "openapi-typescript src/api/openapi.json -o src/api/schema.check.d.ts && node scripts/same-file.mjs src/api/schema.d.ts src/api/schema.check.d.ts",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.104.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router": "8.4.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "jsdom": "30.1.2",
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
+  }
+}

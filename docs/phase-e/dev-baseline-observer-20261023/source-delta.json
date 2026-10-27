@@ -1,0 +1,26 @@
+{
+  "scope": "Runtime/test source delta from the sealed B3 workflow/review packet; documentation changes are separate",
+  "added": [
+    {
+      "path": "chaos/baselines/observer.py",
+      "sha256": "597589e5bf2c93fb4a9c12af10763ab2e1c6c6b2806ed78af7c600543a7afcea"
+    },
+    {
+      "path": "tests/integration/test_baseline_observer.py",
+      "sha256": "299ce465d26e3ebfa32340a184e6821c2092c7c1faddd1355d5eafa70de05917"
+    },
+    {
+      "path": "tests/phase_a/test_baseline_observer.py",
+      "sha256": "2374076eb5fab1aa350ebeb4d7060bc10980c0137ea50fa259315da07ac2fc53"
+    }
+  ],
+  "changed": [
+    {
+      "path": "chaos/workflow_oracle.py",
+      "previous_sha256": "f5de8826b6af7a15e2befe4cbf396b173b3a20b819ed8828c5e817c616ae6341",
+      "sha256": "149b1d0642ee2a8d525420e616ed2d660e6e77f98f3c86da8f06b29532af97e2"
+    }
+  ],
+  "removed": [],
+  "unchanged": 409
+}

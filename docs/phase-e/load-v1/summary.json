@@ -1,0 +1,1355 @@
+{
+  "finished": "2026-10-25T20:23:28.347715+00:00",
+  "steps": [
+    {
+      "step": "s1-10rps",
+      "target_rate": 10.0,
+      "seconds": 30,
+      "scheduled": 300,
+      "arrivals_seconds": 29.9,
+      "client_lag_ms": {
+        "n": 300,
+        "p50": 0.9,
+        "p95": 2.2,
+        "p99": 2.4,
+        "max": 2.8
+      },
+      "http_status": {
+        "201": 300
+      },
+      "error_codes": {},
+      "accepted": 300,
+      "offered_per_second": 10.03,
+      "admitted_per_second": 10.03,
+      "terminal": 300,
+      "terminal_per_second": 9.96,
+      "states": {
+        "SUCCEEDED": 300
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 300,
+          "p50": 16.2,
+          "p95": 19.2,
+          "p99": 22.3,
+          "max": 67.0
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 300,
+          "p50": 137.8,
+          "p95": 233.9,
+          "p99": 245.1,
+          "max": 251.4
+        },
+        "accepted_to_terminal": {
+          "n": 300,
+          "p50": 177.0,
+          "p95": 271.7,
+          "p99": 282.2,
+          "max": 288.0
+        },
+        "submit_to_terminal": {
+          "n": 300,
+          "p50": 192.4,
+          "p95": 289.0,
+          "p99": 299.4,
+          "max": 310.5
+        }
+      },
+      "sampled": {
+        "samples": 30,
+        "max_active": 2,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 9,
+          "CPU:running": 3,
+          "IO:WalSync": 2
+        },
+        "active_statements": {
+          "COMMIT": 3,
+          "BEGIN": 1,
+          "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)": 1
+        }
+      },
+      "load_1_max": 2.26,
+      "clock_offset_spread_ms": 1.1,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 0.5,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 4189,
+        "rollbacks_delta": 0
+      },
+      "top_statements": [
+        {
+          "calls": 300,
+          "total_ms": 306.8,
+          "mean_ms": 1.023,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 306.7,
+          "mean_ms": 1.022,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 295.3,
+          "mean_ms": 0.984,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 269.1,
+          "mean_ms": 0.897,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 150.8,
+          "mean_ms": 0.503,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 144,
+          "total_ms": 74.1,
+          "mean_ms": 0.515,
+          "statement": "SELECT * FROM {schema}.\"safeact_workflows_to_advance\"(?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 59.7,
+          "mean_ms": 0.199,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 134,
+          "total_ms": 43.2,
+          "mean_ms": 0.322,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 834,
+          "total_ms": 40.2,
+          "mean_ms": 0.048,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        },
+        {
+          "calls": 100,
+          "total_ms": 28.4,
+          "mean_ms": 0.284,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 0,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "s2-20rps",
+      "target_rate": 20.0,
+      "seconds": 30,
+      "scheduled": 600,
+      "arrivals_seconds": 29.95,
+      "client_lag_ms": {
+        "n": 600,
+        "p50": 0.7,
+        "p95": 2.3,
+        "p99": 2.4,
+        "max": 8.0
+      },
+      "http_status": {
+        "201": 600
+      },
+      "error_codes": {},
+      "accepted": 600,
+      "offered_per_second": 20.03,
+      "admitted_per_second": 20.02,
+      "terminal": 600,
+      "terminal_per_second": 19.88,
+      "states": {
+        "SUCCEEDED": 600
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 600,
+          "p50": 16.0,
+          "p95": 19.9,
+          "p99": 23.8,
+          "max": 70.2
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 600,
+          "p50": 171.0,
+          "p95": 267.4,
+          "p99": 275.9,
+          "max": 298.4
+        },
+        "accepted_to_terminal": {
+          "n": 600,
+          "p50": 208.3,
+          "p95": 306.6,
+          "p99": 315.2,
+          "max": 334.5
+        },
+        "submit_to_terminal": {
+          "n": 600,
+          "p50": 224.6,
+          "p95": 322.9,
+          "p99": 332.8,
+          "max": 352.3
+        }
+      },
+      "sampled": {
+        "samples": 30,
+        "max_active": 5,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 14,
+          "CPU:running": 13,
+          "IO:WalSync": 3
+        },
+        "active_statements": {
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 3,
+          "COMMIT": 3,
+          "BEGIN": 2,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 2
+        }
+      },
+      "load_1_max": 1.91,
+      "clock_offset_spread_ms": 0.9,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 0.5,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 6804,
+        "rollbacks_delta": 0
+      },
+      "top_statements": [
+        {
+          "calls": 600,
+          "total_ms": 719.4,
+          "mean_ms": 1.199,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 660.3,
+          "mean_ms": 1.1,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 634.1,
+          "mean_ms": 1.057,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 630.4,
+          "mean_ms": 1.051,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 371.8,
+          "mean_ms": 0.62,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 143,
+          "total_ms": 202.8,
+          "mean_ms": 1.418,
+          "statement": "SELECT * FROM {schema}.\"safeact_workflows_to_advance\"(?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 192.5,
+          "mean_ms": 0.321,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 142,
+          "total_ms": 70.5,
+          "mean_ms": 0.497,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 124,
+          "total_ms": 63.8,
+          "mean_ms": 0.515,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 600,
+          "total_ms": 47.0,
+          "mean_ms": 0.078,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 0,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "s3-40rps",
+      "target_rate": 40.0,
+      "seconds": 30,
+      "scheduled": 1200,
+      "arrivals_seconds": 29.98,
+      "client_lag_ms": {
+        "n": 1200,
+        "p50": 0.4,
+        "p95": 2.2,
+        "p99": 2.3,
+        "max": 3.0
+      },
+      "http_status": {
+        "201": 1200
+      },
+      "error_codes": {},
+      "accepted": 1200,
+      "offered_per_second": 40.03,
+      "admitted_per_second": 40.01,
+      "terminal": 1200,
+      "terminal_per_second": 39.79,
+      "states": {
+        "SUCCEEDED": 1200
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 1200,
+          "p50": 15.2,
+          "p95": 20.2,
+          "p99": 24.3,
+          "max": 55.6
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 1200,
+          "p50": 230.4,
+          "p95": 352.0,
+          "p99": 383.6,
+          "max": 394.7
+        },
+        "accepted_to_terminal": {
+          "n": 1200,
+          "p50": 267.8,
+          "p95": 392.2,
+          "p99": 420.4,
+          "max": 434.0
+        },
+        "submit_to_terminal": {
+          "n": 1200,
+          "p50": 283.8,
+          "p95": 408.8,
+          "p99": 438.8,
+          "max": 461.5
+        }
+      },
+      "sampled": {
+        "samples": 30,
+        "max_active": 3,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 22,
+          "CPU:running": 15,
+          "IO:WalSync": 2,
+          "IO:WalWrite": 1
+        },
+        "active_statements": {
+          "COMMIT": 4,
+          "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)": 2,
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 2,
+          "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)": 1,
+          "SELECT ?": 1,
+          "CLOSE ALL; RESET ROLE; SET SESSION AUTHORIZATION DEFAULT; RESET ALL; UNLISTEN *; SELECT pg_advisory_": 1,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 1,
+          "SELECT * FROM {schema}.\"safeact_workflows_to_advance\"(?)": 1
+        }
+      },
+      "load_1_max": 2.96,
+      "clock_offset_spread_ms": 0.9,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 0.5,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 12208,
+        "rollbacks_delta": 0
+      },
+      "top_statements": [
+        {
+          "calls": 1200,
+          "total_ms": 1466.7,
+          "mean_ms": 1.222,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 1427.8,
+          "mean_ms": 1.19,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 1383.0,
+          "mean_ms": 1.153,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 1278.5,
+          "mean_ms": 1.065,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 666.4,
+          "mean_ms": 0.555,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 296.0,
+          "mean_ms": 0.247,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 205,
+          "total_ms": 137.5,
+          "mean_ms": 0.671,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 106,
+          "total_ms": 134.1,
+          "mean_ms": 1.265,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 144,
+          "total_ms": 99.2,
+          "mean_ms": 0.689,
+          "statement": "SELECT * FROM {schema}.\"safeact_workflows_to_advance\"(?)"
+        },
+        {
+          "calls": 1200,
+          "total_ms": 96.2,
+          "mean_ms": 0.08,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 0,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "s4-80rps",
+      "target_rate": 80.0,
+      "seconds": 30,
+      "scheduled": 2400,
+      "arrivals_seconds": 29.99,
+      "client_lag_ms": {
+        "n": 2400,
+        "p50": 0.3,
+        "p95": 1.0,
+        "p99": 1.7,
+        "max": 5.2
+      },
+      "http_status": {
+        "201": 2400
+      },
+      "error_codes": {},
+      "accepted": 2400,
+      "offered_per_second": 80.03,
+      "admitted_per_second": 79.98,
+      "terminal": 2400,
+      "terminal_per_second": 47.66,
+      "states": {
+        "SUCCEEDED": 2400
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 2400,
+          "p50": 19.6,
+          "p95": 27.0,
+          "p99": 33.6,
+          "max": 96.2
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 2400,
+          "p50": 10320.9,
+          "p95": 19208.8,
+          "p99": 20118.0,
+          "max": 20508.1
+        },
+        "accepted_to_terminal": {
+          "n": 2400,
+          "p50": 10364.8,
+          "p95": 19246.0,
+          "p99": 20154.2,
+          "max": 20547.2
+        },
+        "submit_to_terminal": {
+          "n": 2400,
+          "p50": 10383.0,
+          "p95": 19265.0,
+          "p99": 20173.9,
+          "max": 20569.2
+        }
+      },
+      "sampled": {
+        "samples": 50,
+        "max_active": 6,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 73,
+          "CPU:running": 37,
+          "IO:WalSync": 8,
+          "LWLock:WALWrite": 2,
+          "IO:WalWrite": 1
+        },
+        "active_statements": {
+          "COMMIT": 12,
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 8,
+          "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)": 4,
+          "CLOSE ALL; RESET ROLE; SET SESSION AUTHORIZATION DEFAULT; RESET ALL; UNLISTEN *; SELECT pg_advisory_": 3,
+          "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)": 2,
+          "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)": 2,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 2,
+          "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)": 2
+        }
+      },
+      "load_1_max": 4.83,
+      "clock_offset_spread_ms": 1.4,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 20.5,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 32228,
+        "rollbacks_delta": 2733
+      },
+      "top_statements": [
+        {
+          "calls": 2400,
+          "total_ms": 3764.2,
+          "mean_ms": 1.568,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 2400,
+          "total_ms": 3719.2,
+          "mean_ms": 1.55,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 2400,
+          "total_ms": 3100.9,
+          "mean_ms": 1.292,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 2400,
+          "total_ms": 2886.9,
+          "mean_ms": 1.203,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 2400,
+          "total_ms": 1318.3,
+          "mean_ms": 0.549,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 5232,
+          "total_ms": 1172.0,
+          "mean_ms": 0.224,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 413,
+          "total_ms": 514.2,
+          "mean_ms": 1.245,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 62,
+          "total_ms": 223.6,
+          "mean_ms": 3.607,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 2400,
+          "total_ms": 193.5,
+          "mean_ms": 0.081,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        },
+        {
+          "calls": 1302,
+          "total_ms": 139.9,
+          "mean_ms": 0.107,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 2832,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "s5-120rps",
+      "target_rate": 120.0,
+      "seconds": 30,
+      "scheduled": 3600,
+      "arrivals_seconds": 29.99,
+      "client_lag_ms": {
+        "n": 3600,
+        "p50": 0.3,
+        "p95": 1.2,
+        "p99": 3.1,
+        "max": 8.7
+      },
+      "http_status": {
+        "201": 3600
+      },
+      "error_codes": {},
+      "accepted": 3600,
+      "offered_per_second": 120.03,
+      "admitted_per_second": 119.95,
+      "terminal": 3600,
+      "terminal_per_second": 43.33,
+      "states": {
+        "SUCCEEDED": 3600
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 3600,
+          "p50": 24.1,
+          "p95": 48.9,
+          "p99": 81.7,
+          "max": 116.9
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 3600,
+          "p50": 27052.3,
+          "p95": 50063.4,
+          "p99": 52418.2,
+          "max": 53097.7
+        },
+        "accepted_to_terminal": {
+          "n": 3600,
+          "p50": 27093.1,
+          "p95": 50103.6,
+          "p99": 52461.4,
+          "max": 53139.6
+        },
+        "submit_to_terminal": {
+          "n": 3600,
+          "p50": 27143.1,
+          "p95": 50128.7,
+          "p99": 52489.6,
+          "max": 53162.9
+        }
+      },
+      "sampled": {
+        "samples": 82,
+        "max_active": 5,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 106,
+          "CPU:running": 68,
+          "IO:WalSync": 12,
+          "LWLock:WALWrite": 3,
+          "IO:WalWrite": 2
+        },
+        "active_statements": {
+          "COMMIT": 23,
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 14,
+          "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)": 7,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 5,
+          "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)": 5,
+          "CLOSE ALL; RESET ROLE; SET SESSION AUTHORIZATION DEFAULT; RESET ALL; UNLISTEN *; SELECT pg_advisory_": 4,
+          "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)": 3,
+          "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)": 2
+        }
+      },
+      "load_1_max": 7.13,
+      "clock_offset_spread_ms": 1.7,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 53.6,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 50125,
+        "rollbacks_delta": 4686
+      },
+      "top_statements": [
+        {
+          "calls": 3600,
+          "total_ms": 7758.9,
+          "mean_ms": 2.155,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 3600,
+          "total_ms": 7745.2,
+          "mean_ms": 2.151,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 3600,
+          "total_ms": 5728.5,
+          "mean_ms": 1.591,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 3600,
+          "total_ms": 4717.2,
+          "mean_ms": 1.31,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 3600,
+          "total_ms": 2142.1,
+          "mean_ms": 0.595,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 8336,
+          "total_ms": 1935.8,
+          "mean_ms": 0.232,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 643,
+          "total_ms": 1618.8,
+          "mean_ms": 2.518,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 94,
+          "total_ms": 737.1,
+          "mean_ms": 7.842,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 2112,
+          "total_ms": 395.9,
+          "mean_ms": 0.187,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        },
+        {
+          "calls": 3600,
+          "total_ms": 311.4,
+          "mean_ms": 0.086,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 4736,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "s6-160rps",
+      "target_rate": 160.0,
+      "seconds": 30,
+      "scheduled": 4800,
+      "arrivals_seconds": 30.01,
+      "client_lag_ms": {
+        "n": 4800,
+        "p50": 0.6,
+        "p95": 19.9,
+        "p99": 143.8,
+        "max": 314.7
+      },
+      "http_status": {
+        "201": 4800
+      },
+      "error_codes": {},
+      "accepted": 4800,
+      "offered_per_second": 159.97,
+      "admitted_per_second": 88.44,
+      "terminal": 4800,
+      "terminal_per_second": 32.06,
+      "states": {
+        "SUCCEEDED": 4800
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 4800,
+          "p50": 20019.5,
+          "p95": 26404.3,
+          "p99": 27437.1,
+          "max": 30267.0
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 4800,
+          "p50": 59045.5,
+          "p95": 98696.5,
+          "p99": 102101.0,
+          "max": 103062.0
+        },
+        "accepted_to_terminal": {
+          "n": 4800,
+          "p50": 59103.7,
+          "p95": 98745.4,
+          "p99": 102149.2,
+          "max": 103106.6
+        },
+        "submit_to_terminal": {
+          "n": 4800,
+          "p50": 79140.5,
+          "p95": 124310.5,
+          "p99": 126617.1,
+          "max": 127448.5
+        }
+      },
+      "sampled": {
+        "samples": 145,
+        "max_active": 7,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 269,
+          "CPU:running": 149,
+          "IO:WalSync": 37,
+          "LWLock:WALWrite": 4,
+          "IO:WalWrite": 3
+        },
+        "active_statements": {
+          "COMMIT": 50,
+          "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)": 36,
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 22,
+          "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)": 14,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 13,
+          "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)": 9,
+          "CLOSE ALL; RESET ROLE; SET SESSION AUTHORIZATION DEFAULT; RESET ALL; UNLISTEN *; SELECT pg_advisory_": 8,
+          "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)": 5
+        }
+      },
+      "load_1_max": 10.41,
+      "clock_offset_spread_ms": 5.9,
+      "clock_jump": false,
+      "contract": "v1",
+      "kinds": [
+        "crm",
+        "email",
+        "payments"
+      ],
+      "drain_seconds": 95.8,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 69160,
+        "rollbacks_delta": 6586
+      },
+      "top_statements": [
+        {
+          "calls": 4800,
+          "total_ms": 19233.2,
+          "mean_ms": 4.007,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 4800,
+          "total_ms": 18314.3,
+          "mean_ms": 3.815,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 4800,
+          "total_ms": 12671.9,
+          "mean_ms": 2.64,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 4800,
+          "total_ms": 9068.4,
+          "mean_ms": 1.889,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 1110,
+          "total_ms": 6406.0,
+          "mean_ms": 5.771,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 4800,
+          "total_ms": 4121.3,
+          "mean_ms": 0.859,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 11363,
+          "total_ms": 3827.8,
+          "mean_ms": 0.337,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 123,
+          "total_ms": 2140.0,
+          "mean_ms": 17.399,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 3540,
+          "total_ms": 923.0,
+          "mean_ms": 0.261,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        },
+        {
+          "calls": 4800,
+          "total_ms": 579.7,
+          "mean_ms": 0.121,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 6563,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "limited",
+      "target_rate": 50,
+      "seconds": 30,
+      "scheduled": 1500,
+      "arrivals_seconds": 29.98,
+      "client_lag_ms": {
+        "n": 1500,
+        "p50": 0.4,
+        "p95": 1.1,
+        "p99": 1.8,
+        "max": 8.1
+      },
+      "http_status": {
+        "201": 1500
+      },
+      "error_codes": {},
+      "accepted": 1500,
+      "offered_per_second": 50.03,
+      "admitted_per_second": 49.99,
+      "terminal": 1500,
+      "terminal_per_second": 25.26,
+      "states": {
+        "SUCCEEDED": 1500
+      },
+      "extra_claims": 0,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 1500,
+          "p50": 23.6,
+          "p95": 32.7,
+          "p99": 38.1,
+          "max": 53.4
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 1500,
+          "p50": 14106.7,
+          "p95": 28047.0,
+          "p99": 30052.8,
+          "max": 32610.7
+        },
+        "accepted_to_terminal": {
+          "n": 1500,
+          "p50": 14161.4,
+          "p95": 28099.3,
+          "p99": 30101.0,
+          "max": 32659.0
+        },
+        "submit_to_terminal": {
+          "n": 1500,
+          "p50": 14188.6,
+          "p95": 28129.3,
+          "p99": 30127.0,
+          "max": 32685.8
+        }
+      },
+      "sampled": {
+        "samples": 58,
+        "max_active": 6,
+        "max_lock_waits": 0,
+        "samples_with_lock_waits": 0,
+        "wait_events": {
+          "Client:ClientRead": 70,
+          "CPU:running": 61,
+          "IO:WalSync": 11
+        },
+        "active_statements": {
+          "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)": 20,
+          "COMMIT": 13,
+          "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)": 9,
+          "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)": 5,
+          "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)": 4,
+          "CLOSE ALL; RESET ROLE; SET SESSION AUTHORIZATION DEFAULT; RESET ALL; UNLISTEN *; SELECT pg_advisory_": 4,
+          "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)": 4,
+          "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)": 2
+        }
+      },
+      "load_1_max": 7.71,
+      "clock_offset_spread_ms": 1.4,
+      "clock_jump": false,
+      "contract": "v2",
+      "kinds": [
+        "payments"
+      ],
+      "drain_seconds": 29.4,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 26121,
+        "rollbacks_delta": 3447
+      },
+      "top_statements": [
+        {
+          "calls": 1500,
+          "total_ms": 6786.3,
+          "mean_ms": 4.524,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 1500,
+          "total_ms": 5404.2,
+          "mean_ms": 3.603,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 1500,
+          "total_ms": 2411.3,
+          "mean_ms": 1.608,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 1500,
+          "total_ms": 2363.2,
+          "mean_ms": 1.575,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 320,
+          "total_ms": 1968.1,
+          "mean_ms": 6.15,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 4895,
+          "total_ms": 1352.2,
+          "mean_ms": 0.276,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 1500,
+          "total_ms": 1135.7,
+          "mean_ms": 0.757,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_attempt_outcome\"(?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 65,
+          "total_ms": 597.6,
+          "mean_ms": 9.194,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 1501,
+          "total_ms": 307.1,
+          "mean_ms": 0.205,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        },
+        {
+          "calls": 1500,
+          "total_ms": 158.4,
+          "mean_ms": 0.106,
+          "statement": "SELECT * FROM {schema}.\"safeact_connector_contract\"(?, ?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 3395,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    },
+    {
+      "step": "breaker",
+      "target_rate": 10,
+      "seconds": 30,
+      "scheduled": 300,
+      "arrivals_seconds": 29.9,
+      "client_lag_ms": {
+        "n": 300,
+        "p50": 0.8,
+        "p95": 1.3,
+        "p99": 2.0,
+        "max": 8.1
+      },
+      "http_status": {
+        "201": 300
+      },
+      "error_codes": {},
+      "accepted": 300,
+      "offered_per_second": 10.03,
+      "admitted_per_second": 10.03,
+      "terminal": 300,
+      "terminal_per_second": 2.17,
+      "states": {
+        "SUCCEEDED": 299,
+        "FAILED_CONFIRMED": 1
+      },
+      "extra_claims": 7,
+      "latency_ms": {
+        "submit_to_accepted": {
+          "n": 300,
+          "p50": 16.9,
+          "p95": 20.9,
+          "p99": 27.7,
+          "max": 58.3
+        },
+        "queue_wait_accepted_to_claimed": {
+          "n": 300,
+          "p50": 109856.3,
+          "p95": 121200.6,
+          "p99": 123986.2,
+          "max": 126386.6
+        },
+        "accepted_to_terminal": {
+          "n": 300,
+          "p50": 110142.4,
+          "p95": 121607.0,
+          "p99": 124663.8,
+          "max": 126428.5
+        },
+        "submit_to_terminal": {
+          "n": 300,
+          "p50": 110159.4,
+          "p95": 121620.5,
+          "p99": 124682.9,
+          "max": 126442.9
+        }
+      },
+      "sampled": {
+        "samples": 136,
+        "max_active": 3,
+        "max_lock_waits": 1,
+        "samples_with_lock_waits": 1,
+        "wait_events": {
+          "CPU:running": 27,
+          "Client:ClientRead": 21,
+          "Lock:transactionid": 1
+        },
+        "active_statements": {
+          "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)": 6,
+          "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)": 2,
+          "SELECT * FROM {schema}.\"safeact_reclaim_blocked\"(?)": 2,
+          "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)": 2,
+          "SELECT * FROM {schema}.\"safeact_recovery_transition\"(?, ?, ?, ?, ?, ?)": 1,
+          "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)": 1,
+          "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)": 1,
+          "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)": 1
+        }
+      },
+      "load_1_max": 7.86,
+      "clock_offset_spread_ms": 2.1,
+      "clock_jump": false,
+      "contract": "v2",
+      "kinds": [
+        "payments"
+      ],
+      "drain_seconds": 108.5,
+      "drained": true,
+      "database": {
+        "deadlocks_delta": 0,
+        "commits_delta": 15545,
+        "rollbacks_delta": 789
+      },
+      "top_statements": [
+        {
+          "calls": 2300,
+          "total_ms": 8705.5,
+          "mean_ms": 3.785,
+          "statement": "SELECT * FROM {schema}.\"safeact_recovery_snapshot\"(?)"
+        },
+        {
+          "calls": 605,
+          "total_ms": 2925.1,
+          "mean_ms": 4.835,
+          "statement": "SELECT * FROM {schema}.\"safeact_relay_pending\"(?)"
+        },
+        {
+          "calls": 307,
+          "total_ms": 1052.7,
+          "mean_ms": 3.429,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_dispatch_outcome\"(?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 307,
+          "total_ms": 854.5,
+          "mean_ms": 2.783,
+          "statement": "SELECT * FROM {schema}.\"safeact_claim\"(?, ?)"
+        },
+        {
+          "calls": 3138,
+          "total_ms": 392.7,
+          "mean_ms": 0.125,
+          "statement": "SELECT * FROM {schema}.\"safeact_operations_in_state\"(?, ?)"
+        },
+        {
+          "calls": 307,
+          "total_ms": 387.1,
+          "mean_ms": 1.261,
+          "statement": "SELECT * FROM {schema}.\"safeact_begin_dispatch\"(?, ?, ?, ?)"
+        },
+        {
+          "calls": 300,
+          "total_ms": 348.3,
+          "mean_ms": 1.161,
+          "statement": "SELECT * FROM {schema}.\"safeact_api_submit\"(?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        },
+        {
+          "calls": 2129,
+          "total_ms": 317.8,
+          "mean_ms": 0.149,
+          "statement": "SELECT * FROM {schema}.\"safeact_reclaim_blocked\"(?)"
+        },
+        {
+          "calls": 1106,
+          "total_ms": 225.8,
+          "mean_ms": 0.204,
+          "statement": "SELECT * FROM {schema}.\"safeact_record_outbox_delivery\"(?)"
+        },
+        {
+          "calls": 652,
+          "total_ms": 97.4,
+          "mean_ms": 0.149,
+          "statement": "SELECT * FROM {schema}.\"safeact_workflows_to_advance\"(?)"
+        }
+      ],
+      "server_log_errors": {
+        "errors": 799,
+        "deadlock": 0,
+        "lock_timeout": 0,
+        "serialization": 0,
+        "statement_timeout": 0,
+        "idle_in_transaction_timeout": 0
+      }
+    }
+  ],
+  "projection_drift": 0,
+  "ledger": {
+    "provider_calls": 14717,
+    "effects": 14709,
+    "correlations": 14709,
+    "duplicate_effects": 0,
+    "succeeded_operations": 14709
+  },
+  "unfinished": {},
+  "breaker_events": {
+    "probe_admitted": 4,
+    "breaker_closed": 1,
+    "breaker_opened": 4
+  },
+  "operations": 14710,
+  "metrics": {
+    "worker": {
+      "safeact_dispatch_outcomes_total{connector=\"mock-payments\",kind=\"applied\",reason=\"provider_confirmed\"}": 9545.0,
+      "safeact_dispatch_outcomes_total{connector=\"mock-email\",kind=\"applied\",reason=\"provider_confirmed\"}": 2582.0,
+      "safeact_dispatch_outcomes_total{connector=\"mock-crm\",kind=\"applied\",reason=\"provider_confirmed\"}": 2582.0,
+      "safeact_dispatch_outcomes_total{connector=\"mock-payments\",kind=\"not_applied\",reason=\"provider_rejected\"}": 8.0,
+      "safeact_claims_refused_total{reason=\"already_claimed\"}": 14135.0,
+      "safeact_claims_refused_total{reason=\"provider_limited\"}": 4190.0
+    },
+    "relay": {
+      "safeact_relay_published_total": 33042.0
+    },
+    "reconciler": {
+      "safeact_lookups_total{connector=\"mock-payments\",kind=\"proven_not_applied\"}": 8.0,
+      "safeact_reconciler_decisions_total{decision=\"move\",state=\"VERIFYING\"}": 8.0,
+      "safeact_reconciler_decisions_total{decision=\"retry_after_proof\",state=\"RETRY_ELIGIBLE\"}": 7.0,
+      "safeact_reconciler_decisions_total{decision=\"confirm_not_applied\",state=\"FAILED_CONFIRMED\"}": 1.0
+    },
+    "api": {
+      "safeact_http_requests_total{method=\"GET\",route=\"/healthz\",status=\"200\"}": 1.0,
+      "safeact_http_requests_total{method=\"POST\",route=\"/auth/login\",status=\"200\"}": 8.0,
+      "safeact_http_requests_total{method=\"POST\",route=\"/actions\",status=\"201\"}": 14710.0
+    }
+  },
+  "pg_stat_statements": "available",
+  "clock_jumps": [],
+  "relay_published_per_operation": 2.25,
+  "safety_failures": []
+}

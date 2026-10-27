@@ -1,0 +1,7 @@
+{
+  "mock_threads_stopped": true,
+  "schema_removed": true,
+  "roles_removed": true,
+  "frozen_inputs_unchanged": true,
+  "frozen_ledger_absent": true
+}

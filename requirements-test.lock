@@ -1,0 +1,5 @@
+# SafeAct test dependency snapshot.
+# Generated from the project Python 3.13 environment.
+# Refresh deliberately and review dependency diffs.
+hypothesis==6.168.5
+sortedcontainers==2.4.0

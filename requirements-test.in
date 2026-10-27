@@ -1,0 +1,6 @@
+# SafeAct Milestone 5: pinned test-only dependencies.
+# Transitive installed versions are recorded in requirements-test.lock.
+# hypothesis drives randomized transition sequences against the
+# current-state projection (released 2026-10-05).
+
+hypothesis==6.168.5

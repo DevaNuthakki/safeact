@@ -1,0 +1,38 @@
+[
+  {
+    "path": "REVIEW.md",
+    "sha256": "7f86c1e639de8d18b0c0a971bccfecd5a80a490f09532fa4f8f95c0837a8b341"
+  },
+  {
+    "path": "comparison.json",
+    "sha256": "4c07b81739857b7eb7e5343498285de606af506b19f757474671c96294473ca4"
+  },
+  {
+    "path": "coverage.json",
+    "sha256": "e8babe89efd5267f6a5ad4269f75b35310503f7b6c68a2147903504b7861c2bf"
+  },
+  {
+    "path": "environment.json",
+    "sha256": "62a7220931c5f103977b686ec5c9559e356d865c302655cd57b66f680c78b47d"
+  },
+  {
+    "path": "outside-repo.json",
+    "sha256": "693237129d569555cc1dbe34e3d31f8e4e3c73db91330121632f0c90f2b1eaaa"
+  },
+  {
+    "path": "regression-checks.json",
+    "sha256": "65102cc8efe20b54486a90eff477e10e36c5437a409b2db8afba78d8a9dcc64a"
+  },
+  {
+    "path": "report.md",
+    "sha256": "864342ad755dc21042ae93075762ad456ddf098ae056f27f9cd5aef1250e4090"
+  },
+  {
+    "path": "results.jsonl",
+    "sha256": "0da11db5e754de5e1524ee957e6516735ae87bc55e7c8f6cb0010220ab985d9a"
+  },
+  {
+    "path": "summary.json",
+    "sha256": "28d25b425d92650802b0b9ce7eb07b1f39b203568c73cfb9208509534f54488c"
+  }
+]

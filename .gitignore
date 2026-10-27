@@ -1,0 +1,68 @@
+# Python environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# JavaScript and frontend
+node_modules/
+ui/dist/
+ui/coverage/
+
+# Build artifacts
+build/
+dist/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating system
+.DS_Store
+.idea/
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+
+# Local demo credentials (deploy/demo/bootstrap.py)
+.demo-credentials
+.demo-credentials-*
+
+# Console tooling output
+ui/playwright-report/
+ui/test-results/
+ui/src/api/schema.check.d.ts
+
+# Agent evaluation console logs are part of the published results
+# (unfiltered; covered by deploy/evaluation/agent_v1/secret_scan.py).
+!docs/phase-d/agent-eval-v1/**/console.log
+.stack-logs/
+
+# Calibration raw output (~340 MB) stays in the working tree for the full run's digest
+# re-check; copies and digests: ~/safeact-evidence, docs/phase-e/evidence-index.md.
+docs/phase-e/qual-v1/calibration/*/raw.jsonl
+# Full qualification raw output (~1.2 GB): compressed copy in ~/safeact-evidence, to be a
+# GitHub Release asset; digests in docs/phase-e/qual-v1/full/outside-repo.json.
+docs/phase-e/qual-v1/full/raw.jsonl
+# Diagnostic rerun raw output: compressed copy in ~/safeact-evidence; digests in
+# docs/phase-e/qual-v1/diagnostics/outside-repo.json.
+docs/phase-e/qual-v1/diagnostics/raw.jsonl
+
+# Stripe test-mode demo (deploy/demo/stripe_demo.py): fixture PaymentIntent ids
+# and the call log (request ids, never the key).
+.demo-stripe.json
+.demo-stripe-*

@@ -1,0 +1,29 @@
+# Never in an image: local secrets, demo credentials and fixtures, keys, history.
+.env
+.env.*
+!.env.example
+.demo-credentials
+.demo-credentials-*
+.demo-stripe.json
+.demo-stripe-*
+*.key
+*.pem
+.git
+.github
+# Not needed in any image (docs also holds large local raw results).
+.venv
+.hypothesis
+.stack-logs
+docs
+tests
+examples
+chaos
+**/__pycache__
+ui/node_modules
+ui/dist
+ui/test-results*
+ui/playwright-report
+# The walkthrough's case index is generated per running stack
+# (ui/scripts/prepare_walkthrough.py); a copy must never be baked into an image.
+ui/public/demo-cases.json
+ui/public/demo-cases.json.tmp

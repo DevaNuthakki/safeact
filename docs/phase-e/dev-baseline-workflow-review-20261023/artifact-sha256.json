@@ -1,0 +1,197 @@
+{
+  "scope": "Retained local development observations, diagnostics and source",
+  "files": [
+    {
+      "path": "REVIEW.md",
+      "sha256": "623c191807a0d8f4c3f6618a5ffe3fbf542a155a0dd4da223e0b4811b59b04a2"
+    },
+    {
+      "path": "counterexamples.json",
+      "sha256": "1098cddc4e580df912fbb6b6e0308b9abadca5a7a0c9725977822461a22cbf92"
+    },
+    {
+      "path": "counterexamples.py",
+      "sha256": "b8ff6365eb88a87d425cfe6576e4ae9cfbd92b3e88ef47b9d4ab8ed457ab4587"
+    },
+    {
+      "path": "devcheck.py",
+      "sha256": "6ba46b7d42678537c2df6e28b512a844de1002c0c70fd248bc07f794a78fcc5d"
+    },
+    {
+      "path": "diagnostics/replay-initial.py",
+      "sha256": "4b09789afd475e6e0f60445e57d3a2b8abdf733f66bd081d867316580045286f"
+    },
+    {
+      "path": "historical-packets.json",
+      "sha256": "3c91a8f726ddaf4c003e99a3a477f3e42dc620313861f3de49a274d71e1f8b4e"
+    },
+    {
+      "path": "plans/b3-design.md",
+      "sha256": "f23305c234acabab63613b9d5c5a7c8bb45b18ed2ecc68fbb887e3815010b274"
+    },
+    {
+      "path": "plans/b3-execution-plan.md",
+      "sha256": "4cb0458dfbd2d268c6fd2ecc4d55b2017e31d9627e3b17c6744e7fadecbb5e5e"
+    },
+    {
+      "path": "plans/b3-workflow-review-plan.md",
+      "sha256": "4762b4b4c85e8d2924fffedd3e56ca4e2a0ebfb2a9a177b9d917c13b266d1eee"
+    },
+    {
+      "path": "plans/lookup-completion-binding.md",
+      "sha256": "4690d4afd27e53990dfe6844a0d140361c3691dcadcafd6c443add3008aa3d5c"
+    },
+    {
+      "path": "raw/replay.json",
+      "sha256": "ec05d19e29885cf73d14963492cf464e3fe2cc2f8e29815a1d18fadaec12bd55"
+    },
+    {
+      "path": "raw/summary.json",
+      "sha256": "2a4e91f6da07147ed2e0e7b209a7192edc0e989663b217d8be738364d63347b2"
+    },
+    {
+      "path": "raw/test_actual_new_matching_provider_evidence_makes_displayed_proposal_stale.json",
+      "sha256": "d5a3445715ffdcb5cf3b7926f0a37b7395691fd2c494cfd2f7f08ffb6cfba93c"
+    },
+    {
+      "path": "raw/test_actual_order_rejection_refunds_exact_original_charge_and_amount.json",
+      "sha256": "27dce475dae4b327c8edb264b106c20c3a0e2ec894ba16814b1e522ea356e50c"
+    },
+    {
+      "path": "raw/test_hidden_refund_effect_remains_unresolved_without_false_restoration.json",
+      "sha256": "283e34bd910804dcd5ff05624bc3b30c5c2c82b34767e3d65ddd438ced66bcdd"
+    },
+    {
+      "path": "raw/test_human_approval_preserves_actual_retry_after_and_avoids_unnecessary_lookup.json",
+      "sha256": "6865e81cc5662c15b2c5da9b35bcf04b342b2f034c6707d07aefe16571398770"
+    },
+    {
+      "path": "raw/test_late_lookup_resolves_approved_ready_work_without_any_broker_delivery.json",
+      "sha256": "ae63bc38a049e496cb8d55f45e6b358e2ffc74ac26cec468919237d0d971685c"
+    },
+    {
+      "path": "raw/test_lost_refund_reply_is_verified_without_a_second_effect.json",
+      "sha256": "4a7116cee7b4f8a7b97142f135ca56aaa25eddd946064ccefd9ee06e46b48f4b"
+    },
+    {
+      "path": "raw/test_normal_workflow_has_two_distinct_forward_effects_and_no_inverse.json",
+      "sha256": "1e1b9b2c6247e029ae9cc8d59602d342774bb41742c0f21725f4c8bec206e76a"
+    },
+    {
+      "path": "raw/test_real_overlapping_reviewers_commit_one_decision_winner_key_replays.json",
+      "sha256": "aa90e866d33e32c4333914c8f6d9b16300c76d4eb2f2d66d25e7817b8108f918"
+    },
+    {
+      "path": "raw/test_rejected_refund_keeps_forward_history_and_unresolved_compensation.json",
+      "sha256": "460a8096cb4f7b27785637557cff8bd0573e7b17f712cc34562f4261bb02dc4d"
+    },
+    {
+      "path": "raw/test_reverify_is_one_lookup_past_actual_horizon_and_never_a_dispatch.json",
+      "sha256": "20386a580eebcea42cb7e78ab68da9f87d22f7480c96cdd2c950fbf59aafce69"
+    },
+    {
+      "path": "raw/test_uncertain_charge_does_not_admit_an_order_until_actual_positive_lookup.json",
+      "sha256": "51f791a2ef3a99e6c5d01d0db5fb09aacb4bf447068c19c9caf7957e40c31356"
+    },
+    {
+      "path": "raw/test_uncertain_order_never_admits_a_refund.json",
+      "sha256": "4fd9c53f4eac6be9d68b825fe854a803246ff7f5d84ae6ffe2fc75f785dcb81f"
+    },
+    {
+      "path": "regression-checks.json",
+      "sha256": "3d704a9087bb8a69e43ce5407669f8cc93ff49f5d16a0a6faba0565c8bbf26db"
+    },
+    {
+      "path": "regression-runner.py",
+      "sha256": "59786efb0486aac28ef56af12d9eb68e445391d12e183ca47bc942fc5baa8276"
+    },
+    {
+      "path": "regressions/agent.log",
+      "sha256": "d598010439404c822f168d2c02fc51432cc0e67160fcaa93aef21ef7eae4543d"
+    },
+    {
+      "path": "regressions/api.log",
+      "sha256": "cc62cabbf56131e1ed7df7290de00d45e77129ff5edef5c97c162b2e6f5ed257"
+    },
+    {
+      "path": "regressions/browser.log",
+      "sha256": "cc9101688a038d9d6288445368250c1739ad3e49ef72e44e73939cb960f844a0"
+    },
+    {
+      "path": "regressions/build.log",
+      "sha256": "9ad18469a57b45b6f2cdb5b47110269bc8bc6747bb17e2624630b4db2d7b6a55"
+    },
+    {
+      "path": "regressions/combined-corrected.log",
+      "sha256": "f78b52b77d1582df532deaf9e72b8145e97ecdd3f28c6b6fa0f06a81e0598933"
+    },
+    {
+      "path": "regressions/combined-first-failed.log",
+      "sha256": "8e28baa86534b7083586694026e77c7998fd0b62937ba7fdc4ff62ea10fedd8a"
+    },
+    {
+      "path": "regressions/console-unit.log",
+      "sha256": "732440ffe6371a6c18c52b41e56647f8783e3dfd6e38b3d00ab035522bf14f2e"
+    },
+    {
+      "path": "regressions/development.log",
+      "sha256": "2da1c9ebf54bab6538eb60d44bcfc92a6527232828ab014c418d2b134fee16d6"
+    },
+    {
+      "path": "regressions/existing-b3-first.log",
+      "sha256": "3fa2f287186a5a1b8477e99785ae9e2452fa2b094eda6c8ec3892f82b98cf835"
+    },
+    {
+      "path": "regressions/focused-first-failed.log",
+      "sha256": "f97409a1e9188c573645ee4907fafcf8da3dcbbb1b07e31e572ceb2e6b6120be"
+    },
+    {
+      "path": "regressions/integration.log",
+      "sha256": "caa3103a4cfe90ab5e58b79268c17eb539711adfd7163b50300d5fb1780e1027"
+    },
+    {
+      "path": "regressions/isolated.log",
+      "sha256": "1b30ff3216b30d05759be402c75b10191bde38f67cbec8692326752b2ca4e98a"
+    },
+    {
+      "path": "regressions/lint.log",
+      "sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7"
+    },
+    {
+      "path": "regressions/new-unit.log",
+      "sha256": "b95b5805bef96b568b1b2424b637003cd6f306e6312d682e4f2e4e23f635b26a"
+    },
+    {
+      "path": "regressions/phase-a.log",
+      "sha256": "932734586726964f30528245cf9ebf7d1f694e4e18b3fd83f438940e857d4ece"
+    },
+    {
+      "path": "regressions/rate-contract-corrected.log",
+      "sha256": "1d51d85072a1d56e5bcbee7d0b6911634a9a4217c3a44c742b5ccff9762086b5"
+    },
+    {
+      "path": "regressions/replay-first-failed.log",
+      "sha256": "52b9b7c37ae4715ebe8508fb032fe85c829a89af85cbf7361462a7138707a099"
+    },
+    {
+      "path": "regressions/typecheck.log",
+      "sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619"
+    },
+    {
+      "path": "regressions/workflow-first-failed.log",
+      "sha256": "36e560b69debe948be638e95872fca92431d9043a63f7c390a599179ff43b504"
+    },
+    {
+      "path": "replay.py",
+      "sha256": "4b9ccb28fcbd48cc06c0f38e59458a3dcf1d4b2b847c67235654545917e51d20"
+    },
+    {
+      "path": "source-sha256.json",
+      "sha256": "c9833b18e5cca21d4137a9694a61defad61dd3f88e125003bbe3998a9c0dad6f"
+    },
+    {
+      "path": "source.tar.gz",
+      "sha256": "37971781fe5a1dfde234118eaba105152e7369acbeb3a9fa1bdfedf4adc5c5be"
+    }
+  ]
+}

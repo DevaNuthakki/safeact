@@ -1,0 +1,12 @@
+[
+  {
+    "path": "raw.jsonl",
+    "bytes": 66030228,
+    "sha256": "bff3439a32b8a02f293296adebeafb827a16f4818bdc153df20e355c1dc9519f"
+  },
+  {
+    "path": "qualify-dev.log",
+    "bytes": 18087,
+    "sha256": "bb72851ab4297b566114e5fcde44aa8cb94494d02debc9059cd3d99fb611ef9c"
+  }
+]

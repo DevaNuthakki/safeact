@@ -1,0 +1,49 @@
+{
+  "scope": "Local worker microbenchmark; no frozen scenarios, queue runner, smoke or calibration",
+  "paths": [
+    "direct_http",
+    "safeact_durable_worker"
+  ],
+  "concurrency": [
+    1,
+    4
+  ],
+  "measured_per_configuration": 100,
+  "warmups_per_configuration": 5,
+  "blocks_per_configuration": 10,
+  "requests_per_block": 10,
+  "ordering": "Path order alternates per block; same shared loopback provider and HTTP client",
+  "timer": "perf_counter_ns",
+  "percentile_method": "nearest rank",
+  "provider": "mock payments refund; same amount, unique resource and request identity",
+  "durable_path": "submit_intent with NullPool, then ExecutionWorker.execute synchronously",
+  "excluded": [
+    "Application HTTP admission/authentication",
+    "Redis/Celery queue scheduling",
+    "Toxiproxy/fault injection",
+    "Startup/migrations/warmup/cleanup",
+    "Production load or sustained saturation"
+  ],
+  "limitations": [
+    "Direct HTTP provides no durable guarantees and is not B0/B1/B2/B3",
+    "No acceptance SLO specified; report observations without pass/fail latency threshold",
+    "100 samples/configuration cannot establish stable tail latency",
+    "Non-provider overhead includes admission, connections, SQL, commits and Python processing"
+  ],
+  "manifest_sha256": "2fdb8e036709eb77f4d993b285d47fa2311f7bb9afed38f0ef5f7654271630f4",
+  "source_sha256": "5b69c18b051cdea7996d1183b9265bab401b22a5ed0fccb886cafbd1d986b7dd",
+  "machine": {
+    "os": "Darwin",
+    "release": "24.4.0",
+    "architecture": "x86_64",
+    "python": "3.13.1",
+    "cpu_count": 12,
+    "load_start": [
+      2.455078125,
+      2.69140625,
+      2.8583984375
+    ]
+  },
+  "external_api_calls": 0,
+  "paid_calls": 0
+}

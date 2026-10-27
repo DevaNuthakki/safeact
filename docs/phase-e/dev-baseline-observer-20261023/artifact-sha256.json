@@ -1,0 +1,165 @@
+{
+  "scope": "Local B3 database adapter source and development evidence",
+  "files": [
+    {
+      "path": "REVIEW.md",
+      "sha256": "d156a2c2857e0c7931cfb2e80d4597ae8a9af8e1fa59422d0756cf13baf2683d"
+    },
+    {
+      "path": "counterexamples.json",
+      "sha256": "1d88dde7a7f0d2e76fa9577d97e2f0d0471e384d21d3cceb11fdb828e46cf07d"
+    },
+    {
+      "path": "counterexamples.py",
+      "sha256": "6735f96099b3e1aaab78db7c8df4204024ec867ebd61eeb391920b78d3fb9826"
+    },
+    {
+      "path": "coverage-boundary.json",
+      "sha256": "0243cedde170be0a88d64317516e99e3e042ccf64428de2eabf6418f6df69e06"
+    },
+    {
+      "path": "devcheck.py",
+      "sha256": "be7a61ec030b45dc4304b2f21f7405f3481835bcb70b2e32562b77a572d15599"
+    },
+    {
+      "path": "historical-packets.json",
+      "sha256": "7a66ceda7471b25c7105bfea5f03d9b4edc4380886eb67701233c1e136b215f4"
+    },
+    {
+      "path": "plans/CLAUDE.md",
+      "sha256": "f003d827c5b0cc6ece4de9959bf57fefcfbd30667fdbfad123c5f92c253321e0"
+    },
+    {
+      "path": "plans/README.md",
+      "sha256": "9e9fe11075cd17e02770197930b00ac8e307d8060fb7beb35b3bbdcf08dfaa19"
+    },
+    {
+      "path": "plans/b3-observer-plan.md",
+      "sha256": "869f49f5a217cce6b5cd1d4a15ffdb40f4fa5ae2fa6101f25204c279ba5aa235"
+    },
+    {
+      "path": "plans/b3-process-adapter-checkpoint.md",
+      "sha256": "475cc4ef6d5aa8d6429ca1d79b3b809eac3cfe436f026d48b5da3268c83ec4a9"
+    },
+    {
+      "path": "plans/observations.md",
+      "sha256": "ff1ded0b5d18885780fbb43e36a119c2c208682c019e9e0a08c9b969a6a01243"
+    },
+    {
+      "path": "raw/summary.json",
+      "sha256": "ac7eba9f4dfcb4c47f1bb68b3d04d7c33da053a8b6d1a7df185a8b2269fcf3e8"
+    },
+    {
+      "path": "raw/test_actual_hidden_inverse_stays_unresolved_and_preserves_effect.json",
+      "sha256": "49db158f01f1d3971855a30bf49c5efd9afe12421e313725b1d938cd8d9e4e98"
+    },
+    {
+      "path": "raw/test_actual_inverse_with_distinct_provider_accounts_passes_the_common_oracle.json",
+      "sha256": "2bff54bdbd0385543b9a768957bb11db594ea68d7e4a310dd5493d9dcbe2d4d6"
+    },
+    {
+      "path": "raw/test_actual_lost_inverse_reply_requires_matching_lookup_before_restoration.json",
+      "sha256": "30d2d734ffb872e21559561cab4e4a09054aa030c5f321a8ba1b21691d44e89d"
+    },
+    {
+      "path": "raw/test_actual_normal_workflow_passes_the_common_oracle.json",
+      "sha256": "ed00c1f5db040d5b5e1396efee915eb0b5ac1681156274240339a3a3583d8fe2"
+    },
+    {
+      "path": "raw/test_actual_rejected_inverse_does_not_claim_restoration.json",
+      "sha256": "3f6b3e9a46714547a0ff6ed8dbb512b2822ba89c63f761bfe6b77c9a16cbf480"
+    },
+    {
+      "path": "regression-checks.json",
+      "sha256": "14f24da613671c4a4c35bab2dab43aad832cb2a0aecb9a183a0a588e2a780408"
+    },
+    {
+      "path": "regressions/agent.log",
+      "sha256": "26bee4e301c29e571dda5d9238cd45cfe16c5c6b027f6b3ccc4b9f7b0f7fc11c"
+    },
+    {
+      "path": "regressions/api.log",
+      "sha256": "2b5e8c1c942b07986c5e7d04ef7528a0d64fc87a827f57f6207990a8fdbaf7fe"
+    },
+    {
+      "path": "regressions/browser.log",
+      "sha256": "41dc58545f5e7633cf08f56fcfd0a68866cfd854b7db04e289128101c4cad11d"
+    },
+    {
+      "path": "regressions/build.log",
+      "sha256": "ad232fa0f11b2ac98e9ab2077fb83e1efd119f8b503ab9c0263b19e3be683f5f"
+    },
+    {
+      "path": "regressions/console-unit.log",
+      "sha256": "eea8ee98c74516cd43a6df449082fe0155741be2994311e5ce180203d2c2ca53"
+    },
+    {
+      "path": "regressions/counterexamples.log",
+      "sha256": "9af6cfed7d4d39dcf2513ec260ccc656433e7a6dc29962bc90cc495ce0774538"
+    },
+    {
+      "path": "regressions/development.log",
+      "sha256": "975f47247a3f4de7122f87b38a30c113599ce9ecff028ae17f93f4cbb5f7263d"
+    },
+    {
+      "path": "regressions/focused-intermediate.log",
+      "sha256": "d4606859f2aa9a9dd0a79c9bdfcfd002a2b6c3426b642f5689b33a838d297e5e"
+    },
+    {
+      "path": "regressions/integration.log",
+      "sha256": "0745fdac5a22b71878c07c704059cab9cf77f0306c9c6b55a60f676721d33d18"
+    },
+    {
+      "path": "regressions/isolated.log",
+      "sha256": "8ed1660195971324021c9c9fc9c6dcf8a466c4f3bebc493791bd48ca8b27e344"
+    },
+    {
+      "path": "regressions/lint.log",
+      "sha256": "e025356aa4806e19e042085c226c28bdcd7ae40489a277e92a26ac874bef17d7"
+    },
+    {
+      "path": "regressions/new-unit.log",
+      "sha256": "5291ee26798fe9df79a212d75290dcaa4013928bb237c6dfee72f9728a781a9a"
+    },
+    {
+      "path": "regressions/phase-a.log",
+      "sha256": "5705b8df1287da1198fded2f126e67c3ae48203f73ebfab510a1de78df8f39b2"
+    },
+    {
+      "path": "regressions/replay-final.log",
+      "sha256": "38b71bce332fdd54993e02f506ac59644a0d17e265b974062d82ee95386243d0"
+    },
+    {
+      "path": "regressions/replay-import-failed.log",
+      "sha256": "1faebe16ee20a1fddc456ab722a576fd7ba60fb797109ccbe376d20e33aea5e3"
+    },
+    {
+      "path": "regressions/replay-json-comparison-failed.log",
+      "sha256": "cbce0c3dda8d96799217ec2e66d70bd832413b1025df435563314100798136a1"
+    },
+    {
+      "path": "regressions/typecheck.log",
+      "sha256": "c0eb59be434f8dc93ed8de09b38ba392ccfc83b1c2f4189cbc6403f512774619"
+    },
+    {
+      "path": "replay.json",
+      "sha256": "a47c93c219d2389bafc77305c39fb3e617beccf268f07d63c632d5cd175871c0"
+    },
+    {
+      "path": "replay.py",
+      "sha256": "f21540814e6d2a187e2b5ebe83fd87bef784df0c4279fa859e35394fbbca4cd7"
+    },
+    {
+      "path": "source-delta.json",
+      "sha256": "9adb9f7c501a4d0aea6ff73c93bdae268c90fe2a8e0f03e990ee743f30a76fb6"
+    },
+    {
+      "path": "source-sha256.json",
+      "sha256": "9a80c861e97fe609e4e7d60e130742d82832eba1f9f88c4849bb98e29c189d02"
+    },
+    {
+      "path": "source.tar.gz",
+      "sha256": "83226074dfb10c5167748a7f744c66a96fc673d3dd71b4e2e458b8df821a8dab"
+    }
+  ]
+}
