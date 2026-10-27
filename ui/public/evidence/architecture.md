@@ -375,6 +375,15 @@ second clone would reuse the first clone's containers and volumes. In the second
 - give its `.env` free host ports, since the first copy holds them:
   `SAFEACT_DEV_DB_PORT` and `SAFEACT_DEV_REDIS_PORT` (for example 55433 and 56380), and
   `SAFEACT_CONSOLE_PORT` / `SAFEACT_MCP_PORT` in the shell for the container stack;
+- point the guided walkthrough at those ports, because its commands name the first
+  copy's 8080 and 8002 (and `prepare_walkthrough.py` defaults to them, so without these
+  flags it signs in and submits to the first copy's stack):
+  ```sh
+  .venv/bin/python ui/scripts/prepare_walkthrough.py --compose \
+      --api http://127.0.0.1:$SAFEACT_CONSOLE_PORT --mcp http://127.0.0.1:$SAFEACT_MCP_PORT/mcp
+  cd ui && npm ci && SAFEACT_API_URL=http://127.0.0.1:$SAFEACT_CONSOLE_PORT npm run dev
+  ```
+  and use `$SAFEACT_CONSOLE_PORT` wherever the README says `:8080`;
 - the Toxiproxy ports (8474, 21000-21099, only with `--profile chaos`), and the browser
   tests' 8001 and 5173 are fixed: run those in one copy at a time;
 - `down -v` with the same project name deletes only that copy's volumes.
